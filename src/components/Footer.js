@@ -31,12 +31,14 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-        <p style={{textAlign:'center'}} class='copyright-tag'>Veva &#169;</p>
-        <ul class='social-tags'>
-          <SocialMediaIconsReact icon="linkedin" backgroundColor='none' roundness={0} class='social-link'/>
-          <SocialMediaIconsReact icon="facebook" backgroundColor='none' roundness={0} class='social-link'/>
-          <SocialMediaIconsReact icon="instagram" backgroundColor='none' roundness={0} class='social-link'/>
-        </ul>
+        <div class='footer-bottom'>
+          <p style={{textAlign:'center'}} class='copyright-tag'>Veva &#169;</p>
+          <ul class='social-tags'>
+            <SocialMediaIconsReact icon="linkedin" backgroundColor='none' roundness={0} class='social-link'/>
+            <SocialMediaIconsReact icon="facebook" backgroundColor='none' roundness={0} class='social-link'/>
+            <SocialMediaIconsReact icon="instagram" backgroundColor='none' roundness={0} class='social-link'/>
+          </ul>
+        </div>
       </div>
     )
   }
