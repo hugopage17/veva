@@ -8,11 +8,11 @@ body{
 }
 
 @keyframes slide {
-  0%   {
-  opacity: 0%;
+  0% {
+    transform: translateY(-1000%);
   }
   100% {
-  opacity: 100%;
+    transform: translateY(0);
   }
 }
 
@@ -53,6 +53,12 @@ h1{
   cursor: pointer;
   animation-name: slideInFromLeft;
   -webkit-animation:slideInFromLeft;
+  animation-duration: 1s;
+}
+
+.fadein{
+  animation-name: slide;
+  -webkit-animation: slide;
   animation-duration: 0.5s;
 }
 
@@ -94,11 +100,7 @@ h1{
   background: linear-gradient(to bottom right,#0E1938,#14234C);
 }
 
-.fadein{
-  animation-name: slide;
-  -webkit-animation: slide;
-  animation-duration: 1s;
-}
+
 
 .home-mid-sec{
   border-bottom: 1px solid #59B8D0;
