@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import { BrowserRouter, Route, Switch} from "react-router-dom";
+import Navbar from './components/Navbar.js'
+import Home from './components/Home.js'
+import Footer from './components/Footer.js'
+import About from './components/About.js'
+import Contact from './components/Contact.js'
+import Team from './components/Team.js'
+import Error from './components/Error.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {}
+  }
+
+
+
+  toggleNav = () => {
+    document.getElementById('navbar').style.display = 'block'
+  }
+
+  render(){
+    return (
+      <BrowserRouter>
+        <div>
+          <Navbar/>
+          <button class='toggle-nav' onClick={this.toggleNav}>
+            <div class='tog-bar'></div>
+            <div class='tog-bar'></div>
+            <div class='tog-bar'></div>
+          </button>
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route exact path='/About' component={About}/>
+            <Route exact path='/Contact' component={Contact}/>
+            <Route exact path='/OurTeam' component={Team}/>
+            <Route component={Error}/>
+          </Switch>
+          <Footer/>
+        </div>
+      </BrowserRouter>
+    )
+  }
 }
+
 
 export default App;

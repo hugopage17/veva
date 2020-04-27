@@ -1,38 +1,300 @@
-.App {
+#navbar{
+  background: #14234C;
+  color:white;
+}
+
+body{
+  background-color: #E0E0E0;
+}
+
+@keyframes slide {
+  0%   {
+  opacity: 0%;
+  }
+  100% {
+  opacity: 100%;
+  }
+}
+
+button{
+  cursor: pointer;
+}
+
+h1{
+  font-weight: 100;
+}
+
+.route-link{
+  color:white;
+  text-decoration: none;
+}
+
+.main-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #59B8D0;
+  padding:10px;
+}
+
+.main-nav-li {
+  float: left;
+  margin-left: 60px;
+  cursor: pointer;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+.main-nav-li:hover{
+  text-shadow:2px 2px 4px #60BC3F;
+}
+
+#service-title{
+  position: relative;
+}
+
+#services-title:hover + .service-menu{
+  display: block;
+}
+
+.service-menu{
+  display: none;
+  color:white;
+  position: absolute;
+  background-color:#14234C;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style-type: none;
+}
+
+
+.home-wrapper{
+  color:white;
+}
+
+.home-inner-sec{
+  margin:20px;
+}
+
+.home-top-sec{
+  border-bottom: 1px solid #59B8D0;
+  height: 60vh;
+  background: linear-gradient(to bottom right,#0E1938,#14234C);
+}
+
+.fadein{
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+.home-mid-sec{
+  border-bottom: 1px solid #59B8D0;
+  height: 80vh;
+}
+
+.home-bottom-sec{
+  height: 40vh;
+}
+
+.footer-wrapper{
+  border-top:1px solid #59B8D0;
+  background-color: #14234C;
+  color:white;
+  padding:5px;
+  position: relative;
+  height: 40vh;
+}
+
+.copyright-tag{
+  position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.footer-inner{
+  width:75%;
+  margin:auto;
+}
+
+.footer-inner ul{
+  list-style-type: none;
+  line-height: 2;
+}
+
+.about-wrapper{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-panel{
+  border-radius:5px;
+  box-shadow: 2px 2px 8px 2px #888888;
+  width:50%;
+  margin:auto;
+  height:120vh;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-wrapper{
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.contact-inner{
+  width:50%;
+  margin:auto;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+.email-add{
+  width:70%;
+  margin:auto;
+  padding:10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.msg-body{
+  height:60vh;
+  width:70%;
+  padding: 10px;
+}
+
+.submit-but{
+  width:70%;
+  margin:auto;
+  padding:10px;
+  font-size: 16px;
+  border:1px solid #59B8D0;
+  background: linear-gradient(to bottom right,#0E1938,#14234C);
+  color:white;
+}
+
+.toggle-nav{
+  display: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.tog-bar{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.team-inner{
+  height:80vh;
+  margin:20px;
+}
+
+.social-tags{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.social-link{
+  padding:5px;
+  cursor: pointer;
+  display: flex;
+  align-items:center;
+  float: left;
+}
+
+.error-wrapper{
+  background: linear-gradient(to bottom right,#0E1938,#14234C);
+  height: 80vh;
+  padding: 20px;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.but-1{
+  border-radius: 5px;
+  border:1px solid #59B8D0;
+  color:white;
+  background: none;
+  padding:5px;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.but-1:hover{
+  background: rgba(89, 184, 208, 0.3);
+}
+
+.bottom-nav li:hover{
+  border-bottom:1px solid #59B8D0;
+}
+
+@media screen and (max-width: 560px) {
+  .home-inner-sec{
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .toggle-nav{
+    display: block;
+  }
+
+  #navbar{
+    height: 100%;
+    position: fixed;
+    width:100%;
+    display: none;
+    animation-name: slide;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes slide {
+  0%   {
+    width:0%;
+  }
+  100% {
+    width:100%;
+  }
+}
+
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    padding:10px;
+  }
+
+  #navbar ul li {
+    margin-bottom: 40px;
+    cursor: pointer;
+    float:none;
+    font-size: 20px;
+  }
+
+  .contact-inner{
+    width:100%;
+    margin:auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-wrapper{
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+
+  .about-panel{
+    border-radius:5px;
+    box-shadow: none;
+    width:80%;
+    margin:auto;
+    height:60vh;
+    margin-bottom: 20px;
+  }
+
+  .team-inner{
+    height:80vh;
+    margin:20px;
   }
 }
