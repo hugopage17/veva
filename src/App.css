@@ -119,8 +119,9 @@ h1, h2{
 }
 
 .footer-bottom{
-  background-color:#14234C;
+  background-color: #14234C;
   border-top:1px solid #59B8D0; 
+  overflow:auto;
 }
 
 .copyright-tag{
