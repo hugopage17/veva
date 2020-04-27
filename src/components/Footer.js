@@ -13,6 +13,11 @@ class Footer extends Component {
     return (
       <div class='footer-wrapper'>
         <div style={{overflow:'auto',backgroundColor:'#0E1938'}}>
+        <ul class='social-tags'>
+          <SocialMediaIconsReact icon="linkedin" backgroundColor='none' roundness={0} class='social-link'/>
+          <SocialMediaIconsReact icon="facebook" backgroundColor='none' roundness={0} class='social-link'/>
+          <SocialMediaIconsReact icon="instagram" backgroundColor='none' roundness={0} class='social-link'/>
+        </ul>
           <div class='footer-inner'>
             <div style={{float:'left'}}>
               <ul>
@@ -32,11 +37,7 @@ class Footer extends Component {
           </div>
         </div>
         <div class='footer-bottom'>
-        <ul class='social-tags'>
-          <SocialMediaIconsReact icon="linkedin" backgroundColor='none' roundness={0} class='social-link'/>
-          <SocialMediaIconsReact icon="facebook" backgroundColor='none' roundness={0} class='social-link'/>
-          <SocialMediaIconsReact icon="instagram" backgroundColor='none' roundness={0} class='social-link'/>
-        </ul>
+
           <p style={{textAlign:'center'}} class='copyright-tag'>Veva Development &#169;</p>
         </div>
       </div>
