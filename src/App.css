@@ -42,7 +42,7 @@ h1{
   float: left;
   margin-left: 60px;
   cursor: pointer;
-  animation-name: slide;
+  -webkit-animation-name: slide;
   animation-duration: 1s;
 }
 
@@ -85,7 +85,7 @@ h1{
 }
 
 .fadein{
-  animation-name: slide;
+  -webkit-animation-name: slide;
   animation-duration: 1s;
 }
 
