@@ -160,18 +160,21 @@ h1, h2{
   text-align: center;
 }
 
+
 .email-add{
   width:70%;
   margin:auto;
   padding:10px;
   font-size: 16px;
   margin-bottom: 10px;
+  outline-color:#60BC3F;
 }
 
 .msg-body{
   height:60vh;
   width:70%;
   padding: 10px;
+  outline-color:#60BC3F;
 }
 
 .submit-but{
