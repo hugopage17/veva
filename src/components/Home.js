@@ -18,9 +18,11 @@ class Home extends Component {
     return (
       <div class='home-wrapper'>
         <div class='home-top-sec'>
-          <div class='home-inner-sec' style={{overflow:'auto',width:'70%',margin:'auto',alignItems:'center'}}>
-            <h1 style={{float:'left'}} class='fadein'>Veva</h1>
-            <p style={{float:'left'}} class='fadein'>Insert blurb introducing Veva Development here</p>
+          <div class='home-inner-sec' style={{overflow:'auto',width:'80%',margin:'auto',alignItems:'center'}}>
+            <div style={{float:'left',textAlign:'center'}}>
+              <h1 class='fadein'>Veva</h1>
+              <p class='fadein'>Insert blurb introducing Veva Development here</p>
+            </div>
           </div>
         </div>
         <div class='home-mid-sec'>
