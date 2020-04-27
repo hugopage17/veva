@@ -121,14 +121,13 @@ h1, h2{
   border-top:1px solid #59B8D0;
   background-color: #14234C;
   padding:5px;
-  position: relative;
+  overflow: auto;
 }
 
 .social-tags{
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  float: left;
 }
+
 
 .social-link{
   padding:5px;
