@@ -96,7 +96,7 @@ h1{
 
 .fadein{
   animation-name: slide;
-  animation-name: slide;
+  -webkit-animation: slide;
   animation-duration: 1s;
 }
 
