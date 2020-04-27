@@ -113,15 +113,13 @@ h1, h2{
 
 .footer-wrapper{
   border-top:1px solid #59B8D0;
-  background-color: #0E1938;
   color:white;
-  padding:5px;
   position: relative;
   height: 40vh;
 }
 
 .footer-bottom{
-  background-color:red;
+  background-color:#14234C;
   border-top:1px solid #59B8D0; 
 }
 
@@ -132,8 +130,10 @@ h1, h2{
 }
 
 .footer-inner{
+  padding:5px;
   width:75%;
   margin:auto;
+  background-color: #0E1938;
 }
 
 .footer-inner ul{
