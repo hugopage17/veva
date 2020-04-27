@@ -12,8 +12,8 @@ class Footer extends Component {
   render(){
     return (
       <div class='footer-wrapper'>
-        <div class='footer-inner'>
-          <div style={{overflow:'auto'}}>
+        <div style={{overflow:'auto',backgroundColor:'#0E1938'}}>
+          <div class='footer-inner'>
             <div style={{float:'left'}}>
               <ul>
                 <li>Email</li>
@@ -32,7 +32,7 @@ class Footer extends Component {
           </div>
         </div>
         <div class='footer-bottom'>
-          <p style={{textAlign:'center'}} class='copyright-tag'>Veva &#169;</p>
+          <p style={{textAlign:'center'}} class='copyright-tag'>Veva Development &#169;</p>
           <ul class='social-tags'>
             <SocialMediaIconsReact icon="linkedin" backgroundColor='none' roundness={0} class='social-link'/>
             <SocialMediaIconsReact icon="facebook" backgroundColor='none' roundness={0} class='social-link'/>
