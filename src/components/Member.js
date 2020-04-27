@@ -23,7 +23,7 @@ class Member extends Component {
         <div class='member-inner'>
           <div class='member-top'>
             <div class='member-left-top'>
-              <img src={this.props.member.img}/>
+              <img src={this.props.member.img} alt='display'/>
             </div>
             <div class='member-top-right'>
               <h1>{this.props.member.name}</h1>
