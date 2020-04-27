@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
 import '../App.css'
+import '../Spinner.css'
+import Member from './Member.js'
 
 class Team extends Component {
   constructor(props){
     super(props)
-    this.state = {}
+    this.state = {
+      data:[],
+      loading:true,
+      member:{},
+      hideMember:true
+    }
   }
 
   componentDidMount(){
@@ -12,16 +19,52 @@ class Team extends Component {
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
     }
+    fetch('https://api.jsonbin.io/b/5ea63eff1299b9374236c11b/2')
+    .then(response => response.json())
+    .then((data) => {
+      this.setState({data})
+      this.setState({loading:!this.state.loading})
+    })
+  }
+
+  showMember = (member) => {
+    this.setState({member})
+    this.setState({hideMember:!this.state.hideMember})
+  }
+
+  showTeam(){
+    const data = this.state.data
+    return(
+      <div class='whole-team'>
+        {data.map((d)=>{
+          return(
+            <div class='each-member' onClick={()=>{this.showMember(d)}}>
+              <img src={d.img} alt='display'/>
+              <p>{d.name}</p>
+              <p>{d.title}</p>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
+
+  showLoader(){
+    return(
+      <div class="loader"></div>
+    )
   }
 
   render(){
     return (
-      <div id='team-wrapper'>
-        <div class='team-inner'>
-          <h1>Meet the Team</h1>
-          <div>
-            <p>Here we can have a photo of each member of Veva that a user can click on that will then
-            display a popup box with the photo enlarged and a small description about that persons role at veva</p>
+      <div>
+        <Member member={this.state.member} hide={this.state.hideMember} close={()=>{this.setState({hideMember:!this.state.hideMember})}}/>
+        <div id='team-wrapper'>
+          <div class='team-inner'>
+            <h1>Meet the Team</h1>
+            <div>
+              {this.state.loading ? (this.showLoader()):(this.showTeam())}
+            </div>
           </div>
         </div>
       </div>

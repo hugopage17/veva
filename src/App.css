@@ -29,7 +29,7 @@ button{
   cursor: pointer;
 }
 
-h1{
+h1, h2{
   font-weight: 100;
 }
 
@@ -240,6 +240,78 @@ h1{
 
 .bottom-nav li:hover{
   border-bottom:1px solid #59B8D0;
+}
+
+.whole-team{
+  background: white;
+  border-radius: 5px;
+  padding:5px;
+  box-shadow: 5px 5px 8px 5px #adadad;
+  border:1px solid #adadad;
+}
+
+.each-member{
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.each-member img{
+  width:50%;
+  border-radius: 100%;
+  border:1px solid #59B8D0;
+}
+
+.black-bg{
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+  z-index:50;
+  width:100%;
+  height:100%;
+}
+
+.member-inner{
+  background-color: white;
+  position:fixed;
+  top:5%;
+  left:20%;
+  height:90vh;
+  width:60%;
+  border-radius:5px;
+  border:1px solid #59B8D0;
+}
+
+.member-top{
+  overflow: auto;
+  border-bottom: 1px solid #59B8D0;
+}
+
+.member-left-top{
+  float:left;
+  width:50%;
+  margin: auto;
+}
+
+.member-top-right{
+  float:right;
+  text-align:center;
+  position: relative;
+  width:49%;
+  margin: auto;
+}
+
+.but-3{
+  border-radius: 5px;
+  background-color: #E0E0E0;
+  color:#0E1938;
+  border:none;
+  outline:none;
+  margin: 10px;
+  font-size: 18px;
+  padding:5px;
+  margin-left: 40px;
 }
 
 @media screen and (max-width: 560px) {
