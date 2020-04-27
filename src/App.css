@@ -7,12 +7,21 @@ body{
   background-color: #E0E0E0;
 }
 
-@-webkit-keyframes slide {
+@keyframes slide {
   0%   {
   opacity: 0%;
   }
   100% {
   opacity: 100%;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-1000%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -42,8 +51,9 @@ h1{
   float: left;
   margin-left: 60px;
   cursor: pointer;
-  -webkit-animation-name: slide;
-  animation-duration: 1s;
+  animation-name: slideInFromLeft;
+  -webkit-animation:slideInFromLeft;
+  animation-duration: 0.5s;
 }
 
 .main-nav-li:hover{
@@ -85,7 +95,8 @@ h1{
 }
 
 .fadein{
-  -webkit-animation-name: slide;
+  animation-name: slide;
+  animation-name: slide;
   animation-duration: 1s;
 }
 
@@ -247,7 +258,7 @@ h1{
     animation-duration: 0.5s;
   }
 
-  @-webkit-keyframes slide {
+  @keyframes slide {
   0%   {
     width:0%;
   }
