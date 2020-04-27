@@ -16,6 +16,15 @@ body{
   }
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-1000%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 button{
   cursor: pointer;
 }
@@ -42,8 +51,9 @@ h1{
   float: left;
   margin-left: 60px;
   cursor: pointer;
-  animation-name: slide;
-  animation-duration: 1s;
+  animation-name: slideInFromLeft;
+  -webkit-animation:slideInFromLeft;
+  animation-duration: 0.5s;
 }
 
 .main-nav-li:hover{
@@ -86,6 +96,7 @@ h1{
 
 .fadein{
   animation-name: slide;
+  -webkit-animation: slide;
   animation-duration: 1s;
 }
 
