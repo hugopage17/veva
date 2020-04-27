@@ -247,7 +247,7 @@ h1{
     animation-duration: 0.5s;
   }
 
-  @keyframes slide {
+  @-webkit-keyframes slide {
   0%   {
     width:0%;
   }
