@@ -109,12 +109,13 @@ h1, h2{
 
 .home-bottom-sec{
   height: 40vh;
+  background-color: white;
+  padding: 5px;
 }
 
 .footer-wrapper{
   border-top:1px solid #59B8D0;
   color:white;
-  
 }
 
 .footer-bottom {
@@ -123,6 +124,7 @@ h1, h2{
   padding:5px;
   overflow: auto;
 }
+
 
 .social-tags{
   float: left;
