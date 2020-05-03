@@ -19,6 +19,7 @@ class Error extends Component {
       <div class='error-wrapper'>
         <div class='error-inner'>
           <h1 style={{fontSize:64}}>404</h1>
+          <img src={require('../images/veva-1.png')} alt='Veva'/>
           <p>Veva could not find the page you are looking for</p>
           <Link to='/' class='route-link'><button class='but-1' style={{fontSize:22}}>Return Home</button></Link>
         </div>

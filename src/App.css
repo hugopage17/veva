@@ -96,7 +96,7 @@ h1, h2{
 
 
 .home-wrapper{
-  color:#0E1938
+  color:#0E1938;
 }
 
 .home-inner-sec{
@@ -173,6 +173,7 @@ h1, h2{
 
 .contact-wrapper{
   margin-bottom: 20px;
+  color:#0E1938;
 }
 
 .contact-inner{
@@ -225,6 +226,7 @@ h1, h2{
 
 .team-inner{
   margin:20px;
+  color:#0E1938;
 }
 
 
@@ -235,6 +237,15 @@ h1, h2{
   padding: 20px;
   text-align: center;
   color: white;
+}
+
+.error-inner{
+  width:50%;
+  margin:auto;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  color:white;
 }
 
 .but-1{
@@ -445,5 +456,9 @@ h1, h2{
 
   .member-top-right h1, h2{
     font-size: 20px;
+  }
+
+  .error-inner img{
+    width:100%;
   }
 }
