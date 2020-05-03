@@ -57,7 +57,7 @@ h1, h2{
 
 .main-nav-li {
   float: left;
-  margin-left: 60px;
+  margin-left: 50px;
   cursor: pointer;
   animation-name: slideInFromLeft;
   -webkit-animation:slideInFromLeft;
