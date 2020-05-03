@@ -55,7 +55,7 @@ class Team extends Component {
 
   showLoader(){
     return(
-      <div class="loader"></div>
+      <div class='loader-wrapper'><div class="loader"></div></div>
     )
   }
 
