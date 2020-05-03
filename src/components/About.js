@@ -14,9 +14,18 @@ class About extends Component {
     }
   }
 
+  toggleNav = () => {
+    document.getElementById('navbar').style.display = 'block'
+  }
+
   render(){
     return (
       <div class='about-wrapper'>
+      <button class='toggle-nav' onClick={this.toggleNav}>
+        <div class='tog-bar'></div>
+        <div class='tog-bar'></div>
+        <div class='tog-bar'></div>
+      </button>
         <h1>About Veva</h1>
         <div class='about-panel'>
           <p>Insert description of Veva and our services here</p>

@@ -15,6 +15,10 @@ class Contact extends Component {
     }
   }
 
+  toggleNav = () => {
+    document.getElementById('navbar').style.display = 'block'
+  }
+
   sendEmail = () => {
     const email = document.getElementById('email-add').value
     if(email)
@@ -37,6 +41,11 @@ class Contact extends Component {
   render(){
     return (
       <div class='contact-wrapper'>
+      <button class='toggle-nav' onClick={this.toggleNav}>
+        <div class='tog-bar'></div>
+        <div class='tog-bar'></div>
+        <div class='tog-bar'></div>
+      </button>
         <div class='contact-inner'>
           <h1>Contact Us</h1>
           <p style={{fontSize:12}}>Please send us all your queries and requests below and we will get back to you with 2-3 business days</p>

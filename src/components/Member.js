@@ -19,7 +19,7 @@ class Member extends Component {
   render(){
     return (
       <div class='black-bg' hidden={this.props.hide}>
-        <button class='but-3' onClick={this.props.close}>Back</button>
+        <button class='but-3' id='close-member-but' onClick={this.props.close}>Back</button>
         <div class='member-inner'>
           <div class='member-top'>
             <div class='member-left-top'>
@@ -30,7 +30,7 @@ class Member extends Component {
               <h2>{this.props.member.title}</h2>
             </div>
           </div>
-          <div>
+          <div class='member-desc'>
             <p>{this.props.member.desc}</p>
           </div>
         </div>

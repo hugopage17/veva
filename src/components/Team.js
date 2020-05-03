@@ -32,6 +32,10 @@ class Team extends Component {
     this.setState({hideMember:!this.state.hideMember})
   }
 
+  toggleNav = () => {
+    document.getElementById('navbar').style.display = 'block'
+  }
+
   showTeam(){
     const data = this.state.data
     return(
@@ -60,6 +64,11 @@ class Team extends Component {
       <div>
         <Member member={this.state.member} hide={this.state.hideMember} close={()=>{this.setState({hideMember:!this.state.hideMember})}}/>
         <div id='team-wrapper'>
+          <button class='toggle-nav' onClick={this.toggleNav}>
+            <div class='tog-bar'></div>
+            <div class='tog-bar'></div>
+            <div class='tog-bar'></div>
+          </button>
           <div class='team-inner'>
             <h1>Meet the Team</h1>
             <div>

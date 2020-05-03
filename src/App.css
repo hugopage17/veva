@@ -224,7 +224,6 @@ h1, h2{
 }
 
 .team-inner{
-  height:80vh;
   margin:20px;
 }
 
@@ -372,7 +371,7 @@ h1, h2{
     margin-bottom: 40px;
     cursor: pointer;
     float:none;
-    font-size: 20px;
+    font-size: 32px;
   }
 
   .contact-inner{
@@ -397,8 +396,8 @@ h1, h2{
   }
 
   .team-inner{
-    height:80vh;
     margin:20px;
+    text-align: center;
   }
 
   .footer-inner{
@@ -407,5 +406,44 @@ h1, h2{
 
   .footer-bottom{
     width:100%;
+  }
+
+  #close-member-but{
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .member-inner{
+    background-color: white;
+    position:fixed;
+    top:7%;
+    left:0%;
+    height:100vh;
+    width:100%;
+    border-radius:5px;
+    border:1px solid #59B8D0;
+  }
+
+  .member-top{
+    overflow: auto;
+    border-bottom: 1px solid #59B8D0;
+  }
+
+  .member-left-top{
+    width:100%;
+    display: block;
+  }
+
+  .member-left-top img{
+    width:100%;
+  }
+
+  .member-top-right{
+    width:100%;
+    display: block;
+  }
+
+  .member-top-right h1, h2{
+    font-size: 20px;
   }
 }
