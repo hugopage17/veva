@@ -16,10 +16,19 @@ class Home extends Component {
     }
   }
 
+  toggleNav = () => {
+    document.getElementById('navbar').style.display = 'block'
+  }
+
   render(){
     return (
       <div class='home-wrapper'>
         <div class='home-top-sec'>
+          <button class='toggle-nav' onClick={this.toggleNav}>
+            <div class='tog-bar'></div>
+            <div class='tog-bar'></div>
+            <div class='tog-bar'></div>
+          </button>
           <div class='home-inner-sec' style={{overflow:'auto',width:'80%',margin:'auto',alignItems:'center',paddingTop:10}}>
             <div style={{float:'left',textAlign:'center'}} class='intro-blurb'>
               <p class='fadein'>Insert blurb introducing Veva Development here</p>

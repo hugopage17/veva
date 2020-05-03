@@ -32,11 +32,6 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Navbar/>
-          <button class='toggle-nav' onClick={this.toggleNav}>
-            <div class='tog-bar'></div>
-            <div class='tog-bar'></div>
-            <div class='tog-bar'></div>
-          </button>
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route exact path='/About' component={About}/>

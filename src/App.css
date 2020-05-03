@@ -39,6 +39,7 @@ h1, h2{
   position: absolute;
   top: 20%;
   left: -5%;
+  color:white;
 }
 
 .route-link{
@@ -95,7 +96,7 @@ h1, h2{
 
 
 .home-wrapper{
-  color:white;
+  color:#0E1938
 }
 
 .home-inner-sec{
@@ -218,7 +219,7 @@ h1, h2{
 .tog-bar{
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: #59B8D0;
   margin: 6px 0;
 }
 
@@ -331,8 +332,13 @@ h1, h2{
     text-align: center;
   }
 
+  .intro-blurb{
+    display: none;
+  }
+
   .toggle-nav{
     display: block;
+    background-color: none;
   }
 
   #navbar{
@@ -393,5 +399,13 @@ h1, h2{
   .team-inner{
     height:80vh;
     margin:20px;
+  }
+
+  .footer-inner{
+    width:90%;
+  }
+
+  .footer-bottom{
+    width:100%;
   }
 }
