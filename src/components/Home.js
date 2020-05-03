@@ -5,7 +5,7 @@ class Home extends Component {
   constructor(props){
     super(props)
     this.state = {
-      
+
     }
   }
 
@@ -20,10 +20,12 @@ class Home extends Component {
     return (
       <div class='home-wrapper'>
         <div class='home-top-sec'>
-          <div class='home-inner-sec' style={{overflow:'auto',width:'80%',margin:'auto',alignItems:'center'}}>
-            <div style={{float:'left',textAlign:'center'}}>
-              <h1 class='fadein'>Veva</h1>
+          <div class='home-inner-sec' style={{overflow:'auto',width:'80%',margin:'auto',alignItems:'center',paddingTop:10}}>
+            <div style={{float:'left',textAlign:'center'}} class='intro-blurb'>
               <p class='fadein'>Insert blurb introducing Veva Development here</p>
+            </div>
+            <div style={{float:'right'}}>
+              <img class='fadein' src={require('../images/veva-3.png')} style={{width:'80%'}}/>
             </div>
           </div>
         </div>
