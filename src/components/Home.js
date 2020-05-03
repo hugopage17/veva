@@ -25,7 +25,7 @@ class Home extends Component {
               <p class='fadein'>Insert blurb introducing Veva Development here</p>
             </div>
             <div style={{float:'right'}}>
-              <img class='fadein' src={require('../images/veva-3.png')} style={{width:'80%'}}/>
+              <img class='fadein' src={require('../images/veva-3.png')} style={{width:'80%'}} alt='Veva'/>
             </div>
           </div>
         </div>
