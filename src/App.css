@@ -3,6 +3,10 @@
   color:white;
 }
 
+#home-logo{
+  width:48px;
+}
+
 body{
   background-color: #E0E0E0;
 }
@@ -464,5 +468,9 @@ h1, h2{
 
   .error-inner img{
     width:100%;
+  }
+
+  #home-logo{
+    width:35%;
   }
 }

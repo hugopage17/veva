@@ -21,7 +21,7 @@ class Navbar extends Component {
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-          <Link to='/' class='route-link'><li class='main-nav-li'><img src={require('../images/veva-1.png')} style={{width:32}} alt='Home'/></li></Link>
+          <Link to='/' class='route-link'><li class='main-nav-li'><img id='home-logo' src={require('../images/veva-4.png')} alt='Home'/></li></Link>
           <Link to='/About' class='route-link'><li class='main-nav-li'>About</li></Link>
           <Link to='/Services' class='route-link'>
             <li class='main-nav-li' id='service-title'>Services</li>
