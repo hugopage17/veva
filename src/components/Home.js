@@ -31,7 +31,7 @@ class Home extends Component {
           </button>
           <div class='home-inner-sec' style={{overflow:'auto',width:'80%',margin:'auto',alignItems:'center',paddingTop:10}}>
             <div style={{float:'left',textAlign:'center'}} class='intro-blurb'>
-              <p class='fadein'>Insert blurb introducing Veva Development here</p>
+              <p class='fadein'>Blurb introducing Veva Development</p>
             </div>
             <div style={{float:'right'}}>
               <img class='fadein' src={require('../images/veva-3.png')} style={{width:'80%'}} alt='Veva'/>
