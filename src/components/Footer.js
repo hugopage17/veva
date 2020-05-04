@@ -16,7 +16,7 @@ class Footer extends Component {
           <div class='footer-inner'>
             <div style={{float:'left'}}>
               <ul>
-                <li>Email</li>
+                <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li><br/>
                 <li>Phone Number</li>
               </ul>
             </div>

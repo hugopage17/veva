@@ -7,6 +7,16 @@
   width:48px;
 }
 
+#mail-link{
+  color:none;
+  text-decoration: none;
+  color:white;
+}
+
+#mail-link:hover{
+  border-bottom:1px solid #60BC3F;
+}
+
 body{
   background-color: #E0E0E0;
 }
