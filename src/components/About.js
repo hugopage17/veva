@@ -28,7 +28,7 @@ class About extends Component {
       </button>
         <h1>About Veva</h1>
         <div class='about-panel'>
-          <p>Insert description of Veva and our services here</p>
+          <p>Description of Veva and our services here</p>
         </div>
       </div>
     )
