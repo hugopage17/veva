@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css'
+import {data} from '../services-data.js'
+import { Link} from "react-router-dom";
 
 class Home extends Component {
   constructor(props){
@@ -18,6 +20,26 @@ class Home extends Component {
 
   toggleNav = () => {
     document.getElementById('navbar').style.display = 'block'
+  }
+
+  showServices(){
+    return data.map((service)=>{
+      const index = data.indexOf(service)
+      return(
+        <div class='each-service' id={`index-${index}`}>
+          <div style={{float:'left',width:'60%',margin:'auto'}}>
+            <h3>{service.name}</h3>
+            {service.keyPoints.map((point)=>{
+              return <li>{point}</li>
+            })}
+          </div>
+          <div style={{float:'right'}}>
+            <img src={require(`../images/${service.img}`)} alt={service.name}/><br/>
+            <Link to={`Services/${service.name}`}><button>Find out More</button></Link>
+          </div>
+        </div>
+      )
+    })
   }
 
   render(){
@@ -39,10 +61,9 @@ class Home extends Component {
           </div>
         </div>
         <div class='home-mid-sec'>
-          <div class='home-inner-sec'>
-            <p style={{textAlign:'center'}}>This section of the home page can have infomation
-            around the three main services we offer with a brief description of
-            each</p>
+          <h1 style={{textAlign:'center',fontWeight:400}}>What we offer</h1>
+          <div class='home-inner-sec' id='middle-inner'>
+            {this.showServices()}
           </div>
         </div>
         <div class='home-bottom-sec'>

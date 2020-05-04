@@ -117,18 +117,60 @@ h1, h2{
   margin:20px;
 }
 
+
 .home-top-sec{
   border-bottom: 1px solid #59B8D0;
   height: 60vh;
   background: linear-gradient(to bottom right,#0E1938,#14234C);
 }
 
-
-
 .home-mid-sec{
   border-bottom: 1px solid #59B8D0;
-  height: 80vh;
+  text-align: left;
+  padding: 20px;
 }
+
+#middle-inner{
+  width:95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.current-service{
+  animation-name: slideInFromLeft;
+  -webkit-animation:slideInFromLeft;
+  animation-duration: 1s;
+}
+
+.each-service{
+  display: inline-block;
+  overflow: auto;
+  margin: 20px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.each-service img{
+  width:96px;
+  margin: auto;
+}
+
+.each-service li{
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 2.5;
+}
+
+.each-service button{
+  border-radius: 5px;
+  outline:none;
+  border:none;
+  background-color: #14234C;
+  padding:10px;
+  font-size: 16px;
+  color:white;
+}
+
 
 .home-bottom-sec{
   height: 40vh;
@@ -353,6 +395,53 @@ h1, h2{
 
 .team-wrapper{
   height: 60vh;
+}
+
+.all-services{
+  padding: 10px;
+  width:90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.rounded-services{
+  display: inline-block;
+  margin: 10px;
+  width:30%;
+  text-align: center;
+  color:#14234C;
+  cursor: pointer;
+}
+
+@keyframes zoom {
+  0%   {
+  width:30%;
+  }
+  100% {
+  width:35%;
+  }
+}
+
+.rounded-services img{
+  width:30%;
+}
+
+.rounded-services:hover img{
+  animation-name: zoom;
+  animation-duration: 0.25s;
+  width:35%;
+}
+
+.services-wrapper{
+  color:#14234C;
+  padding: 10px;
+  text-align: center;
+}
+
+.services-wrapper h1{
+  font-weight: 400;
 }
 
 @media screen and (max-width: 560px) {

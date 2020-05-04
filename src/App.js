@@ -6,12 +6,16 @@ import Footer from './components/Footer.js'
 import About from './components/About.js'
 import Contact from './components/Contact.js'
 import Team from './components/Team.js'
+import Services from './components/Services.js'
+import Service from './components/Service.js'
 import Error from './components/Error.js'
 
 class App extends Component {
   constructor(props){
     super(props)
-    this.state = {}
+    this.state = {
+
+    }
   }
 
   componentDidMount(){
@@ -36,6 +40,8 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route exact path='/About' component={About}/>
+            <Route exact path='/Services' component={Services}/>
+            <Route exact path='/Services/:service' component={Service}/>
             <Route exact path='/Contact' component={Contact}/>
             <Route exact path='/OurTeam' component={Team}/>
             <Route component={Error}/>
