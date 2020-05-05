@@ -10,10 +10,17 @@ class Services extends Component{
     }
   }
 
+  componentDidMount(){
+    window.scrollTo(0, 0);
+    if(window.screen.width <= 560){
+      document.getElementById('navbar').style.display = 'none'
+    }
+  }
+
   showServices(){
     return data.map((service)=>{
       return(
-        <Link to={`Services/${service.name}`}><div class='rounded-services'>
+        <Link to={`Services/${service.name}`} class='route-link'><div class='rounded-services'>
           <img src={require(`../images/${service.img}`)} alt={service.name}/>
           <h3>{service.name}</h3>
         </div></Link>
@@ -21,9 +28,18 @@ class Services extends Component{
     })
   }
 
+  toggleNav = () => {
+    document.getElementById('navbar').style.display = 'block'
+  }
+
   render(){
     return(
       <div class='services-wrapper'>
+        <button class='toggle-nav' onClick={this.toggleNav}>
+          <div class='tog-bar'></div>
+          <div class='tog-bar'></div>
+          <div class='tog-bar'></div>
+        </button>
         <h1>Find out about our Services below</h1>
         <div class='all-services'>
           {this.showServices()}

@@ -142,6 +142,34 @@ h1, h2{
   animation-duration: 1s;
 }
 
+.this-service{
+  display: block;
+  margin: auto;
+  width:100%;
+}
+
+.this-service img{
+  width:128px;
+  margin: auto;
+}
+
+.this-service li{
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 2.5;
+}
+
+.this-service button{
+  border-radius: 5px;
+  outline:none;
+  border:none;
+  background-color: #14234C;
+  padding:10px;
+  font-size: 16px;
+  color:white;
+  width: 80%;
+}
+
 .each-service{
   display: inline-block;
   overflow: auto;
@@ -522,9 +550,6 @@ h1, h2{
     width:90%;
   }
 
-  .footer-bottom{
-    width:100%;
-  }
 
   #close-member-but{
     margin-top: 10px;
@@ -571,5 +596,15 @@ h1, h2{
 
   #home-logo{
     width:35%;
+  }
+  .rounded-services{
+    display: block;
+    width:80%;
+    margin:auto;
+    padding-bottom: 40px;
+  }
+
+  .rounded-services img{
+    width:128px;
   }
 }

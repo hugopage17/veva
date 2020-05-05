@@ -7,7 +7,8 @@ class Home extends Component {
   constructor(props){
     super(props)
     this.state = {
-
+      serviceIndex:0,
+      isMobile:false
     }
   }
 
@@ -15,11 +16,37 @@ class Home extends Component {
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
+      this.setState({isMobile:true})
+      setInterval(()=>{
+        var index = this.state.serviceIndex
+        if(index < 2){
+          index++
+        }else if(index >= 2){
+          index = 0
+        }
+        console.log(index);
+        this.setState({serviceIndex:index})
+      },3000)
     }
   }
 
   toggleNav = () => {
     document.getElementById('navbar').style.display = 'block'
+  }
+
+  scrollServices(){
+    const index = this.state.serviceIndex
+    const service = data[index]
+    return(
+        <div class='this-service' id={`index-${index}`}>
+          <h3>{service.name}</h3>
+          {service.keyPoints.map((point)=>{
+            return <li>{point}</li>
+          })}
+          <img src={require(`../images/${service.img}`)} alt={service.name}/><br/>
+          <Link to={`Services/${service.name}`} class='route-link'><button>Find out More</button></Link>
+        </div>
+    )
   }
 
   showServices(){
@@ -62,8 +89,8 @@ class Home extends Component {
         </div>
         <div class='home-mid-sec'>
           <h1 style={{textAlign:'center',fontWeight:400}}>What we offer</h1>
-          <div class='home-inner-sec' id='middle-inner'>
-            {this.showServices()}
+          <div class='home-inner-sec'>
+            {this.state.isMobile ?(this.scrollServices()):(<div id='middle-inner'>{this.showServices()}</div>)}
           </div>
         </div>
         <div class='home-bottom-sec'>

@@ -11,6 +11,10 @@ class Service extends Component{
   }
 
   componentDidMount(){
+    window.scrollTo(0, 0);
+    if(window.screen.width <= 560){
+      document.getElementById('navbar').style.display = 'none'
+    }
     const key = this.props.match.params
     for (var i = 0; i < data.length; i++) {
       if(key.service === data[i].name){
@@ -20,10 +24,18 @@ class Service extends Component{
     }
   }
 
+  toggleNav = () => {
+    document.getElementById('navbar').style.display = 'block'
+  }
 
   render(){
     return(
       <div class='services-wrapper'>
+        <button class='toggle-nav' onClick={this.toggleNav}>
+          <div class='tog-bar'></div>
+          <div class='tog-bar'></div>
+          <div class='tog-bar'></div>
+        </button>
         <h1>{this.state.service.name}</h1>
         <p>This section can include further in depth Information
         about the particular service we offer (marketing, Business Dev and Web design)</p>
