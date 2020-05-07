@@ -18,7 +18,6 @@ class Service extends Component{
     const key = this.props.match.params
     for (var i = 0; i < data.length; i++) {
       if(key.service === data[i].name){
-        console.log(data[i].name);
         this.setState({service:data[i]})
       }
     }

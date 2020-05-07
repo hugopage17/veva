@@ -88,6 +88,9 @@ class Home extends Component {
           </div>
         </div>
         <div class='home-mid-sec'>
+        <video width="100%" height="420" style={{margin:'auto 0',display:'block',outline:'none'}} controls>
+          <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
+        </video>
           <h1 style={{textAlign:'center',fontWeight:400}}>What we offer</h1>
           <div class='home-inner-sec'>
             {this.state.isMobile ?(this.scrollServices()):(<div id='middle-inner'>{this.showServices()}</div>)}
