@@ -1,26 +1,16 @@
 import React, {Component} from 'react';
-import '../App.css'
-import {data} from '../services-data.js'
 import Navbar from './Navbar.js'
 
-class Service extends Component{
+class Video extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      service:{}
-    }
+    this.state = {}
   }
 
   componentDidMount(){
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
-    }
-    const key = this.props.match.params
-    for (var i = 0; i < data.length; i++) {
-      if(key.service === data[i].name){
-        this.setState({service:data[i]})
-      }
     }
   }
 
@@ -29,20 +19,21 @@ class Service extends Component{
   }
 
   render(){
-    return(
-      <div class='services-wrapper'>
+    return (
+      <div class='video-wrapper'>
         <Navbar/>
         <button class='toggle-nav' onClick={this.toggleNav}>
           <div class='tog-bar'></div>
           <div class='tog-bar'></div>
           <div class='tog-bar'></div>
         </button>
-        <h1>{this.state.service.name}</h1>
-        <p>This section can include further in depth Information
-        about the particular service we offer (marketing, Business Dev and Web design)</p>
+        <video width="100%" height="420" style={{margin:'auto 0',display:'block',outline:'none'}} controls>
+          <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
+        </video>
       </div>
     )
   }
 }
 
-export default Service
+
+export default Video;

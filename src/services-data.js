@@ -8,7 +8,7 @@ export const data = [
       'Marketing',
       'Accounting'
     ],
-    img:'Investment-Management.png'
+    img:'Business-Development.png'
   },
   {
     name:'Business Management',
@@ -20,7 +20,7 @@ export const data = [
       'Managing',
       'Communicating'
     ],
-    img:'Investment-Management.png'
+    img:'Business-Management.png'
   },
   {
     name:'Investment Management',

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css'
 import Swal from 'sweetalert2'
+import Navbar from './Navbar.js'
 
 class Contact extends Component {
   constructor(props){
@@ -41,6 +42,7 @@ class Contact extends Component {
   render(){
     return (
       <div class='contact-wrapper'>
+      <Navbar/>
       <button class='toggle-nav' onClick={this.toggleNav}>
         <div class='tog-bar'></div>
         <div class='tog-bar'></div>

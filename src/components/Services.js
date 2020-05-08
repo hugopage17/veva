@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../App.css'
 import {data} from '../services-data.js'
 import { Link} from "react-router-dom";
+import Navbar from './Navbar.js'
 
 class Services extends Component{
   constructor(props){
@@ -40,6 +41,7 @@ class Services extends Component{
           <div class='tog-bar'></div>
           <div class='tog-bar'></div>
         </button>
+        <Navbar/>
         <h1>Find out about our Services below</h1>
         <div class='all-services'>
           {this.showServices()}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../App.css'
 import '../Spinner.css'
 import Member from './Member.js'
+import Navbar from './Navbar.js'
 
 class Team extends Component {
   constructor(props){
@@ -62,6 +63,7 @@ class Team extends Component {
   render(){
     return (
       <div>
+        <Navbar/>
         <Member member={this.state.member} hide={this.state.hideMember} close={()=>{this.setState({hideMember:!this.state.hideMember})}}/>
         <div id='team-wrapper'>
           <button class='toggle-nav' onClick={this.toggleNav}>

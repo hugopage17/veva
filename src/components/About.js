@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css'
+import Navbar from './Navbar.js'
 
 class About extends Component {
   constructor(props){
@@ -21,6 +22,7 @@ class About extends Component {
   render(){
     return (
       <div class='about-wrapper'>
+      <Navbar/>
       <button class='toggle-nav' onClick={this.toggleNav}>
         <div class='tog-bar'></div>
         <div class='tog-bar'></div>

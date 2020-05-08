@@ -81,7 +81,9 @@ class Home extends Component {
                 <p class='fadein' id='blurb-id'>It's our business to grow your business</p>
                 <p style={{width:'50%',fontWeight:100}}>Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
                 investment company in New Zealand</p>
-                <button>Watch what we do</button>
+                <Link to='/Watch'>
+                  <button style={{color:'#18E69B',border:'1px solid #18E69B',padding:10,paddingTop:20,paddingBottom:20,background:'none',outline:'none'}}>WATCH WHAT WE DO</button>
+                </Link>
               </div>
               <div style={{float:'right',bottom:'40%',position:'absolute'}}>
                 <img class='fadein' src={require('../images/Header-Image_Placeholder.png')} style={{width:'80%'}} alt='Veva'/>
