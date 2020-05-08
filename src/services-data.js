@@ -27,11 +27,7 @@ export const data = [
   {
     name:'Investment Management',
     brief:'With the latest technology and data resources at your disposal, managing your portfolios and ensuring the best results has never been easier!',
-    keyPoints:[
-      'Gain an online presence',
-      'Expand your market online',
-      'Sell your products online'
-    ],
+    keyPoints:[],
     img:'Investment-Management.png'
   }
 ]

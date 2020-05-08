@@ -34,7 +34,7 @@
 }
 
 body{
-  background-color: #E0E0E0;
+  background-color: white;
 }
 
 @keyframes slide {
@@ -290,6 +290,20 @@ h1, h2{
   text-align: center;
 }
 
+#watch-but{
+  color:#18E69B;
+  border:1px solid #18E69B;
+  padding:10;
+  padding-top:20px;
+  padding-bottom:20px;
+  background:none;
+  outline:none;
+}
+
+#watch-but:hover{
+  background-color: rgba(24, 230, 155, 0.3);
+}
+
 
 .email-add{
   width:70%;
@@ -301,9 +315,10 @@ h1, h2{
 }
 
 #services-wrapper{
-  width:60%;
-  margin: auto;
-  text-align: left;
+  width:100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
 .msg-body{

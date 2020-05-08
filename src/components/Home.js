@@ -57,9 +57,12 @@ class Home extends Component {
         <div class='each-service' id={`index-${index}`}>
           <img src={require(`../images/${service.img}`)} alt={service.name}/><br/>
           <h3>{service.name}</h3>
-          {service.keyPoints.map((point)=>{
-            return <li>{point}</li>
-          })}
+          <p style={{fontSize:12,width:'50%',margin:'auto',marginBottom:5}}>{service.brief}</p>
+          <div id='key-points-list'>
+            {service.keyPoints.map((point)=>{
+              return <li>{point}</li>
+            })}
+          </div>
         </div>
       )
     })
@@ -82,7 +85,7 @@ class Home extends Component {
                 <p style={{width:'50%',fontWeight:100}}>Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
                 investment company in New Zealand</p>
                 <Link to='/Watch'>
-                  <button style={{color:'#18E69B',border:'1px solid #18E69B',padding:10,paddingTop:20,paddingBottom:20,background:'none',outline:'none'}}>WATCH WHAT WE DO</button>
+                  <button id='watch-but'>WATCH WHAT WE DO</button>
                 </Link>
               </div>
               <div style={{float:'right',bottom:'40%',position:'absolute'}}>
