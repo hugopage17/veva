@@ -21,18 +21,20 @@ class Navbar extends Component {
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-          <Link to='/' class='route-link'><li class='main-nav-li'><img id='home-logo' src={require('../images/veva-4.png')} alt='Home'/></li></Link>
-          <Link to='/About' class='route-link'><li class='main-nav-li'>About</li></Link>
-          <Link to='/Services' class='route-link'>
-            <li class='main-nav-li' id='service-title'>Services</li>
-            <ul class='service-menu'>
-              <li>Marketing</li>
-              <li>Sales</li>
-              <li>Information Technology</li>
-            </ul>
-          </Link>
-          <Link to='/Contact' class='route-link'><li class='main-nav-li'>Contact</li></Link>
-          <Link to='/OurTeam' class='route-link'><li class='main-nav-li'>Our Team</li></Link>
+          <Link to='/' class='route-link'><li class='main-nav-li'><img id='home-logo' style={{width:32}} src={require('../images/veva-1.png')} alt='V'/><img id='home-logo' src={require('../images/veva-4.png')} alt='Veva'/></li></Link>
+          <span style={{float:'right',marginRight:'20px'}}>
+            <Link to='/About' class='route-link'><li class='main-nav-li'>About</li></Link>
+            <Link to='/Services' class='route-link'>
+              <li class='main-nav-li' id='service-title'>Services</li>
+              <ul class='service-menu'>
+                <li>Marketing</li>
+                <li>Sales</li>
+                <li>Information Technology</li>
+              </ul>
+            </Link>
+            <Link to='/Contact' class='route-link'><li class='main-nav-li'>Contact</li></Link>
+            <Link to='/OurTeam' class='route-link'><li class='main-nav-li'>Our Team</li></Link>
+          </span>
         </ul>
       </div>
     )

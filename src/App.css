@@ -1,6 +1,6 @@
 #navbar{
-  background: #14234C;
-  color:white;
+  background: none;
+  color:#14234C;
 }
 
 #home-logo{
@@ -10,11 +10,22 @@
 #mail-link{
   color:none;
   text-decoration: none;
-  color:white;
+  color:#14234C;
 }
 
-#mail-link:hover{
-  border-bottom:1px solid #60BC3F;
+#blurb-id{
+  font-size:28px;
+  width:50%;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: #18E69B;
+}
+
+#footer-v-img{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  display: block;
 }
 
 body{
@@ -56,8 +67,8 @@ h1, h2{
   color:white;
 }
 
-.route-link{
-  color:white;
+.route-link-bottom{
+  color:#14234C;
   text-decoration: none;
 }
 
@@ -66,7 +77,6 @@ h1, h2{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border-bottom: 1px solid #59B8D0;
   padding:10px;
 }
 
@@ -77,6 +87,7 @@ h1, h2{
   animation-name: slideInFromLeft;
   -webkit-animation:slideInFromLeft;
   animation-duration: 1s;
+  color:#14234C;
 }
 
 .fadein{
@@ -86,7 +97,7 @@ h1, h2{
 }
 
 .main-nav-li:hover{
-  text-shadow:2px 2px 4px #60BC3F;
+  text-shadow:2px 2px 4px #18E69B
 }
 
 #service-title{
@@ -113,21 +124,16 @@ h1, h2{
   color:#0E1938;
 }
 
-.home-inner-sec{
-  margin:20px;
-}
-
 
 .home-top-sec{
-  border-bottom: 1px solid #59B8D0;
   height: 60vh;
-  background: linear-gradient(to bottom right,#0E1938,#14234C);
+  background-image: -webkit-linear-gradient(30deg, #0E1938 55%, white 35%);
 }
 
 .home-mid-sec{
-  border-bottom: 1px solid #59B8D0;
   text-align: left;
   padding: 20px;
+  background-color: white;
 }
 
 #middle-inner{
@@ -176,6 +182,13 @@ h1, h2{
   margin: 20px;
   position: relative;
   margin-right: 30px;
+  color:white;
+}
+
+.each-service h3{
+  font-weight: 100;
+  text-decoration: underline;
+  text-decoration-color: #18E69B;
 }
 
 .each-service img{
@@ -186,7 +199,8 @@ h1, h2{
 .each-service li{
   text-decoration: none;
   list-style-type: none;
-  line-height: 2.5;
+  line-height: 2;
+  font-size: 12px;
 }
 
 .each-service button{
@@ -207,13 +221,12 @@ h1, h2{
 }
 
 .footer-wrapper{
-  border-top:1px solid #59B8D0;
-  color:white;
+  color:#14234C;
+  background-color: white;
 }
 
 .footer-bottom {
-  border-top:1px solid #59B8D0;
-  background-color: #14234C;
+  background-color: white;
   padding:5px;
   overflow: auto;
 }
@@ -235,6 +248,7 @@ h1, h2{
 .footer-inner{
   width:75%;
   margin:auto;
+  color:#14234C;
 }
 
 .footer-inner ul{
@@ -274,14 +288,20 @@ h1, h2{
   padding:10px;
   font-size: 16px;
   margin-bottom: 10px;
-  outline-color:#60BC3F;
+  outline-color:#18E69B
+}
+
+#services-wrapper{
+  width:60%;
+  margin: auto;
+  text-align: left;
 }
 
 .msg-body{
   height:60vh;
   width:70%;
   padding: 10px;
-  outline-color:#60BC3F;
+  outline-color:#18E69B
 }
 
 .submit-but{
@@ -345,8 +365,13 @@ h1, h2{
   background: rgba(89, 184, 208, 0.3);
 }
 
+.bottom-nav li{
+  width:20%;
+  margin: auto;
+}
+
 .bottom-nav li:hover{
-  border-bottom:1px solid #60BC3F;
+  border-bottom:1px solid #18E69B
 }
 
 .whole-team{

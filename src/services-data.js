@@ -2,28 +2,33 @@ export const data = [
   {
     name:'Business Development',
     keyPoints:[
-      'Grow your business with Veva',
-      'Gain business strategies',
-      'Develop your business to expand and grow'
+      'Strategic Planning',
+      'Sales Training',
+      'Brand Building',
+      'Marketing',
+      'Accounting'
     ],
-    img:'business-and-finance.png'
+    img:'Investment-Management.png'
   },
   {
-    name:'Marketing',
+    name:'Business Management',
     keyPoints:[
-      'Gain a larger audience',
-      'Reach your audience efficiently',
-      'Gain higher sale convertions'
+      'Identify',
+      'Analysing',
+      'Strategising',
+      'Collaborating',
+      'Managing',
+      'Communicating'
     ],
-    img:'bullhorn.png'
+    img:'Investment-Management.png'
   },
   {
-    name:'Web Development',
+    name:'Investment Management',
     keyPoints:[
       'Gain an online presence',
       'Expand your market online',
       'Sell your products online'
     ],
-    img:'web.png'
+    img:'Investment-Management.png'
   }
 ]

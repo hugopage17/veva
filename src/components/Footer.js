@@ -12,23 +12,19 @@ class Footer extends Component {
   render(){
     return (
       <div class='footer-wrapper'>
-        <div style={{overflow:'auto',backgroundColor:'#0E1938'}}>
+        <div style={{overflow:'auto',backgroundColor:'white'}}>
           <div class='footer-inner'>
-            <div style={{float:'left'}}>
-              <ul>
-                <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li><br/>
-                <li>Phone Number</li>
-              </ul>
-            </div>
-            <div style={{float:'right'}}>
-              <ul class='bottom-nav'>
-                <Link to='/About' class='route-link'><li>About</li></Link>
-                <br/>
-                <Link to='/Contact' class='route-link'><li>Contact</li></Link>
-                <br/>
-                <Link to='/OurTeam' class='route-link'><li>Our Team</li></Link>
-              </ul>
-            </div>
+            <img src={require('../images/veva-1.png')} style={{width:'96px',margin:'auto'}} id='footer-v-img' alt='Veva'/>
+            <ul class='bottom-nav' style={{textAlign:'center'}}>
+              <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li>
+              <li>Phone Number</li>
+            </ul>
+            <ul  style={{float:'left'}}>
+              <Link to='/About' class='route-link-bottom'><li>About</li></Link>
+              <Link to='/Services' class='route-link-bottom'><li>Services</li></Link>
+              <Link to='/Contact' class='route-link-bottom'><li>Contact</li></Link>
+              <Link to='/OurTeam' class='route-link-bottom'><li>Our Team</li></Link>
+            </ul>
           </div>
         </div>
         <div class='footer-bottom'>

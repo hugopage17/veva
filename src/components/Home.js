@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../App.css'
 import {data} from '../services-data.js'
 import { Link} from "react-router-dom";
+import Navbar from './Navbar.js'
 
 class Home extends Component {
   constructor(props){
@@ -54,16 +55,11 @@ class Home extends Component {
       const index = data.indexOf(service)
       return(
         <div class='each-service' id={`index-${index}`}>
-          <div style={{float:'left',width:'60%',margin:'auto'}}>
-            <h3>{service.name}</h3>
-            {service.keyPoints.map((point)=>{
-              return <li>{point}</li>
-            })}
-          </div>
-          <div style={{float:'right'}}>
-            <img src={require(`../images/${service.img}`)} alt={service.name}/><br/>
-            <Link to={`Services/${service.name}`}><button>Find out More</button></Link>
-          </div>
+          <img src={require(`../images/${service.img}`)} alt={service.name}/><br/>
+          <h3>{service.name}</h3>
+          {service.keyPoints.map((point)=>{
+            return <li>{point}</li>
+          })}
         </div>
       )
     })
@@ -78,27 +74,37 @@ class Home extends Component {
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-          <div class='home-inner-sec' style={{overflow:'auto',width:'80%',margin:'auto',alignItems:'center',paddingTop:10}}>
-            <div style={{float:'left',textAlign:'center'}} class='intro-blurb'>
-              <p class='fadein'>Blurb introducing Veva Development</p>
-            </div>
-            <div style={{float:'right'}}>
-              <img class='fadein' src={require('../images/veva-3.png')} style={{width:'80%'}} alt='Veva'/>
+          <div class='home-inner-sec'>
+            <Navbar/>
+            <div style={{overflow:'auto',width:'30%',margin:'auto',alignItems:'center',paddingTop:10}}>
+              <div style={{float:'left',textAlign:'left',marginLeft:160,position:'absolute',top:'10%'}} class='intro-blurb'>
+                <p class='fadein' id='blurb-id'>It's our business to grow your business</p>
+                <p style={{width:'50%',fontWeight:100}}>Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
+                investment company in New Zealand</p>
+                <button>Watch what we do</button>
+              </div>
+              <div style={{float:'right',bottom:'40%',position:'absolute'}}>
+                <img class='fadein' src={require('../images/Header-Image_Placeholder.png')} style={{width:'80%'}} alt='Veva'/>
+              </div>
             </div>
           </div>
         </div>
         <div class='home-mid-sec'>
-        <video width="100%" height="420" style={{margin:'auto 0',display:'block',outline:'none'}} controls>
-          <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
-        </video>
-          <h1 style={{textAlign:'center',fontWeight:400}}>What we offer</h1>
-          <div class='home-inner-sec'>
-            {this.state.isMobile ?(this.scrollServices()):(<div id='middle-inner'>{this.showServices()}</div>)}
+        <div style={{width:'80%',overflow:'auto',margin:'auto'}}>
+          <div style={{float:'left'}}>
+            <img class='fadein' src={require('../images/One-stop-shop_Placeholder.png')} style={{width:'80%'}} alt='Veva'/>
+          </div>
+          <div id='home-mid-sec-brief' style={{float:'right',textAlign:'left',width:'40%',color:'#14234C'}}>
+            <p style={{fontSize:28}}>The <span style={{textDecoration:'underline',textDecorationColor:'#18E69B'}}>"one stop shop"</span> for all your business needs</p>
+            <p>We are a full-service business development company with years of expertise.
+            Our dedicated team of professionals are all at the top of their fields and passionate about What
+            they do</p>
           </div>
         </div>
-        <div class='home-bottom-sec'>
-          <div class='home-inner-sec'>
-            <p style={{textAlign:'center'}}>This section can showcase testimonials from clients we have</p>
+        </div>
+        <div style={{backgroundColor:'#14234C'}}>
+          <div class='home-inner-sec' id='services-wrapper'>
+            {this.state.isMobile ?(this.scrollServices()):(<div id='middle-inner'>{this.showServices()}</div>)}
           </div>
         </div>
       </div>
