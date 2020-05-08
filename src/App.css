@@ -11,6 +11,7 @@
   color:none;
   text-decoration: none;
   color:#14234C;
+  font-size: 14px;
 }
 
 #blurb-id{
@@ -78,6 +79,7 @@ h1, h2{
 }
 
 #footer-link{
+  font-size: 14px;
   color:#14234C;
 }
 
