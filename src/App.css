@@ -77,7 +77,7 @@ h1, h2{
   text-decoration: none;
 }
 
-.route-link-bottom li:hover{
+#footer-link li:hover{
   border-bottom:1px solid #18E69B;
 }
 

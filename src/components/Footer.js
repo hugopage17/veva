@@ -20,10 +20,10 @@ class Footer extends Component {
                 <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li>
               </ul>
               <ul  style={{float:'left'}}>
-                <Link to='/About' class='route-link-bottom'><li>About</li></Link>
-                <Link to='/Services' class='route-link-bottom'><li>Services</li></Link>
-                <Link to='/Contact' class='route-link-bottom'><li>Contact</li></Link>
-                <Link to='/OurTeam' class='route-link-bottom'><li>Our Team</li></Link>
+                <Link to='/About' class='route-link-bottom' id='footer-link'><li>About</li></Link>
+                <Link to='/Services' class='route-link-bottom' id='footer-link'><li>Services</li></Link>
+                <Link to='/Contact' class='route-link-bottom' id='footer-link'><li>Contact</li></Link>
+                <Link to='/OurTeam' class='route-link-bottom' id='footer-link'><li>Our Team</li></Link>
               </ul>
             </div>
           </div>
