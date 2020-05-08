@@ -77,6 +77,10 @@ h1, h2{
   text-decoration: none;
 }
 
+.route-link-bottom li:hover{
+  border-bottom:1px solid #18E69B;
+}
+
 .main-nav {
   list-style-type: none;
   margin: 0;
@@ -290,7 +294,7 @@ h1, h2{
 #watch-but{
   color:#18E69B;
   border:1px solid #18E69B;
-  padding:15px;
+  padding:20px;
   background:none;
   outline:none;
 }
@@ -314,6 +318,7 @@ h1, h2{
   margin: 0 auto;
   display: block;
   text-align: center;
+  border-bottom:1px solid #18E69B;
 }
 
 .msg-body{
@@ -475,6 +480,7 @@ h1, h2{
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  border-bottom:1px solid #18E69B;
 }
 
 

@@ -56,7 +56,7 @@ class Home extends Component {
       return(
         <div class='each-service' id={`index-${index}`}>
           <img src={require(`../images/${service.img}`)} alt={service.name}/><br/>
-          <h3>{service.name}</h3>
+          <Link style={{color:'white'}} to={`Services/${service.name}`}><h3>{service.name}</h3></Link>
           <p style={{fontSize:12,width:'50%',margin:'auto',marginBottom:5}}>{service.brief}</p>
           <div id='key-points-list'>
             {service.keyPoints.map((point)=>{
