@@ -102,7 +102,7 @@ class Home extends Component {
           <div id='home-mid-sec-brief' style={{float:'right',textAlign:'left',width:'40%',color:'#14234C'}}>
             <p style={{fontSize:28}}>The <span style={{textDecoration:'underline',textDecorationColor:'#18E69B'}}>"one stop shop"</span> for all your business needs</p>
             <p>We are a full-service business development company with years of expertise.
-            Our dedicated team of professionals are all at the top of their fields and passionate about What
+            Our dedicated team of professionals are all at the top of their fields and passionate about what
             they do</p>
           </div>
         </div>
