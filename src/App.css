@@ -77,6 +77,10 @@ h1, h2{
   text-decoration: none;
 }
 
+#footer-link{
+  color:#14234C;
+}
+
 #footer-link li:hover{
   border-bottom:1px solid #18E69B;
 }

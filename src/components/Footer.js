@@ -15,7 +15,7 @@ class Footer extends Component {
         <div style={{overflow:'auto',backgroundColor:'white'}}>
           <div class='footer-inner'>
             <img src={require('../images/veva-1.png')} style={{width:'96px',margin:'auto'}} id='footer-v-img' alt='Veva'/>
-            <div style={{width:'50%',margin:'auto'}}>
+            <div style={{width:'70%',margin:'auto'}}>
               <ul class='bottom-nav' style={{textAlign:'center',float:'right'}}>
                 <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li>
               </ul>
