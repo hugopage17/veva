@@ -392,16 +392,17 @@ h1, h2{
 }
 
 .but-1{
-  border-radius: 5px;
-  border:1px solid #59B8D0;
+  border:1px solid #18E69B;
   color:white;
   background: none;
   padding:5px;
   font-size: 16px;
+  color: #18E69B;
+  font-weight: 100;
 }
 
 .but-1:hover{
-  background: rgba(89, 184, 208, 0.3);
+  background-color: rgba(24, 230, 155, 0.3);
 }
 
 .bottom-nav li{
