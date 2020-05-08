@@ -235,6 +235,9 @@ h1, h2{
   background-color: white;
   padding:5px;
   overflow: auto;
+  text-align: right;
+  width:50%;
+  margin: auto;
 }
 
 
@@ -372,7 +375,7 @@ h1, h2{
 }
 
 .bottom-nav li{
-  width:20%;
+  width:100%;
   margin: auto;
 }
 
@@ -578,7 +581,7 @@ h1, h2{
   }
 
   .footer-inner{
-    width:90%;
+    width:100%;
   }
 
 
