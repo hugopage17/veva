@@ -231,6 +231,12 @@ h1, h2{
   padding: 5px;
 }
 
+#key-points-list{
+  width:20%;
+  text-align: left;
+  margin: auto;
+}
+
 .footer-wrapper{
   color:#14234C;
   background-color: white;
@@ -244,6 +250,12 @@ h1, h2{
   margin: auto;
 }
 
+#footer-gradient-tag{
+  background: linear-gradient(to right, #1E76BB, #00B5CD, #18E69B);
+  padding-top: 5px;
+  padding-bottom:5px;
+  width:100%;
+}
 
 .social-tags{
   float: left;

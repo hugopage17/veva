@@ -36,6 +36,7 @@ class Footer extends Component {
             <SocialMediaIconsReact icon="instagram" backgroundColor='none' roundness={0} class='social-link'/>
           </ul>
         </div>
+        <div id='footer-gradient-tag'></div>
       </div>
     )
   }
