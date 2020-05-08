@@ -38,8 +38,7 @@ class Service extends Component{
           <div class='tog-bar'></div>
         </button>
         <h1>{this.state.service.name}</h1>
-        <p>This section can include further in depth Information
-        about the particular service we offer (marketing, Business Dev and Web design)</p>
+        <p>{this.state.service.brief}</p>
       </div>
     )
   }
