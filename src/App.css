@@ -165,6 +165,7 @@ h1, h2{
   display: block;
   margin: auto;
   width:100%;
+  color:white;
 }
 
 .this-service img{
@@ -333,9 +334,14 @@ h1, h2{
 #services-wrapper{
   width:100%;
   margin: 0 auto;
+  padding: 0px;
   display: block;
   text-align: center;
   border-bottom:1px solid #18E69B;
+}
+
+#left-footer-ul{
+  float:left;
 }
 
 .msg-body{
@@ -559,6 +565,16 @@ h1, h2{
   color:#14234C;
 }
 
+#right-side-nav{
+  float:right;
+  margin-right:20px;
+}
+
+#contact-ul-footer{
+  text-align:center;
+  float:right;
+}
+
 @media screen and (max-width: 560px) {
   .home-top-sec{
     background: #0E1938;
@@ -566,6 +582,11 @@ h1, h2{
 
   .home-inner-sec{
     text-align: center;
+  }
+
+  #contact-ul-footer{
+    text-align:center;
+    float:none;
   }
 
   #anim-img{
@@ -590,6 +611,10 @@ h1, h2{
     top:10%;
   }
 
+  .main-nav-li{
+    color:white;
+  }
+
   .blurb-para{
     display: none;
   }
@@ -603,6 +628,23 @@ h1, h2{
     text-align:center;
     width:100%;
     color:#14234C;
+  }
+
+  #right-side-nav{
+    text-align: center;
+    float:none;
+    width:50%;
+    margin: auto;
+  }
+
+  #left-footer-ul{
+    float: none;
+    text-align: center;
+    margin: auto;
+  }
+
+  .route-link{
+    text-decoration: none;
   }
 
   .toggle-nav{
@@ -724,6 +766,11 @@ h1, h2{
   #home-logo{
     width:35%;
   }
+
+  .v-logo-nav{
+    display: none;
+  }
+
   .rounded-services{
     display: block;
     width:80%;

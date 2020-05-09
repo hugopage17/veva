@@ -16,10 +16,10 @@ class Footer extends Component {
           <div class='footer-inner'>
             <img src={require('../images/veva-1.png')} style={{width:'96px',margin:'auto'}} id='footer-v-img' alt='Veva'/>
             <div style={{width:'70%',margin:'auto'}}>
-              <ul class='bottom-nav' style={{textAlign:'center',float:'right'}}>
+              <ul class='bottom-nav' id='contact-ul-footer'>
                 <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li>
               </ul>
-              <ul  style={{float:'left'}}>
+              <ul id='left-footer-ul'>
                 <Link to='/About' class='route-link-bottom' id='footer-link'><li>About</li></Link>
                 <Link to='/Services' class='route-link-bottom' id='footer-link'><li>Services</li></Link>
                 <Link to='/Contact' class='route-link-bottom' id='footer-link'><li>Contact</li></Link>

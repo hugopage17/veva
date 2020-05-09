@@ -16,8 +16,8 @@ class Navbar extends Component {
     return (
       <div id='navbar'>
         <ul class='main-nav'>
-          <Link to='/' class='route-link'><li class='main-nav-li'><img id='home-logo' style={{width:32}} src={require('../images/veva-1.png')} alt='V'/><img id='home-logo' style={{margin:'0 auto',display:'inline'}} src={require('../images/veva-4.png')} alt='Veva'/></li></Link>
-          <span style={{float:'right',marginRight:'20px'}}>
+          <Link to='/' class='route-link'><li class='main-nav-li'><img id='home-logo' style={{width:32}} src={require('../images/veva-1.png')} alt='V' class='v-logo-nav'/><img id='home-logo' style={{margin:'0 auto',display:'inline'}} src={require('../images/veva-4.png')} alt='Veva'/></li></Link>
+          <span id='right-side-nav'>
             <Link to='/About' class='route-link'><li class='main-nav-li'>ABOUT</li></Link>
             <Link to='/Services' class='route-link'>
               <li class='main-nav-li' id='service-title'>SERVICES</li>

@@ -40,12 +40,11 @@ class Home extends Component {
     const service = data[index]
     return(
         <div class='this-service' id={`index-${index}`}>
-          <h3>{service.name}</h3>
+          <Link to={`Services/${service.name}`} class='route-link' style={{color:'white'}}><h3>{service.name}</h3></Link>
           {service.keyPoints.map((point)=>{
             return <li>{point}</li>
           })}
           <img src={require(`../images/${service.img}`)} alt={service.name}/><br/>
-          <Link to={`Services/${service.name}`} class='route-link'><button>Find out More</button></Link>
         </div>
     )
   }

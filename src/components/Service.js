@@ -30,15 +30,17 @@ class Service extends Component{
 
   render(){
     return(
-      <div class='services-wrapper'>
+      <div>
         <Navbar/>
-        <button class='toggle-nav' onClick={this.toggleNav}>
-          <div class='tog-bar'></div>
-          <div class='tog-bar'></div>
-          <div class='tog-bar'></div>
-        </button>
-        <h1>{this.state.service.name}</h1>
-        <p>{this.state.service.brief}</p>
+        <div class='services-wrapper'>
+          <button class='toggle-nav' onClick={this.toggleNav}>
+            <div class='tog-bar'></div>
+            <div class='tog-bar'></div>
+            <div class='tog-bar'></div>
+          </button>
+          <h1>{this.state.service.name}</h1>
+          <p>{this.state.service.brief}</p>
+        </div>
       </div>
     )
   }

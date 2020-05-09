@@ -35,16 +35,18 @@ class Services extends Component{
 
   render(){
     return(
-      <div class='services-wrapper'>
-        <button class='toggle-nav' onClick={this.toggleNav}>
-          <div class='tog-bar'></div>
-          <div class='tog-bar'></div>
-          <div class='tog-bar'></div>
-        </button>
+      <div>
         <Navbar/>
-        <h1>Find out about our Services below</h1>
-        <div class='all-services'>
-          {this.showServices()}
+        <div class='services-wrapper'>
+          <button class='toggle-nav' onClick={this.toggleNav}>
+            <div class='tog-bar'></div>
+            <div class='tog-bar'></div>
+            <div class='tog-bar'></div>
+          </button>
+          <h1>Find out about our Services below</h1>
+          <div class='all-services'>
+            {this.showServices()}
+          </div>
         </div>
       </div>
     )
