@@ -286,15 +286,23 @@ h1, h2{
 
 .about-wrapper{
   text-align: center;
+  padding: 20px;
 }
 
 .about-panel{
   border-radius:5px;
-  box-shadow: 2px 2px 8px 2px #888888;
   width:50%;
   margin:auto;
-  height:120vh;
   margin-bottom: 20px;
+  box-shadow: none;
+  float: right;
+}
+
+#veva-video{
+  margin:auto 0;
+  display:inline;
+  outline:none;
+  width:50%;
 }
 
 .contact-wrapper{
@@ -701,14 +709,6 @@ h1, h2{
     border-bottom: 1px solid black;
   }
 
-  .about-panel{
-    border-radius:5px;
-    box-shadow: none;
-    width:80%;
-    margin:auto;
-    height:60vh;
-    margin-bottom: 20px;
-  }
 
   .team-inner{
     margin:20px;
@@ -780,5 +780,16 @@ h1, h2{
 
   .rounded-services img{
     width:128px;
+  }
+
+  #veva-video{
+    margin:auto 0;
+    display:inline;
+    outline:none;
+    width:100%;
+  }
+
+  .about-panel{
+    float:none;
   }
 }

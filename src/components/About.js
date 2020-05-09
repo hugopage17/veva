@@ -28,10 +28,10 @@ class About extends Component {
         <div class='tog-bar'></div>
         <div class='tog-bar'></div>
       </button>
-        <h1>About Veva</h1>
-        <div class='about-panel'>
-          <p>Description of Veva and our services here</p>
-        </div>
+        <video height="420" id='veva-video' controls>
+          <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
+        </video>
+        <p class='about-panel'>Description of Veva and our services here</p>
       </div>
     )
   }

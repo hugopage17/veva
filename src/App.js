@@ -7,7 +7,6 @@ import Contact from './components/Contact.js'
 import Team from './components/Team.js'
 import Services from './components/Services.js'
 import Service from './components/Service.js'
-import Video from  './components/Video.js'
 import Error from './components/Error.js'
 
 class App extends Component {
@@ -43,7 +42,6 @@ class App extends Component {
             <Route exact path='/Services/:service' component={Service}/>
             <Route exact path='/Contact' component={Contact}/>
             <Route exact path='/OurTeam' component={Team}/>
-            <Route exact path='/Watch' component={Video}/>
             <Route component={Error}/>
           </Switch>
           <Footer/>

@@ -82,7 +82,7 @@ class Home extends Component {
                 <p class='fadein' id='blurb-id'>It's our business to grow your business</p>
                 <p style={{width:'50%',fontWeight:100}} class='blurb-para'>Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
                 investment company in New Zealand</p>
-                <Link to='/Watch'>
+                <Link to='/About'>
                   <button id='watch-but'>WATCH WHAT WE DO</button>
                 </Link>
               </div>
