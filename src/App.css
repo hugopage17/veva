@@ -540,13 +540,69 @@ h1, h2{
   font-weight: 400;
 }
 
+#first-div-top{
+  float:left;
+  text-align:left;
+  margin-left:160px;
+  position:absolute;
+  top:10%;
+}
+
+#second-header{
+  font-size: 28px;
+}
+
+#home-mid-sec-brief{
+  float:right;
+  text-align:left;
+  width:40%;
+  color:#14234C;
+}
+
 @media screen and (max-width: 560px) {
+  .home-top-sec{
+    background: #0E1938;
+  }
+
   .home-inner-sec{
     text-align: center;
   }
 
-  .intro-blurb{
+  #anim-img{
+    width:50%;
+    margin: auto;
+  }
+
+  #watch-but{
+    font-size: 12px;
+  }
+
+  #blurb-id{
+    width:100%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #first-div-top{
+    text-align:center;
+    margin-left:30%;
+    position:absolute;
+    top:10%;
+  }
+
+  .blurb-para{
     display: none;
+  }
+
+  #second-header{
+    font-size: 18px;
+  }
+
+  #home-mid-sec-brief{
+    float:right;
+    text-align:center;
+    width:100%;
+    color:#14234C;
   }
 
   .toggle-nav{
@@ -561,6 +617,9 @@ h1, h2{
     display: none;
     animation-name: slide;
     animation-duration: 0.5s;
+    background-color:  #0E1938;
+    z-index: 10;
+    text-align: center;
   }
 
   @keyframes slide {

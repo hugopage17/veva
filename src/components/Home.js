@@ -79,16 +79,16 @@ class Home extends Component {
           <div class='home-inner-sec'>
             <Navbar/>
             <div style={{overflow:'auto',width:'30%',margin:'auto',alignItems:'center',paddingTop:10}}>
-              <div style={{float:'left',textAlign:'left',marginLeft:160,position:'absolute',top:'10%'}} class='intro-blurb'>
+              <div id='first-div-top' class='intro-blurb'>
                 <p class='fadein' id='blurb-id'>It's our business to grow your business</p>
-                <p style={{width:'50%',fontWeight:100}}>Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
+                <p style={{width:'50%',fontWeight:100}} class='blurb-para'>Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
                 investment company in New Zealand</p>
                 <Link to='/Watch'>
                   <button id='watch-but'>WATCH WHAT WE DO</button>
                 </Link>
               </div>
               <div style={{float:'right',bottom:'40%',position:'absolute'}}>
-                <img class='fadein' src={require('../images/Header-Image_Placeholder.png')} style={{width:'80%'}} alt='Veva'/>
+                <img class='fadein' src={require('../images/Header-Image_Placeholder.png')} id='anim-img' style={{width:'80%'}} alt='Veva'/>
               </div>
             </div>
           </div>
@@ -96,10 +96,10 @@ class Home extends Component {
         <div class='home-mid-sec'>
         <div style={{width:'80%',overflow:'auto',margin:'auto'}}>
           <div style={{float:'left'}}>
-            <img class='fadein' src={require('../images/One-stop-shop_Placeholder.png')} style={{width:'80%'}} alt='Veva'/>
+            <img class='fadein' id='anim-img' src={require('../images/One-stop-shop_Placeholder.png')} style={{width:'80%'}} alt='Veva'/>
           </div>
-          <div id='home-mid-sec-brief' style={{float:'right',textAlign:'left',width:'40%',color:'#14234C'}}>
-            <p style={{fontSize:28}}>The "<span style={{textDecoration:'underline',textDecorationColor:'#18E69B'}}>one stop shop</span>" for all your business needs</p>
+          <div id='home-mid-sec-brief'>
+            <p id='second-header'>The "<span style={{textDecoration:'underline',textDecorationColor:'#18E69B'}}>one stop shop</span>" for all your business needs</p>
             <p>We are a full-service business development company with years of expertise.
             Our dedicated team of professionals are all at the top of their fields and passionate about what
             they do</p>
