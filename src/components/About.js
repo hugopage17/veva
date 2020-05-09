@@ -21,17 +21,19 @@ class About extends Component {
 
   render(){
     return (
-      <div class='about-wrapper'>
-      <Navbar/>
-      <button class='toggle-nav' onClick={this.toggleNav}>
-        <div class='tog-bar'></div>
-        <div class='tog-bar'></div>
-        <div class='tog-bar'></div>
-      </button>
-        <video height="420" id='veva-video' controls>
-          <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
-        </video>
-        <p class='about-panel'>Description of Veva and our services here</p>
+      <div>
+        <Navbar/>
+        <div class='about-wrapper'>
+        <button class='toggle-nav' onClick={this.toggleNav}>
+          <div class='tog-bar'></div>
+          <div class='tog-bar'></div>
+          <div class='tog-bar'></div>
+        </button>
+          <video height="420" id='veva-video' controls>
+            <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
+          </video>
+          <p class='about-panel'>Description of Veva and our services here</p>
+        </div>
       </div>
     )
   }
