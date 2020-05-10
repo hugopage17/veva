@@ -26,9 +26,7 @@ class Footer extends Component {
                   <li>0800 123 456</li>
                 </div>
                 <div id='footer-li-group-right'>
-                  <li>
-                    <label><img src={require('../images/veva-1.png')} style={{width:'64px',margin:'auto'}} id='footer-v-img' alt='Veva'/> Veva Development &#169;</label>
-                  </li>
+                  <label><img src={require('../images/veva-1.png')} style={{width:'64px',margin:'auto'}} id='footer-v-img' alt='Veva'/> Veva Development &#169;</label>
                 </div>
               </ul>
             </div>
