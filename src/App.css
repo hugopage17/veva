@@ -14,6 +14,10 @@
   font-size: 14px;
 }
 
+#mail-link:hover{
+  color:#18E69B;
+}
+
 #blurb-id{
   font-size:28px;
   width:50%;
@@ -598,6 +602,10 @@ h1, h2{
 }
 
 .footer-inner ul li:hover{
+  color:#18E69B;
+}
+
+.footer-inner ul li a:hover{
   color:#18E69B;
 }
 
