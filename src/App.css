@@ -38,9 +38,7 @@
   display: block;
 }
 
-body{
-  background-color: white;
-}
+
 
 @keyframes slide {
   0% {
