@@ -235,8 +235,8 @@ h1, h2{
 }
 
 #key-points-list{
-  width:20%;
-  text-align: left;
+  width:30%;
+  text-align: center;
   margin: auto;
 }
 
@@ -282,6 +282,20 @@ h1, h2{
 .footer-inner ul{
   list-style-type: none;
   line-height: 2;
+}
+
+.footer-inner ul li{
+  float: left;
+  margin-right: 20px;
+  color:#14234C;
+}
+
+#footer-li-group-left{
+  float:left;
+}
+
+#footer-li-group-right{
+  float:right;
 }
 
 .about-wrapper{
@@ -578,6 +592,15 @@ h1, h2{
   margin-right:20px;
 }
 
+#right-side-nav-footer{
+  float:right;
+  margin-right:20px;
+}
+
+.footer-inner ul li:hover{
+  color:#18E69B;
+}
+
 #contact-ul-footer{
   text-align:center;
   float:right;
@@ -718,6 +741,8 @@ h1, h2{
   .footer-inner{
     width:100%;
   }
+
+
 
 
   #close-member-but{

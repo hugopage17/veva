@@ -15,12 +15,11 @@ export const data = [
     name:'Business Management',
     brief:'Kick your feet back and relax! Our team of specialists are here to handle all the pain points of your business',
     keyPoints:[
-      'Identify',
+      'Identifying',
       'Analysing',
       'Strategising',
       'Collaborating',
-      'Managing',
-      'Communicating'
+      'Managing'
     ],
     img:'Business-Management.png'
   },

@@ -14,27 +14,26 @@ class Footer extends Component {
       <div class='footer-wrapper'>
         <div style={{overflow:'auto',backgroundColor:'white'}}>
           <div class='footer-inner'>
-            <img src={require('../images/veva-1.png')} style={{width:'96px',margin:'auto'}} id='footer-v-img' alt='Veva'/>
-            <div style={{width:'70%',margin:'auto'}}>
-              <ul class='bottom-nav' id='contact-ul-footer'>
-                <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li>
-              </ul>
-              <ul id='left-footer-ul'>
-                <Link to='/About' class='route-link-bottom' id='footer-link'><li>About</li></Link>
-                <Link to='/Services' class='route-link-bottom' id='footer-link'><li>Services</li></Link>
-                <Link to='/Contact' class='route-link-bottom' id='footer-link'><li>Contact</li></Link>
-                <Link to='/OurTeam' class='route-link-bottom' id='footer-link'><li>Our Team</li></Link>
+            <div style={{width:'100%',margin:'auto'}}>
+              <ul>
+                <div id='footer-li-group-left'>
+                  <Link to='/About'><li>ABOUT</li></Link>
+                  <Link to='/Services'>
+                    <li>SERVICES</li>
+                  </Link>
+                  <Link to='/OurTeam'><li>TEAM</li></Link>
+                  <Link to='/OurTeam'><li >CONTACT</li></Link><br/><br/>
+                  <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li><br/>
+                  <li>0800 123 456</li>
+                </div>
+                <div id='footer-li-group-right'>
+                  <li>
+                    <label><img src={require('../images/veva-1.png')} style={{width:'64px',margin:'auto'}} id='footer-v-img' alt='Veva'/> Veva Development &#169;</label>
+                  </li>
+                </div>
               </ul>
             </div>
           </div>
-        </div>
-        <p style={{textAlign:'center'}} class='copyright-tag'>Veva Development &#169;</p>
-        <div class='footer-bottom'>
-          <ul class='social-tags'>
-            <SocialMediaIconsReact icon="linkedin" backgroundColor='none' roundness={0} class='social-link'/>
-            <SocialMediaIconsReact icon="facebook" backgroundColor='none' roundness={0} class='social-link'/>
-            <SocialMediaIconsReact icon="instagram" backgroundColor='none' roundness={0} class='social-link'/>
-          </ul>
         </div>
         <div id='footer-gradient-tag'></div>
       </div>
