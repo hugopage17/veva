@@ -23,7 +23,7 @@ class Footer extends Component {
                   <Link to='/OurTeam'><li>TEAM</li></Link>
                   <Link to='/OurTeam'><li >CONTACT</li></Link><br/><br/>
                   <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li><br/>
-                  <li>0800 123 456</li>
+                  <label>0800 123 456</label>
                 </div>
                 <div id='footer-li-group-right'>
                   <label><img src={require('../images/veva-1.png')} style={{width:'64px',margin:'auto'}} id='footer-v-img' alt='Veva'/> Veva Development &#169;</label>
