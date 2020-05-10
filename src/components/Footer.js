@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 import '../App.css'
-import {SocialMediaIconsReact} from 'social-media-icons-react';
 
 class Footer extends Component {
   constructor(props){
