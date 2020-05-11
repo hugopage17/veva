@@ -10,6 +10,7 @@ class Contact extends Component {
   }
 
   componentDidMount(){
+    document.title = 'Veva - Contact'
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'

@@ -12,6 +12,7 @@ class Services extends Component{
   }
 
   componentDidMount(){
+    document.title = 'Veva - Services'
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'

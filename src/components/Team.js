@@ -16,6 +16,7 @@ class Team extends Component {
   }
 
   componentDidMount(){
+    document.title = 'Veva - Team'
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
@@ -73,9 +74,7 @@ class Team extends Component {
           </button>
           <div class='team-inner'>
             <h1>Meet the Team</h1>
-            <div>
-              {this.state.loading ? (this.showLoader()):(this.showTeam())}
-            </div>
+            
           </div>
         </div>
       </div>

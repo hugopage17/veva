@@ -9,6 +9,7 @@ class Error extends Component {
   }
 
   componentDidMount(){
+    document.title = 'Error'
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
     }
@@ -18,9 +19,9 @@ class Error extends Component {
     return (
       <div class='error-wrapper'>
         <div class='error-inner'>
-          <h1 style={{fontSize:64}}>404</h1>
+          <h1 style={{fontSize:64}} class='error-text'>404</h1>
           <img src={require('../images/veva-1.png')} alt='Veva'/>
-          <p>Veva could not find the page you are looking for</p>
+          <p class='error-text'>Veva could not find the page you are looking for</p>
           <Link to='/' class='route-link'><button class='but-1' style={{fontSize:22}}>Return Home</button></Link>
         </div>
       </div>

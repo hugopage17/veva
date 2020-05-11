@@ -12,11 +12,12 @@ class Service extends Component{
   }
 
   componentDidMount(){
+    const key = this.props.match.params
+    document.title = `Veva - ${key.service}`
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
     }
-    const key = this.props.match.params
     for (var i = 0; i < data.length; i++) {
       if(key.service === data[i].name){
         this.setState({service:data[i]})
@@ -38,8 +39,10 @@ class Service extends Component{
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-          <h1>{this.state.service.name}</h1>
-          <p>{this.state.service.brief}</p>
+          <div style={{height:'80vh'}}>
+            <h1>{this.state.service.name}</h1>
+            <p>{this.state.service.brief}</p>
+          </div>
         </div>
       </div>
     )

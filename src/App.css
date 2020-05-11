@@ -245,6 +245,7 @@ h1, h2{
 .footer-wrapper{
   color:#14234C;
   background-color: white;
+  border-top:1px solid #18E69B;
 }
 
 .footer-bottom {
@@ -361,7 +362,7 @@ h1, h2{
   padding: 0px;
   display: block;
   text-align: center;
-  border-bottom:1px solid #18E69B;
+  background:#14234C;
 }
 
 #left-footer-ul{
@@ -407,14 +408,19 @@ h1, h2{
 
 
 .error-wrapper{
-  background: linear-gradient(to bottom right,#0E1938,#14234C);
+  background: white;
   height: 80vh;
   padding: 20px;
   text-align: center;
-  color: white;
+
+}
+
+.error-text{
+  color: #0E1938;
 }
 
 .error-inner{
+  color: #0E1938;
   width:50%;
   margin:auto;
   position: absolute;
@@ -431,6 +437,7 @@ h1, h2{
   font-size: 16px;
   color: #18E69B;
   font-weight: 100;
+  outline: none;
 }
 
 .but-1:hover{
@@ -528,7 +535,7 @@ h1, h2{
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-bottom:1px solid #18E69B;
+  height: 60vh;
 }
 
 

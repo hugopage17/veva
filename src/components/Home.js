@@ -14,6 +14,7 @@ class Home extends Component {
   }
 
   componentDidMount(){
+    document.title = 'Veva'
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
@@ -54,7 +55,7 @@ class Home extends Component {
       const index = data.indexOf(service)
       return(
         <div class='each-service' id={`index-${index}`}>
-          <img src={require(`../images/${service.img}`)} alt={service.name}/><br/>
+          <Link style={{color:'white'}} to={`Services/${service.name}`}><img src={require(`../images/${service.img}`)} alt={service.name}/></Link><br/>
           <Link style={{color:'white'}} to={`Services/${service.name}`}><h3>{service.name}</h3></Link>
           <div id='key-points-list'>
             {service.keyPoints.map((point)=>{
