@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import '../App.css'
 import '../Spinner.css'
 import Member from './Member.js'
-import Navbar from './Navbar.js'
 
 class Team extends Component {
   constructor(props){
@@ -64,7 +63,6 @@ class Team extends Component {
   render(){
     return (
       <div>
-        <Navbar/>
         <Member member={this.state.member} hide={this.state.hideMember} close={()=>{this.setState({hideMember:!this.state.hideMember})}}/>
         <div id='team-wrapper'>
           <button class='toggle-nav' onClick={this.toggleNav}>
@@ -73,8 +71,15 @@ class Team extends Component {
             <div class='tog-bar'></div>
           </button>
           <div class='team-inner'>
-            <h1>Meet the Team</h1>
-            
+            <h1>The Team</h1>
+            <h2>Behind the Scenes</h2>
+            <p style={{width:'100%',lineHeight:'2em'}}>At Veva Development, we have an exceptional team of consultants with expertise in various areas.
+            We’re committed to solving complex business challenges using the latest technology and data resources,
+            combined with our creative and collaborative strategic approach. Learn more about some of our talented professionals below.
+            </p>
+            <div>
+              {this.state.loading ? (this.showLoader()):(this.showTeam())}
+            </div>
           </div>
         </div>
       </div>

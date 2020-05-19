@@ -8,6 +8,7 @@ import Team from './components/Team.js'
 import Services from './components/Services.js'
 import Service from './components/Service.js'
 import Error from './components/Error.js'
+import Navbar from './components/Navbar.js'
 
 class App extends Component {
   constructor(props){
@@ -15,15 +16,6 @@ class App extends Component {
     this.state = {
 
     }
-  }
-
-  componentDidMount(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5eaf73f481d25c0e584879a0/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
   }
 
 
@@ -35,6 +27,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
+          <Navbar/>
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route exact path='/About' component={About}/>

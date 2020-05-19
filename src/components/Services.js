@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css'
 import {data} from '../services-data.js'
-import { Link} from "react-router-dom";
-import Navbar from './Navbar.js'
+import {Link} from "react-router-dom"
 
 class Services extends Component{
   constructor(props){
@@ -25,6 +24,7 @@ class Services extends Component{
         <Link to={`Services/${service.name}`} class='route-link'><div class='rounded-services'>
           <img src={require(`../images/${service.img}`)} alt={service.name}/>
           <h3>{service.name}</h3>
+          <p>{service.brief}</p>
         </div></Link>
       )
     })
@@ -37,7 +37,6 @@ class Services extends Component{
   render(){
     return(
       <div>
-        <Navbar/>
         <div class='services-wrapper'>
           <button class='toggle-nav' onClick={this.toggleNav}>
             <div class='tog-bar'></div>

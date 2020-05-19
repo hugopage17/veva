@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css'
 import Swal from 'sweetalert2'
-import Navbar from './Navbar.js'
 
 class Contact extends Component {
   constructor(props){
@@ -43,7 +42,6 @@ class Contact extends Component {
   render(){
     return (
       <div class='contact-wrapper'>
-      <Navbar/>
       <button class='toggle-nav' onClick={this.toggleNav}>
         <div class='tog-bar'></div>
         <div class='tog-bar'></div>
@@ -53,6 +51,7 @@ class Contact extends Component {
           <h1>Contact Us</h1>
           <p style={{fontSize:12}}>Please send us all your queries and requests below and we will get back to you with 2-3 business days</p>
           <input type='email' placeholder='Email Address' class='email-add' id='email-add'/><br/>
+          <input type='text' placeholder='Subject' class='email-add' id='subject-add' maxlength="100"/><br/>
           <textarea placeholder='How can we help' class='msg-body'/><br/>
           <button class='submit-but' onClick={this.sendEmail}>Submit</button>
         </div>

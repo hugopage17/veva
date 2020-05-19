@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import '../App.css'
 import {data} from '../services-data.js'
 import { Link} from "react-router-dom";
-import Navbar from './Navbar.js'
 
 class Home extends Component {
   constructor(props){
@@ -77,19 +76,19 @@ class Home extends Component {
             <div class='tog-bar'></div>
           </button>
           <div class='home-inner-sec'>
-            <Navbar/>
-            <div style={{overflow:'auto',width:'30%',margin:'auto',alignItems:'center',paddingTop:10}}>
+            <div style={{overflow:'auto',width:'90%',margin:'auto',alignItems:'center',paddingTop:10}}>
               <div id='first-div-top' class='intro-blurb'>
                 <p class='fadein' id='blurb-id'>It's our business to grow your business</p>
-                <p style={{width:'50%',fontWeight:100}} class='blurb-para'>Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
+                <p style={{width:'100%',fontWeight:100}} class='blurb-para'>Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
                 investment company in New Zealand</p>
-                <Link to='/About'>
-                  <button id='watch-but'>WATCH WHAT WE DO</button>
-                </Link>
+                <div>
+                  <img class='fadein' src={require('../images/Header-Image_Placeholder.png')} id='anim-img' style={{width:'100%'}} alt='Veva'/>
+                </div>
               </div>
-              <div style={{float:'right',bottom:'40%',position:'absolute'}}>
-                <img class='fadein' src={require('../images/Header-Image_Placeholder.png')} id='anim-img' style={{width:'80%'}} alt='Veva'/>
-              </div>
+
+              <video class='home-video' controls>
+                <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
+              </video>
             </div>
           </div>
         </div>
@@ -106,9 +105,9 @@ class Home extends Component {
           </div>
         </div>
         </div>
-        <div style={{backgroundColor:'#14234C'}}>
+        <div>
           <div class='home-inner-sec' id='services-wrapper'>
-            {this.state.isMobile ?(this.scrollServices()):(<div id='middle-inner'>{this.showServices()}</div>)}
+            <div id='middle-inner'>{this.showServices()}</div>
           </div>
         </div>
       </div>
