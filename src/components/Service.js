@@ -56,12 +56,14 @@ class Service extends Component{
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-          <div style={{height:'60vh'}}>
+          <div style={{height:'40vh'}}>
             <h1>{this.state.service.name}</h1>
             <p style={{width:'60%',margin:'auto',lineHeight:'2em'}}>{this.state.service.desc}</p>
           </div>
           <h1>Find out more about</h1>
-          {this.showOthers()}
+          <div>
+            {this.showOthers()}
+          </div>
         </div>
       </div>
     )
