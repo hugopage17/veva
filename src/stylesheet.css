@@ -1,0 +1,37 @@
+.bottom-home-wrapper{
+  position: relative;
+}
+
+#bottom-home{
+  background-color: #0E1938;
+  color:white;
+  width:30%;
+  padding: 10px;
+  line-height: 3em;
+  margin: 40px;
+}
+
+.each-member .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+    display: block;
+    background: rgba(89, 184, 208, 0.3);
+    transition:0.5s;
+    font-size: 16px;
+}
+.each-member:hover .after {
+    display: block;
+    background: none;
+}
+
+.after-text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 10px;
+}

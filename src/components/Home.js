@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css'
+import '../stylesheet.css'
 import {data} from '../services-data.js'
 import { Link} from "react-router-dom";
 
@@ -100,8 +101,11 @@ class Home extends Component {
           <div id='home-mid-sec-brief'>
             <p id='second-header'>The "<span style={{textDecoration:'underline',textDecorationColor:'#18E69B'}}>one stop shop</span>" for all your business needs</p>
             <p>We are a full-service business development company with years of expertise.
-            Our dedicated team of professionals are all at the top of their fields and passionate about what
-            they do</p>
+            Our dedicated team of professionals are all at the top of their fields and passionate about what they do.</p>
+            <p>
+              Websites never looked so good. With a small team of graphic designers and developers at the ready we quickly put together high quality websites
+              that pop, and have the means to manage your investment and keep everything up to date.
+            </p>
           </div>
         </div>
         </div>

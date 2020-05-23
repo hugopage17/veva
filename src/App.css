@@ -3,7 +3,8 @@
   color:#0E1938;
   animation-name: colorSlide;
   -webkit-animation:colorSlide;
-  animation-duration: 2s;
+  animation-duration: 1s;
+  overflow:hidden;
 }
 
 @keyframes navSlide {
@@ -56,10 +57,10 @@
 
 @keyframes slide {
   0% {
-    transform: translateY(-1000%);
+    transform: translateX(-1000%);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -90,6 +91,10 @@ h1, h2{
 .home-video{
   width:54%;
   float: right;
+  animation-name: navSlide;
+  -webkit-animation:navSlide;
+  animation-duration: 0.5s;
+  overflow:hidden;
 }
 
 .route-link-bottom{
@@ -116,7 +121,7 @@ textarea { resize: none; }
   padding:10px;
   animation-name: navSlide;
   -webkit-animation: navSlide;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 .main-nav-li {
@@ -132,6 +137,13 @@ textarea { resize: none; }
   animation-name: slide;
   -webkit-animation: slide;
   animation-duration: 0.5s;
+}
+
+.blurb-para{
+  animation-name: slide;
+  -webkit-animation: slide;
+  animation-duration: 0.5s;
+  overflow: auto;
 }
 
 .main-nav-li:hover{
@@ -167,7 +179,7 @@ textarea { resize: none; }
   background-color:#0E1938;
   animation-name: colorSlide;
   -webkit-animation:colorSlide;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @keyframes colorSlide {
@@ -188,7 +200,7 @@ textarea { resize: none; }
 #middle-inner{
   width:100%;
   display: grid;
-  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-columns: 4fr 2fr 4fr;
 }
 
 .current-service{
@@ -346,8 +358,6 @@ textarea { resize: none; }
   text-align: left;
   padding: 20px;
   line-height: 2em;
-  overflow: auto;
-  height: 80vh;
 }
 
 .about-panel{
@@ -446,11 +456,15 @@ textarea { resize: none; }
 }
 
 .team-inner{
+  padding: 20px;
   margin:20px;
-  color:#0E1938;
+  color:white;
+  background-color: #0E1938;
 }
 
-
+.team-inner h1{
+  font-size: 56px;
+}
 
 .error-wrapper{
   background: white;
@@ -499,22 +513,22 @@ textarea { resize: none; }
 }
 
 .whole-team{
-  background: white;
-  border-radius: 5px;
   padding:5px;
-  box-shadow: 5px 5px 8px 5px #adadad;
-  border:1px solid #adadad;
+  width:80%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
 }
 
 .each-member{
   display: inline-block;
   text-align: center;
   cursor: pointer;
+  margin: 20px;
+  position: relative;
 }
 
 .each-member img{
-  width:50%;
-  border-radius: 100%;
+  width:100%;
   border:1px solid #59B8D0;
 }
 
@@ -570,9 +584,7 @@ textarea { resize: none; }
   margin-left: 40px;
 }
 
-#team-wrapper{
-  height: 90vh;
-}
+
 
 .all-services{
   padding: 10px;
@@ -616,7 +628,6 @@ textarea { resize: none; }
   color:#0E1938;
   padding: 10px;
   text-align: center;
-  height: 90vh;
 }
 
 .services-wrapper h1{

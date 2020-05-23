@@ -45,8 +45,9 @@ class Team extends Component {
           return(
             <div class='each-member' onClick={()=>{this.showMember(d)}}>
               <img src={d.img} alt='display'/>
-              <p>{d.name}</p>
-              <p>{d.title}</p>
+              <div class="after">
+                <p class='after-text'>{d.name} - {d.title}</p>
+              </div>
             </div>
           )
         })}
