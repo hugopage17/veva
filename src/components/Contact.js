@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css'
 import Swal from 'sweetalert2'
+import fire from './Fire.js'
 
 class Contact extends Component {
   constructor(props){
@@ -22,14 +23,19 @@ class Contact extends Component {
 
   sendEmail = () => {
     const email = document.getElementById('email-add').value
-    if(email)
-    {
-      console.log('Success');
-      this.showMessage()
-    }else{
-      console.log('Fail');
+    const subject = document.getElementById('subject-add').value
+    const msg = document.getElementById('msg-body').value
+    var data = {
+      email:email,
+      subject:subject,
+      msg:msg
     }
+    var send = fire.functions().httpsCallable('sendEmail');
+    send({data: data}).then(function(result) {
+      console.log(result);
+    });
   }
+
 
   showMessage = () => {
     Swal.fire({
@@ -52,7 +58,7 @@ class Contact extends Component {
           <p style={{fontSize:12}}>Please send us all your queries and requests below and we will get back to you with 2-3 business days</p>
           <input type='email' placeholder='Email Address' class='email-add' id='email-add'/><br/>
           <input type='text' placeholder='Subject' class='email-add' id='subject-add' maxlength="100"/><br/>
-          <textarea placeholder='How can we help' class='msg-body'/><br/>
+          <textarea placeholder='How can we help' class='msg-body' id='msg-body'/><br/>
           <button class='submit-but' onClick={this.sendEmail}>Submit</button>
         </div>
       </div>
