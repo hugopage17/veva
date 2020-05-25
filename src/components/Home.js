@@ -79,39 +79,32 @@ class Home extends Component {
           <div class='home-inner-sec'>
             <div style={{overflow:'auto',width:'90%',margin:'auto',alignItems:'center',paddingTop:10}}>
               <div id='first-div-top' class='intro-blurb'>
-                <p class='fadein' id='blurb-id'>It's our business to grow your business</p>
+                <p id='blurb-id'>It's our business to grow your business</p>
                 <p style={{width:'100%',fontWeight:100}} class='blurb-para'>Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
                 investment company in New Zealand</p>
-                <div>
-                  <img class='fadein' src={require('../images/Header-Image_Placeholder.png')} id='anim-img' style={{width:'100%'}} alt='Veva'/>
-                </div>
+                <p style={{width:'100%',fontWeight:100}}>We are a full-service business development company with years of expertise.
+                Our dedicated team of professionals are all at the top of their fields and passionate about what they do.</p>
+                <p style={{width:'100%',fontWeight:100}}>
+                  Websites never looked so good. With a small team of graphic designers and developers at the ready we quickly put together high quality websites
+                  that pop, and have the means to manage your investment and keep everything up to date.
+                </p>
               </div>
-
-              <video class='home-video' controls>
-                <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
-              </video>
+              <div style={{overflow:'auto'}}>
+                <img class='fadein' src={require('../images/Header-Image_Placeholder.png')} id='anim-img' alt='Veva' style={{overflow:'auto'}}/>
+              </div>
             </div>
           </div>
         </div>
         <div class='home-mid-sec'>
-        <div style={{width:'80%',overflow:'auto',margin:'auto'}}>
-          <div style={{float:'left'}}>
-            <img class='fadein' id='anim-img' src={require('../images/One-stop-shop_Placeholder.png')} style={{width:'80%'}} alt='Veva'/>
-          </div>
-          <div id='home-mid-sec-brief'>
-            <p id='second-header'>The "<span style={{textDecoration:'underline',textDecorationColor:'#18E69B'}}>one stop shop</span>" for all your business needs</p>
-            <p>We are a full-service business development company with years of expertise.
-            Our dedicated team of professionals are all at the top of their fields and passionate about what they do.</p>
-            <p>
-              Websites never looked so good. With a small team of graphic designers and developers at the ready we quickly put together high quality websites
-              that pop, and have the means to manage your investment and keep everything up to date.
-            </p>
-          </div>
-        </div>
+          <video class='home-video' controls>
+            <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
+          </video>
         </div>
         <div>
           <div class='home-inner-sec' id='services-wrapper'>
-            <div id='middle-inner'>{this.showServices()}</div>
+            <p id='second-header' style={{color:'white',textAlign:'center'}}>The "<span style={{textDecoration:'underline',textDecorationColor:'#18E69B'}}>one stop shop</span>" for all your business needs</p>
+            <div id='middle-inner'>
+            {this.showServices()}</div>
           </div>
         </div>
       </div>
