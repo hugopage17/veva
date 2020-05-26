@@ -16,38 +16,10 @@ class Home extends Component {
   componentDidMount(){
     document.title = 'Veva'
     window.scrollTo(0, 0);
-    if(window.screen.width <= 560){
-      document.getElementById('navbar').style.display = 'none'
-      this.setState({isMobile:true})
-      setInterval(()=>{
-        var index = this.state.serviceIndex
-        if(index < 2){
-          index++
-        }else if(index >= 2){
-          index = 0
-        }
-        console.log(index);
-        this.setState({serviceIndex:index})
-      },3000)
-    }
   }
 
   toggleNav = () => {
     document.getElementById('navbar').style.display = 'block'
-  }
-
-  scrollServices(){
-    const index = this.state.serviceIndex
-    const service = data[index]
-    return(
-        <div class='this-service' id={`index-${index}`}>
-          <Link to={`Services/${service.name}`} class='route-link' style={{color:'white'}}><h3>{service.name}</h3></Link>
-          {service.keyPoints.map((point)=>{
-            return <li>{point}</li>
-          })}
-          <img src={require(`../images/${service.img}`)} alt={service.name}/><br/>
-        </div>
-    )
   }
 
   showServices(){
@@ -79,12 +51,13 @@ class Home extends Component {
           <div class='home-inner-sec'>
             <div style={{overflow:'auto',width:'90%',margin:'auto',alignItems:'center',paddingTop:10}}>
               <div id='first-div-top' class='intro-blurb'>
+                <img id='text-logo' src={require('../images/veva-4.png')} alt='Veva'/>
                 <p id='blurb-id'>It's our business to grow your business</p>
-                <p style={{width:'100%',fontWeight:100}} class='blurb-para'>Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
+                <p style={{width:'100%',fontWeight:100}} >Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
                 investment company in New Zealand</p>
-                <p style={{width:'100%',fontWeight:100}}>We are a full-service business development company with years of expertise.
+                <p style={{width:'100%',fontWeight:100}} class='blurb-para'>We are a full-service business development company with years of expertise.
                 Our dedicated team of professionals are all at the top of their fields and passionate about what they do.</p>
-                <p style={{width:'100%',fontWeight:100}}>
+                <p style={{width:'100%',fontWeight:100}} class='blurb-para'>
                   Websites never looked so good. With a small team of graphic designers and developers at the ready we quickly put together high quality websites
                   that pop, and have the means to manage your investment and keep everything up to date.
                 </p>

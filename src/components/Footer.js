@@ -12,7 +12,7 @@ class Footer extends Component {
     return (
       <div class='footer-wrapper'>
         <div style={{backgroundColor:'white'}} class='footer-inner'>
-          <ul>
+          <ul class='first-ul-footer'>
             <Link to='/About'><li>ABOUT</li></Link>
             <Link to='/Services'>
               <li>SERVICES</li>
@@ -24,7 +24,7 @@ class Footer extends Component {
             <img src={require('../images/veva-1.png')} style={{width:'64px',margin:'auto'}} id='footer-v-img' alt='Veva'/>
             <label style={{textAlign:'center'}}>Veva Development &#169;</label>
           </div>
-          <ul>
+          <ul class='contact-ul-footer'>
             <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li><br/>
             <li>0800 123 456</li>
           </ul>

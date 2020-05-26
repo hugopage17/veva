@@ -57,8 +57,8 @@ class Service extends Component{
             <div class='tog-bar'></div>
           </button>
           <div>
-            <h1>{this.state.service.name}</h1>
-            <p style={{width:'60%',margin:'auto',lineHeight:'2em'}}>{this.state.service.desc}</p>
+            <h1 class='this-service-name'>{this.state.service.name}</h1>
+            <p class='service-desc'>{this.state.service.desc}</p>
           </div>
           <h1>Find out more about</h1>
           <div>

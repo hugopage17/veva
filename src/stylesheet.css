@@ -40,3 +40,286 @@
 #anim-img{
   bottom: 0;
 }
+
+#text-logo{
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+  #text-logo{
+    display: block;
+    width:50%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .blurb-para{
+    display: none;
+  }
+
+  .home-top-sec{
+    background: #0E1938;
+  }
+
+  .home-inner-sec{
+    text-align: center;
+  }
+
+  #anim-img{
+    width: 80%;
+  }
+
+  #watch-but{
+    font-size: 12px;
+  }
+
+  #first-div-top{
+    float: none;
+    width:100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #blurb-id{
+    width:100%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .main-nav-li{
+    color:white;
+  }
+
+  .blurb-para{
+    display: none;
+  }
+
+  #second-header{
+    font-size: 18px;
+  }
+
+  .home-video{
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.7);
+  }
+
+  #home-mid-sec-brief{
+    float:right;
+    text-align:center;
+    width:100%;
+    color:#0E1938;
+  }
+
+  #key-points-list{
+    display: none;
+  }
+
+  #right-side-nav{
+    text-align: center;
+    float:none;
+    width:50%;
+    margin: auto;
+  }
+
+
+  .route-link{
+    text-decoration: none;
+  }
+
+  .toggle-nav{
+    display: block;
+    background-color: none;
+  }
+
+  #navbar{
+    height: 100%;
+    position: fixed;
+    width:100%;
+    display: none;
+    animation-name: slide;
+    animation-duration: 0.5s;
+    background-color:  #0E1938;
+    z-index: 10;
+    text-align: center;
+  }
+
+  @keyframes slide {
+  0%   {
+    width:0%;
+  }
+  100% {
+    width:100%;
+  }
+}
+
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    padding:10px;
+  }
+
+  #navbar ul li {
+    margin-bottom: 40px;
+    cursor: pointer;
+    float:none;
+    font-size: 32px;
+  }
+
+  .contact-inner{
+    width:100%;
+    margin:auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-wrapper{
+    text-align: center;
+  }
+
+
+  .team-inner{
+    margin:20px;
+    text-align: center;
+  }
+
+  .footer-inner{
+    width:100%;
+  }
+
+
+  #close-member-but{
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .member-inner{
+    background-color: white;
+    position:fixed;
+    top:7%;
+    left:0%;
+    height:100vh;
+    width:100%;
+    border-radius:5px;
+    border:1px solid #59B8D0;
+  }
+
+  .member-top{
+    overflow: auto;
+    border-bottom: 1px solid #59B8D0;
+  }
+
+  .member-left-top{
+    width:100%;
+    display: block;
+  }
+
+  .member-left-top img{
+    width:100%;
+  }
+
+  .member-top-right{
+    width:100%;
+    display: block;
+  }
+
+  .member-top-right h1, h2{
+    font-size: 20px;
+  }
+
+  .error-inner img{
+    width:100%;
+  }
+
+  #home-logo{
+    width:35%;
+  }
+
+  .v-logo-nav{
+    display: none;
+  }
+
+  .rounded-services{
+    display: block;
+    width:80%;
+    margin:auto;
+    padding-bottom: 40px;
+  }
+
+  .rounded-services img{
+    width:128px;
+  }
+
+  #veva-video{
+    margin:auto 0;
+    display:inline;
+    outline:none;
+    width:100%;
+  }
+
+  .all-services{
+    height: 100%;
+  }
+
+  .about-panel{
+    float:none;
+    width:100%;
+  }
+
+  .sevice-desc{
+    width:100%;
+    margin:auto;
+    line-height:2em;
+  }
+
+
+  .whole-team{
+    padding:5px;
+    width:100%;
+    display: block;
+    margin: auto;
+  }
+
+  .each-member{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+    position: relative;
+  }
+
+  .footer-inner{
+    width:100%;
+    margin:auto;
+    display: inline-block;
+    color:#0E1938;
+  }
+
+  .first-ul-footer{
+    display: inline-block;
+    line-height: 2;
+    width:40%;
+    float: left;
+  }
+
+  .contact-ul-footer{
+
+  }
+
+  .footer-inner div{
+    display: block;
+    line-height: 2;
+    width:30%;
+    float: right;
+  }
+
+  .footer-inner ul li{
+    float: left;
+    margin-right: 20px;
+    color:#0E1938;
+    font-size: 14px;
+  }
+}
