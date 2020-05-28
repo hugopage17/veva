@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
-import {MdClose} from 'react-icons/md';
 import '../App.css'
 
 class Navbar extends Component {
@@ -16,7 +15,7 @@ class Navbar extends Component {
   render(){
     return (
       <div id='navbar'>
-        <MdClose color='#59B8D0' size='3em' style={{float:'left'}} onClick={this.toggleNav} class='close-nav-but'/>
+        <button style={{float:'left',fontSize:26,paddingLeft:10,paddingRight:10,color:'#18E69B',background:'none',border:'1px solid #18E69B',borderRadius:'100%',margin:10}} onClick={this.toggleNav} class='close-nav-but'>X</button>
         <ul class='main-nav'>
           <Link to='/' class='route-link'><li class='main-nav-li'><img id='home-logo' style={{width:32}} src={require('../images/veva-1.png')} alt='V' class='v-logo-nav'/><img id='home-logo' style={{margin:'0 auto',display:'inline'}} src={require('../images/veva-4.png')} alt='Veva'/></li></Link>
           <span id='right-side-nav'>
