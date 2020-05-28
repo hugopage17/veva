@@ -5,7 +5,6 @@ export const data = [
     keyPoints:[
       'Strategic Planning',
       'Sales Training',
-      'Brand Building',
       'Marketing',
       'Accounting'
     ],
@@ -19,8 +18,7 @@ export const data = [
       'Identifying',
       'Analysing',
       'Strategising',
-      'Collaborating',
-      'Managing'
+      'Collaborating'
     ],
     img:'Business-Management.png',
     desc:'Show us your Business and we can show you the rewards. In house and Skype/Zoom workshops and training to give you confidence in your business. We have all the tools and expert skills to help take a dieing company and put it back on the right track. High class marketing, graphic design, IT developers, accounting, business strategy and much more. We have professionals all over NZ that can work with you. Give us a call today to find out more.'
@@ -32,7 +30,6 @@ export const data = [
       'Portfolio Management',
       'Help you out of receivership',
       'Investment Workshops',
-      'Invest with confidence',
       'Safe investment strategies'
     ],
     img:'Investment-Management.png',

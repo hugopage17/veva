@@ -20,7 +20,7 @@ class Team extends Component {
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
     }
-    fetch('https://api.jsonbin.io/b/5ea63eff1299b9374236c11b/2')
+    fetch('https://api.jsonbin.io/b/5ea63eff1299b9374236c11b/8')
     .then(response => response.json())
     .then((data) => {
       this.setState({data})
@@ -43,11 +43,14 @@ class Team extends Component {
       <div class='whole-team'>
         {data.map((d)=>{
           return(
-            <div class='each-member' onClick={()=>{this.showMember(d)}}>
-              <img src={d.img} alt='display'/>
-              <div class="after">
-                <p class='after-text'>{d.name} - {d.title}</p>
+            <div class='each-member-wrapper'>
+              <div class='each-member'>
+                <img src={d.img} alt='display'/>
+                <div class="after">
+                </div>
               </div>
+              <p class='member-title' style={{textDecoration:'underline',textDecorationColor: '#18E69B'}}>{d.name}</p>
+              <p class='member-title'>{d.title}</p>
             </div>
           )
         })}
@@ -66,18 +69,19 @@ class Team extends Component {
       <div>
         <Member member={this.state.member} hide={this.state.hideMember} close={()=>{this.setState({hideMember:!this.state.hideMember})}}/>
         <div id='team-wrapper'>
+          <div class='team-inner'>
           <button class='toggle-nav' onClick={this.toggleNav}>
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-          <div class='team-inner'>
-            <h1>The Team</h1>
-            <h2>Behind the Scenes</h2>
-            <p style={{width:'100%',lineHeight:'2em'}}>At Veva Development, we have an exceptional team of consultants with expertise in various areas.
-            We’re committed to solving complex business challenges using the latest technology and data resources,
-            combined with our creative and collaborative strategic approach. Learn more about some of our talented professionals below.
-            </p>
+            <div>
+              <h1>Meet The Team</h1>
+              <p class='team-desc'>At Veva Development, we have an exceptional team of consultants with expertise in various areas.
+              We’re committed to solving complex business challenges using the latest technology and data resources,
+              combined with our creative and collaborative strategic approach. Learn more about some of our talented professionals below.
+              </p>
+            </div>
             <div>
               {this.state.loading ? (this.showLoader()):(this.showTeam())}
             </div>

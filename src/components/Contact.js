@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import '../App.css'
 import Swal from 'sweetalert2'
-import fire from './Fire.js'
+import Spinner from './Spinner.js'
 
 class Contact extends Component {
   constructor(props){
     super(props)
-    this.state = {}
+    this.state = {
+      hideSpinner:true
+    }
   }
 
   componentDidMount(){
@@ -22,18 +24,35 @@ class Contact extends Component {
   }
 
   sendEmail = () => {
+    this.setState({hideSpinner:false})
     const email = document.getElementById('email-add').value
     const subject = document.getElementById('subject-add').value
     const msg = document.getElementById('msg-body').value
-    var data = {
-      email:email,
-      subject:subject,
-      msg:msg
-    }
-    var send = fire.functions().httpsCallable('sendEmail');
-    send({data: data}).then(function(result) {
-      console.log(result);
-    });
+    fetch(`https://us-central1-veva-dev.cloudfunctions.net/email/send?email=${email}&subject=${subject}&msg=${msg}`,{
+      mode:'no-cors',
+      method:'GET',
+      headers: {
+        'Access-Control-Allow-Origin':'*',
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    }).then((res) => {
+      document.getElementById('msg-body').value = ''
+      document.getElementById('subject-add').value = ''
+      document.getElementById('email-add').value = ''
+      this.setState({hideSpinner:true})
+      this.showMessage()
+    }).catch((err)=>{
+      this.setState({hideSpinner:true})
+      document.getElementById('msg-body').value = ''
+      document.getElementById('subject-add').value = ''
+      document.getElementById('email-add').value = ''
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: err
+      })
+    })
   }
 
 
@@ -48,6 +67,7 @@ class Contact extends Component {
   render(){
     return (
       <div class='contact-wrapper'>
+      <Spinner hide={this.state.hideSpinner}/>
       <button class='toggle-nav' onClick={this.toggleNav}>
         <div class='tog-bar'></div>
         <div class='tog-bar'></div>

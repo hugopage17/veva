@@ -16,6 +16,9 @@ class Home extends Component {
   componentDidMount(){
     document.title = 'Veva'
     window.scrollTo(0, 0);
+    if(window.screen.width <= 560){
+      document.getElementById('navbar').style.display = 'none'
+    }
   }
 
   toggleNav = () => {
@@ -25,14 +28,30 @@ class Home extends Component {
   showServices(){
     return data.map((service)=>{
       const index = data.indexOf(service)
+      var leftUl = []
+      var rightUl = []
+      for (var i = 0; i <= 1; i++) {
+        leftUl.push(service.keyPoints[i])
+      }
+      for (var j = 2; j <=3 ; j++) {
+        rightUl.push(service.keyPoints[j])
+      }
       return(
         <div class='each-service' id={`index-${index}`}>
           <Link style={{color:'white'}} to={`Services/${service.name}`}><img src={require(`../images/${service.img}`)} alt={service.name}/></Link><br/>
           <Link style={{color:'white'}} to={`Services/${service.name}`}><h3>{service.name}</h3></Link>
           <div id='key-points-list'>
-            {service.keyPoints.map((point)=>{
-              return <li>{point}</li>
-            })}
+            <p style={{fontSize:12,fontWeight:100,width:'100%',textAlign:'center'}}>{service.brief}</p>
+            <div class='key-points-left'>
+              {leftUl.map((l)=>{
+                return <p>{l}</p>
+              })}
+            </div>
+            <div class='key-points-right'>
+              {rightUl.map((l)=>{
+                return <p>{l}</p>
+              })}
+            </div>
           </div>
         </div>
       )

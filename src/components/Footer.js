@@ -26,7 +26,6 @@ class Footer extends Component {
           </div>
           <ul class='contact-ul-footer'>
             <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li><br/>
-            <li>0800 123 456</li>
           </ul>
         </div>
         <div id='footer-gradient-tag'></div>

@@ -105,6 +105,7 @@ h1, h2{
 .home-video{
   width: 50%;
   margin: auto;
+  margin-top: 60px;
   box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.7);
 }
 
@@ -212,7 +213,7 @@ textarea { resize: none; }
 #middle-inner{
   width:100%;
   display: grid;
-  grid-template-columns: 4fr 2fr 4fr;
+  grid-template-columns: 4fr 4fr 4fr;
 
 }
 
@@ -272,7 +273,6 @@ textarea { resize: none; }
 
 .each-service li{
   text-decoration: none;
-  list-style-type: none;
   line-height: 2;
   font-size: 12px;
 }
@@ -295,9 +295,24 @@ textarea { resize: none; }
 }
 
 #key-points-list{
-  width:30%;
+  width:50%;
   text-align: center;
   margin: auto;
+  font-size: 12px;
+}
+
+
+
+.key-points-left{
+  float: left;
+  display: inline;
+  width:45%;
+}
+
+.key-points-right{
+  float: right;
+  display: inline;
+  width:45%;
 }
 
 .footer-wrapper{
@@ -476,13 +491,14 @@ textarea { resize: none; }
 
 .team-inner{
   padding: 20px;
-  margin:20px;
   color:white;
   background-color: #0E1938;
 }
 
 .team-inner h1{
   font-size: 56px;
+  text-decoration: underline;
+  text-decoration-color: #18E69B;
 }
 
 .error-wrapper{
@@ -531,24 +547,31 @@ textarea { resize: none; }
   border-bottom:1px solid #18E69B
 }
 
+.team-wrapper{
+  margin: auto;
+}
+
 .whole-team{
+  margin: auto;
   padding:5px;
   width:80%;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
 }
 
+.each-member-wrapper{
+  margin-left: 40px;
+}
+
 .each-member{
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  margin: 20px;
   position: relative;
 }
 
 .each-member img{
   width:100%;
-  border:1px solid #59B8D0;
 }
 
 .black-bg{
@@ -669,8 +692,21 @@ textarea { resize: none; }
   padding: 10px;
 }
 
+#anim-img{
+  overflow: auto;
+}
+
 #second-header{
   font-size: 28px;
+}
+
+.home-mid-sec{
+  margin-top: 40px;
+  background-image: url("images/Video-Illustration.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
 }
 
 #home-mid-sec-brief{
