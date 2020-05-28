@@ -20,7 +20,7 @@ class Footer extends Component {
             <Link to='/OurTeam'><li>TEAM</li></Link>
             <Link to='/Contact'><li >CONTACT</li></Link>
           </ul>
-          <div>
+          <div class='footer-logo-div'>
             <img src={require('../images/veva-1.png')} style={{width:'64px',margin:'auto'}} id='footer-v-img' alt='Veva'/>
             <label style={{textAlign:'center'}}>Veva Development &#169;</label>
           </div>
