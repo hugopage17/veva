@@ -352,18 +352,14 @@
   .first-ul-footer{
     display: inline-block;
     line-height: 2;
-    width:100%;
+    width:80%;
+    float: none;
+    text-align: center;
   }
 
   .contact-ul-footer{
     text-align: center;
-    width:100%;
     display: none;
-  }
-
-  #mail-link{
-    width: 100%;
-    float:none;
   }
 
   .footer-inner div{
