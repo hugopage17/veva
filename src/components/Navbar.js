@@ -15,7 +15,7 @@ class Navbar extends Component {
   render(){
     return (
       <div id='navbar'>
-        <button style={{float:'left',fontSize:26,paddingLeft:10,paddingRight:10,color:'#18E69B',background:'none',border:'1px solid #18E69B',borderRadius:'100%',margin:10}} onClick={this.toggleNav} class='close-nav-but'>X</button>
+        <button style={{float:'left',fontSize:26,paddingLeft:10,paddingRight:10,color:'#59B8D0',background:'none',border:'1px solid #59B8D0',borderRadius:'100%',margin:10}} onClick={this.toggleNav} class='close-nav-but'>X</button>
         <ul class='main-nav'>
           <Link to='/' class='route-link'><li class='main-nav-li'><img id='home-logo' style={{width:32}} src={require('../images/veva-1.png')} alt='V' class='v-logo-nav'/><img id='home-logo' style={{margin:'0 auto',display:'inline'}} src={require('../images/veva-4.png')} alt='Veva'/></li></Link>
           <span id='right-side-nav'>
