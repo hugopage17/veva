@@ -19,6 +19,7 @@ class Footer extends Component {
             </Link>
             <Link to='/OurTeam'><li>TEAM</li></Link>
             <Link to='/Contact'><li >CONTACT</li></Link>
+
           </ul>
           <div class='footer-logo-div'>
             <img src={require('../images/veva-1.png')} style={{width:'64px',margin:'auto'}} id='footer-v-img' alt='Veva'/>
@@ -26,7 +27,9 @@ class Footer extends Component {
           </div>
           <ul class='contact-ul-footer'>
             <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li><br/>
+
           </ul>
+
         </div>
         <div id='footer-gradient-tag'></div>
       </div>

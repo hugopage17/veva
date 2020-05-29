@@ -38,6 +38,7 @@
   text-decoration: underline;
   text-decoration-color: #18E69B;
   overflow: auto;
+  font-weight: bold;
 }
 
 #footer-v-img{
@@ -88,7 +89,7 @@ button{
 }
 
 h1, h2{
-  font-weight: 100;
+  font-weight: bold;
 }
 
 .intro-blurb{
@@ -143,6 +144,7 @@ textarea { resize: none; }
   color:white;
   font-size: 16px;
   transition:0.3s;
+  font-weight: bold;
 }
 
 .fadein{
@@ -213,7 +215,7 @@ textarea { resize: none; }
 #middle-inner{
   width:100%;
   display: grid;
-  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-columns: 8fr 8fr 8fr;
 
 }
 
@@ -258,6 +260,7 @@ textarea { resize: none; }
   color:white;
   width:100%;
   margin: auto;
+  font-size: 16px;
 }
 
 .each-service h3{
@@ -267,7 +270,7 @@ textarea { resize: none; }
 }
 
 .each-service img{
-  width:96px;
+  width:128px;
   margin: auto;
 }
 
@@ -275,16 +278,6 @@ textarea { resize: none; }
   text-decoration: none;
   line-height: 2;
   font-size: 12px;
-}
-
-.each-service button{
-  border-radius: 5px;
-  outline:none;
-  border:none;
-  background-color: #0E1938;
-  padding:10px;
-  font-size: 16px;
-  color:white;
 }
 
 
@@ -298,7 +291,7 @@ textarea { resize: none; }
   width:50%;
   text-align: center;
   margin: auto;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
@@ -358,8 +351,10 @@ textarea { resize: none; }
   margin:auto;
   display: grid;
   color:#0E1938;
+  font-weight: 400;
   text-align:center;
   grid-template-columns: 2fr 4fr 2fr;
+  font-weight: bold;
 }
 
 .footer-inner ul{
@@ -370,8 +365,9 @@ textarea { resize: none; }
 .footer-inner ul li{
   float: left;
   margin-right: 20px;
-  color:#0E1938;
+  color:black;
   font-size: 14px;
+  font-weight: bold;
 }
 
 #footer-li-group-left{
@@ -398,8 +394,16 @@ textarea { resize: none; }
   float: right;
 }
 
+.about-panel p{
+  font-weight: bold;
+}
+
+.solutions-about p{
+  font-weight: bold;
+}
+
 .about-h1{
-  font-weight: 400;
+  font-weight: bold;
   text-decoration: underline;
   text-decoration-color: #18E69B;
 }
@@ -412,8 +416,9 @@ textarea { resize: none; }
 }
 
 .contact-wrapper{
-  margin-bottom: 20px;
-  color:#0E1938;
+  color:white;
+  background-color: #0E1938;
+  padding:10px;
 }
 
 .contact-inner{
@@ -421,6 +426,11 @@ textarea { resize: none; }
   margin:auto;
   align-items: center;
   text-align: center;
+}
+
+.contact-inner h1{
+  text-decoration: underline;
+  text-decoration-color:#18E69B;
 }
 
 #watch-but{
@@ -462,7 +472,7 @@ textarea { resize: none; }
   height:50vh;
   width:70%;
   padding: 10px;
-  outline-color:#18E69B
+  outline-color:#18E69B;
 }
 
 .submit-but{
@@ -470,9 +480,10 @@ textarea { resize: none; }
   margin:auto;
   padding:10px;
   font-size: 16px;
-  border:1px solid #59B8D0;
-  background: linear-gradient(to bottom right,#0E1938,#0E1938);
+  border:1px solid #18E69B;
+  background:#18E69B;
   color:white;
+  border-radius: 5px;
 }
 
 .toggle-nav{
@@ -530,7 +541,7 @@ textarea { resize: none; }
   padding:5px;
   font-size: 16px;
   color: #18E69B;
-  font-weight: 100;
+  font-weight: 200;
   outline: none;
 }
 
@@ -635,6 +646,14 @@ textarea { resize: none; }
 .this-service-name{
   text-decoration: underline;
   text-decoration-color: #18E69B;
+  font-weight: bold;
+}
+
+.service-desc{
+  font-weight: bold;
+  width:60%;
+  line-height: 2em;
+  margin: auto;
 }
 
 .all-services{
@@ -654,6 +673,7 @@ textarea { resize: none; }
   text-align: center;
   color:#0E1938;
   cursor: pointer;
+  font-weight: bold;
 }
 
 @keyframes zoom {
@@ -694,10 +714,12 @@ textarea { resize: none; }
 
 #anim-img{
   overflow: auto;
+  width:100%;
 }
 
 #second-header{
   font-size: 28px;
+  font-weight: bold;
 }
 
 .home-mid-sec{

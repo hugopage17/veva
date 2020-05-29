@@ -43,7 +43,7 @@ class Services extends Component{
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-          <h1>Find out about our Services below</h1>
+          <h1 class='find-services'>Find out about our Services below</h1>
           <div class='all-services'>
             {this.showServices()}
           </div>

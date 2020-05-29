@@ -71,6 +71,42 @@
   display: none;
 }
 
+.forth-panel{
+  width:100%;
+  margin: auto;
+  line-height: 2em;
+  text-align:center;
+  overflow: auto;
+}
+
+.find-services{
+  text-decoration: underline;
+  text-decoration-color:#18E69B;
+  font-weight: bold;
+  text-align: center;
+  overflow: auto;
+}
+
+.social-icon{
+  margin: 20px;
+}
+
+.forth-panel p{
+  font-weight: bold;
+  float: left;
+  width:45%;
+  background-color: white;
+  padding:10px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 8px #888888;
+  margin: 20px;
+  height: 30vh;
+}
+
+.forth-panel img{
+  float: right;
+}
+
 @media screen and (max-width: 560px) {
   #text-logo{
     display: block;
@@ -239,7 +275,6 @@
   .footer-inner{
     width:100%;
   }
-
 
   #close-member-but{
     margin-top: 10px;

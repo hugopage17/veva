@@ -71,18 +71,17 @@ class Home extends Component {
             <div style={{overflow:'auto',width:'90%',margin:'auto',alignItems:'center',paddingTop:10}}>
               <div id='first-div-top' class='intro-blurb'>
                 <img id='text-logo' src={require('../images/veva-4.png')} alt='Veva'/>
-                <p id='blurb-id'>It's our business to grow your business</p>
-                <p style={{width:'100%',fontWeight:100}} >Founded in 2020 with a mission to be the most successful, creative and ground-breaking development and
-                investment company in New Zealand</p>
-                <p style={{width:'100%',fontWeight:100}} class='blurb-para'>We are a full-service business development company with years of expertise.
-                Our dedicated team of professionals are all at the top of their fields and passionate about what they do.</p>
+                <p id='blurb-id'>We are a company that brings the best people in New Zealand to develop/manage companies all across the country.</p>
+                <p style={{width:'100%',fontWeight:100}} >We are a unique company that brings all the resources needed to build a company from a start-up to a corporate level.
+                We can work to manage a business that requires help, or maybe your business needs a rebrand, and we can help with that too.
+                There are no limitations to what we can put together and having such a diverse team in place means you get the best job possible in a very timely manner.</p>
                 <p style={{width:'100%',fontWeight:100}} class='blurb-para'>
                   Websites never looked so good. With a small team of graphic designers and developers at the ready we quickly put together high quality websites
                   that pop, and have the means to manage your investment and keep everything up to date.
                 </p>
               </div>
               <div style={{overflow:'auto'}}>
-                <img class='fadein' src={require('../images/Header-Image_Placeholder.png')} id='anim-img' alt='Veva' style={{overflow:'auto'}}/>
+                <img class='fadein' src={require('../images/Header-Illustration.png')} id='anim-img' alt='Veva' style={{overflow:'auto'}}/>
               </div>
             </div>
           </div>
@@ -98,6 +97,14 @@ class Home extends Component {
             <div id='middle-inner'>
             {this.showServices()}</div>
           </div>
+        </div>
+        <div class='forth-panel'>
+          <p>We have people all over NZ ready at hand and can help 98% of business reach their goals.
+            We can work with investment opportunities to make sure you're making the right decision and investing wisely.
+            Working to bring you out of receivership, whether that's direct with you or the banks we can use our resources to pull you out of the mud and train you to run your business better.
+          </p>
+          <p>Rebranding and building new systems, whether you just need a new logo or a full overhaul we have the team to make that the best investment you can make.
+          Accounting, we have some very talented professionals that know their business. Making sure you have the right budget/advice in place can be vital to a company's success</p>
         </div>
       </div>
     )
