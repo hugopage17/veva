@@ -699,6 +699,7 @@ textarea { resize: none; }
   color:#0E1938;
   padding: 10px;
   text-align: center;
+  height: 100vh;
 }
 
 .services-wrapper h1{
