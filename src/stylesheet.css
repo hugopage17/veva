@@ -360,7 +360,7 @@
   }
 
   .all-services{
-    height: 100%;
+    overflow: auto;
   }
 
   .about-panel{
