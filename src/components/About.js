@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css'
+import MetaTags from 'react-meta-tags'
 
 class About extends Component {
   constructor(props){
@@ -22,6 +23,10 @@ class About extends Component {
   render(){
     return (
       <div>
+        <MetaTags>
+          <title>About</title>
+          <meta name='About' content='Veva Development was founded in 2020 with a single mission: to be the most successful, creative and ground-breaking development and investment company in New Zealand. We approach each of our clients with fresh eyes to develop customized, unique strategies.'/>
+        </MetaTags>
         <div class='about-wrapper'>
         <button class='toggle-nav' onClick={this.toggleNav}>
           <div class='tog-bar'></div>

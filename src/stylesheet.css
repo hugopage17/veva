@@ -11,6 +11,10 @@
   margin: 40px;
 }
 
+.home-img-container{
+  overflow: hidden;
+}
+
 .each-member .after {
     position: absolute;
     top: 0;
@@ -150,6 +154,11 @@
     text-align: center;
   }
 
+  .each-service img{
+    width:96px;
+    margin: auto;
+  }
+
   #blurb-id{
     width:100%;
     font-size: 18px;
@@ -163,6 +172,13 @@
   .team-desc{
     width:100%;
     float: none;
+  }
+
+  .forth-panel p{
+    font-weight: bold;
+    float: none;
+    width:80%;
+    height: auto;
   }
 
   .blurb-para{
@@ -323,9 +339,7 @@
     width:35%;
   }
 
-  .v-logo-nav{
-    display: none;
-  }
+
 
   .rounded-services{
     display: block;
@@ -392,7 +406,7 @@
     text-align: center;
   }
 
-  .contact-ul-footer{
+  #mail-link{
     text-align: center;
     display: none;
   }
@@ -401,6 +415,15 @@
     display: block;
     line-height: 2;
     width:100%;
+  }
+
+  .contact-ul-footer{
+    width: 40%;
+    margin: auto;
+  }
+
+  .social-links{
+    text-align: center;
   }
 
   .footer-inner ul li{

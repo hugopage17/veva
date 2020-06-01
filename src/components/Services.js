@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../App.css'
 import {data} from '../services-data.js'
 import {Link} from "react-router-dom"
+import MetaTags from 'react-meta-tags'
 
 class Services extends Component{
   constructor(props){
@@ -11,7 +12,6 @@ class Services extends Component{
   }
 
   componentDidMount(){
-    document.title = 'Veva - Services'
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
@@ -37,6 +37,10 @@ class Services extends Component{
   render(){
     return(
       <div>
+        <MetaTags>
+          <title>Services</title>
+          <meta name='Services' content='The one stop shop for all your business needs'/>
+        </MetaTags>
         <div class='services-wrapper'>
           <button class='toggle-nav' onClick={this.toggleNav}>
             <div class='tog-bar'></div>

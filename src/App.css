@@ -24,7 +24,7 @@
   color:none;
   text-decoration: none;
   color:#0E1938;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #mail-link:hover{
@@ -39,6 +39,12 @@
   text-decoration-color: #18E69B;
   overflow: auto;
   font-weight: bold;
+}
+
+.intro-blurb{
+  animation-name: slideRight;
+  -webkit-animation:slideRight;
+  animation-duration: 0.5s;
 }
 
 #footer-v-img{
@@ -96,9 +102,7 @@ h1, h2{
   width:70%;
   margin:auto;
   color:white;
-  animation-name: slideRight;
-  -webkit-animation:slideRight;
-  animation-duration: 0.5s;
+
   overflow: auto;
 }
 

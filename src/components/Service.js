@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../App.css'
 import {data} from '../services-data.js'
 import {Link} from "react-router-dom"
+import MetaTags from 'react-meta-tags'
 
 class Service extends Component{
   constructor(props){
@@ -50,6 +51,10 @@ class Service extends Component{
   render(){
     return(
       <div>
+        <MetaTags>
+          <title>{this.state.service.name}</title>
+          <meta name={this.state.service.name} content={this.state.service.desc}/>
+        </MetaTags>
         <div class='services-wrapper'>
           <button class='toggle-nav' onClick={this.toggleNav}>
             <div class='tog-bar'></div>

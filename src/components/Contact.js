@@ -2,12 +2,20 @@ import React, {Component} from 'react';
 import '../App.css'
 import Swal from 'sweetalert2'
 import Spinner from './Spinner.js'
+import MetaTags from 'react-meta-tags'
 
 class Contact extends Component {
   constructor(props){
     super(props)
     this.state = {
-      hideSpinner:true
+      hideSpinner:true,
+      subjectOptions:[
+        'Business Development',
+        'Business Management',
+        'Investment Management',
+        'Website Development',
+        'Accounting'
+      ]
     }
   }
 
@@ -65,8 +73,13 @@ class Contact extends Component {
   }
 
   render(){
+    const options = this.state.subjectOptions
     return (
       <div class='contact-wrapper'>
+      <MetaTags>
+        <title>Contact</title>
+        <meta name='Contact' content='Get in touch with Veva today'/>
+      </MetaTags>
       <Spinner hide={this.state.hideSpinner}/>
       <button class='toggle-nav' onClick={this.toggleNav}>
         <div class='tog-bar'></div>
@@ -77,7 +90,12 @@ class Contact extends Component {
           <h1>Contact Us</h1>
           <p style={{fontSize:16}}>Please send us all your queries and requests below and we will get back to you with 2-3 business days</p>
           <input type='email' placeholder='Email Address' class='email-add' id='email-add'/><br/>
-          <input type='text' placeholder='Subject' class='email-add' id='subject-add' maxlength="100"/><br/>
+          <input type='text' list="options" placeholder='Subject' class='email-add' id='subject-add' maxlength="100"/><br/>
+          <datalist id="options">
+            {options.map((o)=>{
+              return <option value={o}/>
+            })}
+          </datalist>
           <textarea placeholder='How can we help' class='msg-body' id='msg-body'/><br/>
           <button class='submit-but' onClick={this.sendEmail}>Submit</button>
         </div>

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 import '../App.css'
+import {FaFacebookSquare, FaLinkedin} from 'react-icons/fa';
 
 class Footer extends Component {
   constructor(props){
@@ -27,7 +28,8 @@ class Footer extends Component {
           </div>
           <ul class='contact-ul-footer'>
             <li><a href="mailto:contact@vevadev.co.nz" id='mail-link'>contact@vevadev.co.nz</a></li><br/>
-
+            <li class='social-links'><a href='https://www.facebook.com/vevadevnz/' target='_blank'><FaFacebookSquare size='3em' color='#0E1938' class='social-img'/></a></li>
+            <li class='social-links'><a href='https://www.linkedin.com/company/veva-development-nz/' target='_blank'><FaLinkedin size='3em' color='#0E1938' class='social-img'/></a></li>
           </ul>
 
         </div>

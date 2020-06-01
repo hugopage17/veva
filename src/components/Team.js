@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import '../App.css'
 import '../Spinner.css'
 import Member from './Member.js'
+import MetaTags from 'react-meta-tags'
 
 class Team extends Component {
   constructor(props){
@@ -67,6 +68,10 @@ class Team extends Component {
   render(){
     return (
       <div>
+        <MetaTags>
+          <title>Veva Team</title>
+          <meta name='Veva Team' content='At Veva Development, we have an exceptional team of consultants with expertise in various areas. We’re committed to solving complex business challenges using the latest technology and data resources, combined with our creative and collaborative strategic approach. Learn more about some of our talented professionals below.'/>
+        </MetaTags>
         <Member member={this.state.member} hide={this.state.hideMember} close={()=>{this.setState({hideMember:!this.state.hideMember})}}/>
         <div id='team-wrapper'>
           <div class='team-inner'>

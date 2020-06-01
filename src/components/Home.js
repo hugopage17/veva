@@ -72,15 +72,15 @@ class Home extends Component {
               <div id='first-div-top' class='intro-blurb'>
                 <img id='text-logo' src={require('../images/veva-4.png')} alt='Veva'/>
                 <p id='blurb-id'>We are a company that brings the best people in New Zealand to develop/manage companies all across the country.</p>
-                <p style={{width:'100%',fontWeight:100}} >We are a unique company that brings all the resources needed to build a company from a start-up to a corporate level.
+                <p style={{width:'100%',fontWeight:100,lineHeight:'2em'}} >We are a unique company that brings all the resources needed to build a company from a start-up to a corporate level.
                 We can work to manage a business that requires help, or maybe your business needs a rebrand, and we can help with that too.
                 There are no limitations to what we can put together and having such a diverse team in place means you get the best job possible in a very timely manner.</p>
-                <p style={{width:'100%',fontWeight:100}} class='blurb-para'>
+                <p style={{width:'100%',fontWeight:100,lineHeight:'2em'}} class='blurb-para'>
                   Websites never looked so good. With a small team of graphic designers and developers at the ready we quickly put together high quality websites
                   that pop, and have the means to manage your investment and keep everything up to date.
                 </p>
               </div>
-              <div style={{overflow:'auto'}}>
+              <div class='home-img-container'>
                 <img class='fadein' src={require('../images/Header-Illustration.png')} id='anim-img' alt='Veva' style={{overflow:'auto'}}/>
               </div>
             </div>
