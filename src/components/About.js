@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import '../App.css'
 import MetaTags from 'react-meta-tags'
+import {data} from '../services-data.js'
+import { Link} from "react-router-dom";
 
 class About extends Component {
   constructor(props){
@@ -18,6 +20,21 @@ class About extends Component {
 
   toggleNav = () => {
     document.getElementById('navbar').style.display = 'block'
+  }
+
+  showServices(){
+    return(
+      <div class='about-ser-wrapper'>
+        {data.map((d)=>{
+          return(
+            <Link style={{color:'white'}} to={`Services/${d.name}`} target="_blank"><div class='each-ser-about'>
+              <img src={require(`../images/${d.img}`)} alt={d.name}/><br/>
+              <h3>{d.name}</h3>
+            </div></Link>
+          )
+        })}
+      </div>
+    )
   }
 
   render(){
@@ -62,6 +79,14 @@ class About extends Component {
             marketing portfolio. We have a team of professionals that are the best in their field to get you that big break you need.
             </p>
           </div>
+          </div>
+        </div>
+        <div>
+          <div class='about-services-gradient'>
+          </div>
+          <div class='about-services-block'>
+            <h1>Find out more about</h1>
+            {this.showServices()}
           </div>
         </div>
       </div>

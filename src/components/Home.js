@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css'
 import '../stylesheet.css'
+import '../slider.css'
 import {data} from '../services-data.js'
 import { Link} from "react-router-dom";
 
@@ -9,7 +10,13 @@ class Home extends Component {
     super(props)
     this.state = {
       serviceIndex:0,
-      isMobile:false
+      isMobile:false,
+      textSlide:[
+        'We are a unique company that brings all the resources needed to build a company from a start-up to a corporate level. We can work to manage a business that requires help',
+        'Maybe your business needs a rebrand, and we can help with that. There are no limitations to what we can put together and having such a diverse team in place means you get the best job possible in a very timely manner',
+        'Websites never looked so good. With a small team of graphic designers and developers at the ready we quickly put together high quality websites that pop, and have the means to manage your investment and keep everything up to date.'
+      ],
+      slideIndex:0
     }
   }
 
@@ -19,10 +26,33 @@ class Home extends Component {
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
     }
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (var i = 0; i < slides.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+      if(i === 0){
+        slides[i].style.display = "block";
+        dots[i].className += " active";
+      }else{
+        slides[i].style.display = "none";
+      }
+    }
+    setInterval(()=>{
+      this.changeTextSlide()
+    },5000)
   }
 
   toggleNav = () => {
     document.getElementById('navbar').style.display = 'block'
+  }
+
+  renderText(){
+    const text = this.state.textSlide
+    return text.map((t)=>{
+      return(
+        <p style={{width:'100%',fontWeight:100,lineHeight:'2em'}} class='mySlides'>{t}</p>
+      )
+    })
   }
 
   showServices(){
@@ -58,6 +88,29 @@ class Home extends Component {
     })
   }
 
+  changeTextSlide = () => {
+    var index = this.state.slideIndex
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (var i = 0; i < slides.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+       dots[i].className = dots[i].className.replace(" fade", "");
+      if(index === i){
+        slides[i].style.display = "block";
+        dots[i].className += " active";
+        slides[i].className += " fade";
+      }else{
+        slides[i].style.display = "none";
+      }
+    }
+    if(index === 2){
+      index = 0
+    }else{
+      index++
+    }
+    this.setState({slideIndex:index})
+  }
+
   render(){
     return (
       <div class='home-wrapper'>
@@ -68,17 +121,22 @@ class Home extends Component {
             <div class='tog-bar'></div>
           </button>
           <div class='home-inner-sec'>
-            <div style={{overflow:'auto',width:'90%',margin:'auto',alignItems:'center',paddingTop:10}}>
-              <div id='first-div-top' class='intro-blurb'>
-                <img id='text-logo' src={require('../images/veva-4.png')} alt='Veva'/>
-                <p id='blurb-id'>We are a company that brings the best people in New Zealand to develop/manage companies all across the country.</p>
-                <p style={{width:'100%',fontWeight:100,lineHeight:'2em'}} >We are a unique company that brings all the resources needed to build a company from a start-up to a corporate level.
-                We can work to manage a business that requires help, or maybe your business needs a rebrand, and we can help with that too.
-                There are no limitations to what we can put together and having such a diverse team in place means you get the best job possible in a very timely manner.</p>
-                <p style={{width:'100%',fontWeight:100,lineHeight:'2em'}} class='blurb-para'>
-                  Websites never looked so good. With a small team of graphic designers and developers at the ready we quickly put together high quality websites
-                  that pop, and have the means to manage your investment and keep everything up to date.
-                </p>
+            <div style={{width:'90%',margin:'auto',alignItems:'center',paddingTop:10,overflow:'auto'}}>
+              <div style={{float:'left',width:'40%'}}>
+                <h1 id='blurb-id'><span class='text-gradient'>We are a company that brings the best people in New Zealand </span>
+                  <span style={{color:'#0E1938'}}>to develop/manage companies all across the country.</span>
+                </h1>
+                <div id='first-div-top' class='intro-blurb'>
+                  <img id='text-logo' src={require('../images/veva-4.png')} alt='Veva'/>
+                  <div class='sliding-text-home'>
+                    {this.renderText()}
+                    <div style={{textAlign:'center',position:'absolute',bottom:0,left:'45%'}}>
+                      <span class="dot" onClick={this.changeTextSlide}></span>
+                      <span class="dot" onClick={this.changeTextSlide}></span>
+                      <span class="dot" onClick={this.changeTextSlide}></span>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class='home-img-container'>
                 <img class='fadein' src={require('../images/Header-Illustration.png')} id='anim-img' alt='Veva' style={{overflow:'auto'}}/>
