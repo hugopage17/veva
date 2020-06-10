@@ -74,7 +74,7 @@ class Home extends Component {
           <Link style={{color:'white'}} to={`Services/${service.name}`}><img src={require(`../images/${service.img}`)} alt={service.name}/></Link><br/>
           <Link style={{color:'white'}} to={`Services/${service.name}`}><h3>{service.name}</h3></Link>
           <div id='key-points-list'>
-            <p style={{fontSize:12,fontWeight:100,width:'100%',textAlign:'center'}}>{service.brief}</p>
+            <p style={{fontSize:16,fontWeight:100,width:'100%',textAlign:'center',lineHeight:'2em'}}>{service.brief}</p>
             <div class='key-points-left'>
               {leftUl.map((l)=>{
                 return <p>{l}</p>
@@ -165,7 +165,7 @@ class Home extends Component {
           </div>
         </div>
         <div style={{padding:60,textAlign:'center'}}>
-          <h1>Connect on our other channels</h1>
+          <h1><span class='text-gradient'>Connect</span> on our other channels</h1>
           {this.showSocials()}
         </div>
         <div class='home-mid-sec'>
@@ -175,18 +175,18 @@ class Home extends Component {
         </div>
         <div>
           <div class='home-inner-sec' id='services-wrapper'>
-            <p id='second-header' style={{color:'white',textAlign:'center'}}>The "<span style={{textDecoration:'underline',textDecorationColor:'#18E69B'}}>one stop shop</span>" for all your business needs</p>
+            <p id='second-header' style={{color:'white',textAlign:'center',paddingTop:20}}>The <span class='text-gradient'>one stop shop</span> for all your business needs</p>
             <div id='middle-inner'>
             {this.showServices()}</div>
           </div>
         </div>
         <div class='forth-panel'>
-            <p class='four-panel-1'>We have people all over NZ ready at hand and can help 98% of business reach their goals.
+          <p class='four-panel-1'>We have people all over NZ ready at hand and can help 98% of business reach their goals.
               We can work with investment opportunities to make sure you're making the right decision and investing wisely.
               Working to bring you out of receivership, whether that's direct with you or the banks we can use our resources to pull you out of the mud and train you to run your business better.
-            </p>
-            <p class='four-panel-2'>Rebranding and building new systems, whether you just need a new logo or a full overhaul we have the team to make that the best investment you can make.
-            Accounting, we have some very talented professionals that know their business. Making sure you have the right budget/advice in place can be vital to a company's success</p>
+          </p>
+          <p class='four-panel-2'>Rebranding and building new systems, whether you just need a new logo or a full overhaul we have the team to make that the best investment you can make.
+          Accounting, we have some very talented professionals that know their business. Making sure you have the right budget/advice in place can be vital to a company's success</p>
         </div>
       </div>
     )

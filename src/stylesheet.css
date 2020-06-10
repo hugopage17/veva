@@ -22,11 +22,13 @@
   padding: 10px;
 }
 
+.about-services-block h1 {
+  color: #18E69B;
+}
+
 .about-services-block{
   text-align: center;
   color: white;
-  text-decoration: underline;
-  text-decoration-color: #18E69B;
 }
 
 
@@ -118,13 +120,16 @@
 }
 
 .each-member:hover + .member-title{
-  color: #18E69B;
+  background: -webkit-linear-gradient(#00B5CD, #18E69B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 
 .team-desc{
   width:50%;
-
+  line-height: 2em;
 }
 
 .text-gradient{
@@ -132,6 +137,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: color-change 2s;
+  font-weight: bold;
+}
+
+.text-gradient-no-anim{
+  background: -webkit-linear-gradient(#00B5CD, #18E69B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 @keyframes color-change {

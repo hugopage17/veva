@@ -21,7 +21,7 @@ class Team extends Component {
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
     }
-    fetch('https://api.jsonbin.io/b/5ea63eff1299b9374236c11b/8')
+    fetch('https://api.jsonbin.io/b/5ea63eff1299b9374236c11b/9')
     .then(response => response.json())
     .then((data) => {
       this.setState({data})
@@ -81,7 +81,7 @@ class Team extends Component {
             <div class='tog-bar'></div>
           </button>
             <div>
-              <h1>Meet The Team</h1>
+              <h1 class='text-gradient-no-anim'>Meet The Team</h1>
               <p class='team-desc'>At Veva Development, we have an exceptional team of consultants with expertise in various areas.
               We’re committed to solving complex business challenges using the latest technology and data resources,
               combined with our creative and collaborative strategic approach. Learn more about some of our talented professionals below.

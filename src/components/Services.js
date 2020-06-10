@@ -20,11 +20,16 @@ class Services extends Component{
 
   showServices(){
     return data.map((service)=>{
+      const index = data.indexOf(service)
+      let padding
+      if(index === 1){
+        padding = 10
+      }
       return(
         <Link to={`Services/${service.name}`} class='route-link'><div class='rounded-services'>
           <img src={require(`../images/${service.img}`)} alt={service.name}/>
           <h3>{service.name}</h3>
-          <p>{service.brief}</p>
+          <p style={{paddingTop:padding}}>{service.brief}</p>
         </div></Link>
       )
     })
@@ -47,7 +52,7 @@ class Services extends Component{
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-          <h1 class='find-services'>Find out about our Services below</h1>
+          <h1 style={{fontWeight:'bold'}}>Find out about our <span class='text-gradient' >Services </span>below</h1>
           <div class='all-services'>
             {this.showServices()}
           </div>

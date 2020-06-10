@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import '../App.css'
 import MetaTags from 'react-meta-tags'
 import {data} from '../services-data.js'
-import { Link} from "react-router-dom";
+import { Link} from "react-router-dom"
+import ScrollAnimation from 'react-animate-on-scroll'
 
 class About extends Component {
   constructor(props){
@@ -59,7 +60,7 @@ class About extends Component {
             <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
           </video>
           <div class='about-panel'>
-            <h1 class='about-h1'>Who We Are</h1>
+            <h1 class='about-h1 text-gradient'>Who We Are</h1>
             <p>
             Veva Development was founded in 2020 with a single mission: to be the most successful, creative and ground-breaking development and investment company
             in New Zealand. We approach each of our clients with fresh eyes to develop customized, unique strategies.
@@ -71,7 +72,7 @@ class About extends Component {
           </div>
           <div>
           <div class='solutions-about'>
-            <h1 class='about-h1'>Solutions for Success</h1>
+            <h1 class='about-h1 text-gradient'>Solutions for Success</h1>
             <p>
             We can change the world, one step at a time the little things in life can change. With over 35 years of combined experience,
             Veva Development will change the way businesses and companies will be inspired. The vision for the future is here,
@@ -90,8 +91,10 @@ class About extends Component {
           <div class='about-services-gradient'>
           </div>
           <div class='about-services-block'>
-            <h1>Find out more about</h1>
-            {this.showServices()}
+            <h1 class='text-gradient' style={{fontWeight:'bold'}}>Find out more about</h1>
+            <ScrollAnimation animateIn='fadeInLeft'>
+              {this.showServices()}
+            </ScrollAnimation>
           </div>
         </div>
       </div>

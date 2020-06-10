@@ -42,7 +42,7 @@ class Service extends Component{
       return (
         <Link to={`/Services/${service.name}`} class='route-link' target="_blank"><div class='rounded-services'>
           <img src={require(`../images/${service.img}`)} alt={service.name}/>
-          <h3>{service.name}</h3>
+          <h3 >{service.name}</h3>
         </div></Link>
       )
     })
@@ -62,10 +62,10 @@ class Service extends Component{
             <div class='tog-bar'></div>
           </button>
           <div>
-            <h1 class='this-service-name'>{this.state.service.name}</h1>
+            <h1 class='text-gradient' style={{fontWeight:'bold'}}>{this.state.service.name}</h1>
             <p class='service-desc'>{this.state.service.desc}</p>
           </div>
-          <h1>Find out more about</h1>
+          <h1 style={{fontWeight:'bold'}}>Find out more about</h1>
           <div>
             {this.showOthers()}
           </div>
