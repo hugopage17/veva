@@ -26,9 +26,14 @@ class About extends Component {
     return(
       <div class='about-ser-wrapper'>
         {data.map((d)=>{
+          var index = data.indexOf(d)
+          let padding
+          if(index === 1){
+            padding = '42px'
+          }
           return(
             <Link style={{color:'white'}} to={`Services/${d.name}`} target="_blank"><div class='each-ser-about'>
-              <img src={require(`../images/${d.img}`)} alt={d.name}/><br/>
+              <img src={require(`../images/${d.img}`)} alt={d.name} style={{paddingBottom:padding}}/><br/>
               <h3>{d.name}</h3>
             </div></Link>
           )

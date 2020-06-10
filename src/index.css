@@ -5,6 +5,9 @@ body {
   font-family: Barlow;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("images/full-bg-small.png");
+  background-size: 100%;
+  background-repeat: repeat;
 }
 
 

@@ -3,7 +3,10 @@ import '../App.css'
 import '../stylesheet.css'
 import '../slider.css'
 import {data} from '../services-data.js'
-import { Link} from "react-router-dom";
+import { Link} from "react-router-dom"
+import {FaFacebookSquare, FaLinkedin} from 'react-icons/fa'
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 class Home extends Component {
   constructor(props){
@@ -111,6 +114,23 @@ class Home extends Component {
     this.setState({slideIndex:index})
   }
 
+  showSocials(){
+    return(
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+      <div style={{position:'absolute',width:'60%',margin:'auto',left:'20%'}}>
+        <a href='https://www.facebook.com/vevadevnz/' target='_blank' rel="noopener noreferrer" style={{float:'left'}} class='social-img-big'>
+          <FaFacebookSquare size='9em' color='#0E1938'/><br/>
+          <label>Follow Veva on Facebook</label>
+        </a>
+        <a href='https://www.linkedin.com/company/veva-development-nz/' target='_blank' rel="noopener noreferrer" class='social-img-big' style={{float:'right'}}>
+          <FaLinkedin size='9em' color='#0E1938' roundness="50%"/><br/>
+          <label>Connect with Veva on Linkedin</label>
+        </a>
+      </div>
+      </ScrollAnimation>
+    )
+  }
+
   render(){
     return (
       <div class='home-wrapper'>
@@ -144,6 +164,10 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        <div style={{padding:60,textAlign:'center'}}>
+          <h1>Connect on our other channels</h1>
+          {this.showSocials()}
+        </div>
         <div class='home-mid-sec'>
           <video class='home-video' controls>
             <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
@@ -157,12 +181,12 @@ class Home extends Component {
           </div>
         </div>
         <div class='forth-panel'>
-          <p>We have people all over NZ ready at hand and can help 98% of business reach their goals.
-            We can work with investment opportunities to make sure you're making the right decision and investing wisely.
-            Working to bring you out of receivership, whether that's direct with you or the banks we can use our resources to pull you out of the mud and train you to run your business better.
-          </p>
-          <p>Rebranding and building new systems, whether you just need a new logo or a full overhaul we have the team to make that the best investment you can make.
-          Accounting, we have some very talented professionals that know their business. Making sure you have the right budget/advice in place can be vital to a company's success</p>
+            <p class='four-panel-1'>We have people all over NZ ready at hand and can help 98% of business reach their goals.
+              We can work with investment opportunities to make sure you're making the right decision and investing wisely.
+              Working to bring you out of receivership, whether that's direct with you or the banks we can use our resources to pull you out of the mud and train you to run your business better.
+            </p>
+            <p class='four-panel-2'>Rebranding and building new systems, whether you just need a new logo or a full overhaul we have the team to make that the best investment you can make.
+            Accounting, we have some very talented professionals that know their business. Making sure you have the right budget/advice in place can be vital to a company's success</p>
         </div>
       </div>
     )

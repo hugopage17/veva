@@ -39,6 +39,7 @@
   font-weight: bold;
   text-align: justify;
   text-justify: inter-word;
+  padding-left: 20px;
 }
 
 .intro-blurb{
@@ -209,13 +210,14 @@ textarea { resize: none; }
   padding: 20px;
   background-color: white;
   text-align: center;
+  margin-top: 60px;
 }
 
 #middle-inner{
   width:100%;
   display: grid;
   grid-template-columns: 8fr 8fr 8fr;
-
+  padding-bottom:40px;
 }
 
 .current-service{
@@ -381,6 +383,9 @@ textarea { resize: none; }
   text-align: left;
   padding: 20px;
   line-height: 2em;
+  background-image: url("images/full-bg-small.png");
+  background-size: 100%;
+  background-repeat: repeat;
 }
 
 .about-panel{
@@ -446,11 +451,11 @@ textarea { resize: none; }
 
 
 .email-add{
-  width:70%;
+  width:80%;
   margin:auto;
   padding:10px;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin: 20px;
   outline-color:#18E69B
 }
 
@@ -469,14 +474,16 @@ textarea { resize: none; }
 
 .msg-body{
   height:50vh;
-  width:70%;
+  width:80%;
   padding: 10px;
   outline-color:#18E69B;
+  margin: 20px;
 }
 
 .submit-but{
-  width:70%;
+  width:80%;
   margin:auto;
+  margin: 20px;
   padding:10px;
   font-size: 16px;
   border:1px solid #18E69B;
@@ -714,6 +721,7 @@ textarea { resize: none; }
 #anim-img{
   overflow: auto;
   width:100%;
+  margin-left: 40px;
 }
 
 #second-header{
@@ -723,12 +731,13 @@ textarea { resize: none; }
 
 .home-mid-sec{
   background: none;
-  margin-top: 40px;
+  margin-top: 160px;
   background-image: url("images/Video-Illustration.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   height: 80vh;
+  margin-bottom: 80px;
 }
 
 #home-mid-sec-brief{

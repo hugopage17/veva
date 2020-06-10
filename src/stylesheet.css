@@ -30,6 +30,7 @@
 }
 
 
+
 .about-ser-wrapper{
   display: grid;
   text-align:center;
@@ -57,6 +58,23 @@
 
 .each-ser-about:hover h3{
   color: #18E69B;
+}
+
+.social-img-big{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color:#202020;
+  font-size: 18px;
+  padding:5px;
+  transition: 0.5s;
+}
+
+.social-img-big:hover{
+  color: #18E69B;
+  box-shadow: 2px 2px 8px #18E69B;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .each-ser-about img{
@@ -150,7 +168,35 @@
   margin: auto;
   line-height: 2em;
   text-align:center;
-  overflow: auto;
+  overflow: hidden;
+  position: relative;
+  height: 80vh;
+}
+
+.forth-panel p{
+  font-weight: bold;
+  float: left;
+  width:40%;
+  background-color: white;
+  padding:10px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 8px #888888;
+  margin: 20px;
+  line-height: 2.5em;
+}
+
+.four-panel-1{
+  position: absolute;
+  left:10%;
+  top:0%;
+  height: 40vh;
+}
+
+.four-panel-2{
+  position: absolute;
+  left:40%;
+  top:45%;
+  height:30vh;
 }
 
 .find-services{
@@ -165,17 +211,7 @@
   margin: 20px;
 }
 
-.forth-panel p{
-  font-weight: bold;
-  float: left;
-  width:45%;
-  background-color: white;
-  padding:10px;
-  border-radius: 5px;
-  box-shadow: 2px 4px 8px #888888;
-  margin: 20px;
-  height: 30vh;
-}
+
 
 .forth-panel img{
   float: right;
