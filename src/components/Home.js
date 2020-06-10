@@ -69,12 +69,20 @@ class Home extends Component {
       for (var j = 2; j <=3 ; j++) {
         rightUl.push(service.keyPoints[j])
       }
+      let width
+      let padding = 0
+      if(index === 1){
+        width = '80%'
+        padding = 30
+      }else{
+        width = '100%'
+      }
       return(
         <div class='each-service' id={`index-${index}`}>
-          <Link style={{color:'white'}} to={`Services/${service.name}`}><img src={require(`../images/${service.img}`)} alt={service.name}/></Link><br/>
+          <Link style={{color:'white'}} to={`Services/${service.name}`}><img src={require(`../images/${service.img}`)} alt={service.name} style={{paddingBottom:padding}}/></Link><br/>
           <Link style={{color:'white'}} to={`Services/${service.name}`}><h3>{service.name}</h3></Link>
           <div id='key-points-list'>
-            <p style={{fontSize:16,fontWeight:100,width:'100%',textAlign:'center',lineHeight:'2em'}}>{service.brief}</p>
+            <p style={{fontSize:16,fontWeight:100,width:width,textAlign:'center',lineHeight:'2em',margin:'auto'}} >{service.brief}</p>
             <div class='key-points-left'>
               {leftUl.map((l)=>{
                 return <p>{l}</p>
