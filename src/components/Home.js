@@ -1,7 +1,4 @@
-import React, {Component} from 'react';
-import '../App.css'
-import '../stylesheet.css'
-import '../slider.css'
+import React, {Component} from 'react'
 import {data} from '../services-data.js'
 import { Link} from "react-router-dom"
 import {FaFacebookSquare, FaLinkedin} from 'react-icons/fa'
@@ -19,7 +16,8 @@ class Home extends Component {
         'Maybe your business needs a rebrand, and we can help with that. There are no limitations to what we can put together and having such a diverse team in place means you get the best job possible in a very timely manner',
         'Websites never looked so good. With a small team of graphic designers and developers at the ready we quickly put together high quality websites that pop, and have the means to manage your investment and keep everything up to date.'
       ],
-      slideIndex:0
+      slideIndex:0,
+      iconSize:'9em'
     }
   }
 
@@ -28,6 +26,7 @@ class Home extends Component {
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
+      this.setState({iconSize:'3em'})
     }
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
@@ -125,15 +124,17 @@ class Home extends Component {
   showSocials(){
     return(
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-      <div style={{position:'absolute',width:'60%',margin:'auto',left:'20%'}}>
-        <a href='https://www.facebook.com/vevadevnz/' target='_blank' rel="noopener noreferrer" style={{float:'left'}} class='social-img-big'>
-          <FaFacebookSquare size='9em' color='#0E1938'/><br/>
-          <label>Follow Veva on Facebook</label>
-        </a>
-        <a href='https://www.linkedin.com/company/veva-development-nz/' target='_blank' rel="noopener noreferrer" class='social-img-big' style={{float:'right'}}>
-          <FaLinkedin size='9em' color='#0E1938' roundness="50%"/><br/>
-          <label>Connect with Veva on Linkedin</label>
-        </a>
+      <div class='socials-relative'>
+        <div class='top-home-socials'>
+          <a href='https://www.facebook.com/vevadevnz/' target='_blank' rel="noopener noreferrer" class='social-img-big'>
+            <FaFacebookSquare size={this.state.iconSize} color='#0E1938'/>
+            <p>Follow Veva on Facebook</p>
+          </a>
+          <a href='https://www.linkedin.com/company/veva-development-nz/' target='_blank' rel="noopener noreferrer" class='social-img-big'>
+            <FaLinkedin size={this.state.iconSize} color='#0E1938' roundness="50%" class='linkedin'/>
+            <p>Connect with Veva on Linkedin</p>
+          </a>
+        </div>
       </div>
       </ScrollAnimation>
     )
@@ -149,13 +150,12 @@ class Home extends Component {
             <div class='tog-bar'></div>
           </button>
           <div class='home-inner-sec'>
-            <div style={{width:'90%',margin:'auto',alignItems:'center',paddingTop:10,overflow:'auto'}}>
-              <div style={{float:'left',width:'40%'}}>
+            <div class='home-inner-sec-width'>
+              <div class='left-top-div'>
                 <h1 id='blurb-id'><span class='text-gradient'>We are a company that brings the best people in New Zealand </span>
                   <span style={{color:'#0E1938'}}>to develop/manage companies all across the country.</span>
                 </h1>
                 <div id='first-div-top' class='intro-blurb'>
-                  <img id='text-logo' src={require('../images/veva-4.png')} alt='Veva'/>
                   <div class='sliding-text-home'>
                     {this.renderText()}
                     <div style={{textAlign:'center',position:'absolute',bottom:0,left:'45%'}}>

@@ -88,3 +88,50 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.home-inner-sec-width{
+  width:90%;
+  margin: auto;
+  align-items: center;
+  padding-top: 10px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 560px) {
+  .sliding-text-home{
+    background-color: rgba(14, 25, 56, 0.7);
+    color:white;
+    padding:10px;
+    height: 40vh;
+    width:100%;
+    position: relative;
+  }
+
+  .about-ser-wrapper{
+    display: grid;
+    text-align:center;
+    grid-template-columns: 2fr 2fr 2fr;
+    width:50%;
+    margin: auto;
+    position: static;
+    left:0%;
+  }
+
+  #anim-img{
+    overflow: auto;
+    width:100%;
+    margin-left: auto;
+  }
+
+  .home-inner-sec-width{
+    width:100%;
+    margin: auto;
+    align-items: center;
+    padding-top: 10px;
+    overflow: auto;
+  }
+
+  .social-img-big{
+    width: 100%;
+  }
+}

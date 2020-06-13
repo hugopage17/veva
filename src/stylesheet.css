@@ -20,6 +20,7 @@
   background-color: #0E1938;
   height: 60vh;
   padding: 10px;
+
 }
 
 .about-services-block h1 {
@@ -52,10 +53,21 @@
   overflow: auto;
   color:white;
   cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.each-ser-about:hover{
+  background-color: #0E1938;
+  box-shadow: 2px 2px 8px #18E69B;
+  background-image: url("images/repeat-img.png");
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 .each-ser-about h3{
   transition: 0.5s;
+  overflow: hidden;
 }
 
 .each-ser-about:hover h3{
@@ -70,6 +82,8 @@
   font-size: 18px;
   padding:5px;
   transition: 0.5s;
+  width: 40%;
+  margin: auto;
 }
 
 .social-img-big:hover{
@@ -138,6 +152,15 @@
   -webkit-text-fill-color: transparent;
   animation: color-change 2s;
   font-weight: bold;
+}
+
+.left-top-div{
+  float:left;
+  width:40%;
+}
+
+.home-top-sec{
+  margin: 0px;
 }
 
 .text-gradient-no-anim{
@@ -224,13 +247,27 @@
   margin: 20px;
 }
 
+.top-home-socials{
+  position:absolute;
+  width:100%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
 
+.socials-relative{
+  position: relative;
+  height: 20vh;
+}
 
 .forth-panel img{
   float: right;
 }
 
 @media screen and (max-width: 560px) {
+  .social-img-big{
+    width: 100%;
+  }
   #text-logo{
     display: block;
     width:50%;
@@ -250,14 +287,27 @@
     margin-left: 0px;
   }
 
-
+  .each-ser-about{
+    display: inline-block;
+    width:80%;
+    margin: 20px;
+    padding:5px;
+    display: inline-block;
+    overflow: auto;
+    color:white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
 
   .home-inner-sec{
     text-align: center;
   }
 
   #anim-img{
-    width: 80%;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
   }
 
   #watch-but{
@@ -277,10 +327,27 @@
   }
 
   #blurb-id{
-    width:100%;
+    width:80%;
     font-size: 18px;
     text-align: center;
+    margin: auto;
+    padding-left: 0px;
   }
+
+  .top-home-socials{
+    position:static;
+    width:60%;
+    margin:auto;
+    left:20%;
+  }
+
+  .socials-relative{
+    position: static;
+    height: 40vh;
+    width: 100%;
+    margin-top:0px;
+  }
+
 
   .main-nav-li{
     color:white;
@@ -327,6 +394,11 @@
     background-position: center;
     margin-top: 0px;
 
+  }
+
+  .left-top-div{
+    float:none;
+    width:100%;
   }
 
   #key-points-list{
@@ -430,6 +502,16 @@
     border-bottom: 1px solid #59B8D0;
   }
 
+  .about-ser-wrapper{
+    display: grid;
+    text-align:center;
+    grid-template-columns: 2fr 2fr 2fr;
+    width:100%;
+    margin: auto;
+    position: absolute;
+    right:100%;
+  }
+
   .member-left-top{
     width:100%;
     display: block;
@@ -469,6 +551,11 @@
     width:128px;
   }
 
+  .home-img-container{
+    float: none;
+    width:100%;
+  }
+
   #veva-video{
     margin:auto 0;
     display:inline;
@@ -478,6 +565,8 @@
 
   .all-services{
     overflow: auto;
+    height: 100vh;
+    position: static;
   }
 
   .about-panel{

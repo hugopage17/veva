@@ -9,6 +9,9 @@ import Services from './components/Services.js'
 import Service from './components/Service.js'
 import Error from './components/Error.js'
 import Navbar from './components/Navbar.js'
+import './App.css'
+import './stylesheet.css'
+import './slider.css'
 
 class App extends Component {
   constructor(props){
