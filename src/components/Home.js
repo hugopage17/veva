@@ -173,7 +173,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div style={{padding:60,textAlign:'center'}}>
+        <div class='show-socials-wrapper'>
           <h1><span class='text-gradient'>Connect</span> on our other channels</h1>
           {this.showSocials()}
         </div>

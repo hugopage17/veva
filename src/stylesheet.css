@@ -336,7 +336,7 @@
 
   .top-home-socials{
     position:static;
-    width:60%;
+    width:100%;
     margin:auto;
     left:20%;
   }
@@ -398,7 +398,7 @@
 
   .left-top-div{
     float:none;
-    width:100%;
+    width:90%;
   }
 
   #key-points-list{

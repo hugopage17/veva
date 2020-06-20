@@ -60,6 +60,11 @@
   top: 0;
 }
 
+.show-socials-wrapper{
+  padding:60px;
+  text-align: center;
+}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -102,7 +107,7 @@
     background-color: rgba(14, 25, 56, 0.7);
     color:white;
     padding:10px;
-    height: 40vh;
+    height:50vh;
     width:100%;
     position: relative;
   }
@@ -133,6 +138,10 @@
 
   .social-img-big{
     width: 100%;
+  }
+
+  .show-socials-wrapper{
+    padding:20px;
   }
 
   .services-wrapper{
