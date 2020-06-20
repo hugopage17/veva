@@ -88,7 +88,7 @@ class Contact extends Component {
       </button>
         <div class='contact-inner'>
           <h1 class='text-gradient-no-anim' style={{fontSize:50}}>Contact Us</h1>
-          <p style={{fontSize:16}}>Please send us all your queries and requests below and we will get back to you with 2-3 business days</p>
+          <p style={{fontSize:16}}>Use the form below to send us your queries and requests, and we will get back to you with 2-3 business days.</p>
           <input type='email' placeholder='Email Address' class='email-add' id='email-add'/><br/>
           <input type='text' list="options" placeholder='Subject' class='email-add' id='subject-add' maxlength="100"/><br/>
           <datalist id="options">

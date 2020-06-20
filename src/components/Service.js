@@ -61,9 +61,9 @@ class Service extends Component{
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-          <div>
+          <div style={{marginBottom:100}}>
             <h1 class='text-gradient' style={{fontWeight:'bold'}}>{this.state.service.name}</h1>
-            <p class='service-desc'>{this.state.service.desc}</p>
+            <p class='service-desc'>{this.state.service.desc} <a href="mailto:contact@vevadev.co.nz" id='mail-link' class='text-gradient'>Contact us for more information</a></p>
           </div>
           <h1 style={{fontWeight:'bold'}}>Find out more about</h1>
           <div>

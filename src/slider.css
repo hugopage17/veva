@@ -134,4 +134,45 @@
   .social-img-big{
     width: 100%;
   }
+
+  .services-wrapper{
+    height: auto;
+  }
+
+  .service-desc{
+    font-weight: bold;
+    width:90%;
+    line-height: 2em;
+    margin: auto;
+  }
+
+  .forth-panel{
+    width:100%;
+    margin: auto;
+    line-height: 2em;
+    text-align:center;
+    overflow: hidden;
+    position: static;
+    height: auto;
+  }
+
+  .forth-panel p{
+    font-weight: bold;
+    float: left;
+    width:100%;
+    background-color: white;
+    padding:0px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px #888888;
+    margin: 0px;
+    line-height: 2.5em;
+  }
+
+  .four-panel-1{
+    position: static;
+  }
+
+  .four-panel-2{
+    position: static;
+  }
 }

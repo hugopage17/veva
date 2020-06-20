@@ -1,7 +1,7 @@
 export const data = [
   {
     name:'Business Development',
-    brief:'If you have a viable business plan let us have a look we may be able to become business partners and take things to the next level.',
+    brief:'Do you have a viable business plan that needs some help? Let us take a look. We may be able to become business partners and help you take things to the next level.',
     keyPoints:[
       'Strategic Planning',
       'Sales Training',
@@ -9,11 +9,11 @@ export const data = [
       'Accounting'
     ],
     img:'Icon-Business-Development.png',
-    desc:'We have all the tools and expert skills to help take a dying company and put it back on the right track. Give us a call today to find out more. Show us your Business and we can show you the rewards. In house and Skype/Zoom workshops and training to give you confidence in your business. Bring us your ideas and we can turn them into reality, think of having a group of top professionals working with you to make your dreams come true. If you have a viable business plan let us have a look we may be able to become business partners and take things to the next level. Because of our vast access to the best people in NZ it allows us to give you the best outcome possible.'
+    desc:'Is your company undergoing financial stress? Have recent times resulted in financial loss? Our tools and expertise may be able to help put your company back on track. Our in-house and remote workshops provide the training to give you more confidence moving forward. Bring us your ideas, and we’ll show you how to make them tangible. If you have a viable business plan, let us take a look, and we may be able to become business partners or assist you through receivership. We’ll work to give you the best outcome possible.'
   },
   {
     name:'Business Management',
-    brief:'Kick your feet back and relax! Our team of specialists are here to handle all the pain points of your business',
+    brief:'Sometimes you need an outside pair of eyes to help identify the way forward. At Veva Development, you can hand over the work associated with this to us. Leave the pain points of your business to our team of specialists. ',
     keyPoints:[
       'Identifying',
       'Analysing',
@@ -21,11 +21,11 @@ export const data = [
       'Collaborating'
     ],
     img:'Icon-Business-Management.png',
-    desc:'Show us your Business and we can show you the rewards. In house and Skype/Zoom workshops and training to give you confidence in your business. We have all the tools and expert skills to help take a dieing company and put it back on the right track. High class marketing, graphic design, IT developers, accounting, business strategy and much more. We have professionals all over NZ that can work with you. Give us a call today to find out more.'
+    desc:'Show us your business, and we can show you how to reap its rewards better. Our in-house and remote workshops provide the training to give you the confidence to take your business to the next level. If your company has been hit by difficult times, we can help you find our way out of it and back on the right track. Our marketing, graphic design, IT, accounting, and business strategy professionals are available every step of the way. '
   },
   {
     name:'Investment Management',
-    brief:'With the latest technology and data resources at your disposal, managing your portfolios and ensuring the best results has never been easier!',
+    brief:'We can help create and execute the strategies that will make your money work for you. With the latest technology and data sources at your disposal, managing your portfolios to ensure the best results is easier than ever!',
     keyPoints:[
       'Data Analysis',
       'Market Research',
@@ -33,6 +33,6 @@ export const data = [
       'Fund Management'
     ],
     img:'Icon-Investment-Management.png',
-    desc:"It is hard to imagine that with the world in the state it's in that your investments can still flourish and mature. We are leading the way to introduce safe 'COVID-19' strategies to keep your business turning over and run to the highest standard. We have the best team in place to manage your portfolios and make sure you are getting the best results and peace of mind. Working with banks to help you out of receivership."
+    desc:"Investments may sound risky when the world is dealing with economic uncertainty. But the truth is, your investments can still flourish and mature. Veva Development is leading the way in safe COVID-19 strategies that keep businesses turning over profit and operate at a high standard. Our team has the expertise to manage your portfolios to ensure you are getting the best results. We can also help you out of receivership. We’ll work with the banks while you enjoy peace of mind. "
   }
 ]

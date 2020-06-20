@@ -20,6 +20,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "social-media-icons-react": "^1.0.10",
+    "socket.io-client": "^2.3.0",
     "sweetalert2": "^9.10.12"
   },
   "scripts": {

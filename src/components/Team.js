@@ -82,9 +82,9 @@ class Team extends Component {
           </button>
             <div>
               <h1 class='text-gradient-no-anim'>Meet The Team</h1>
-              <p class='team-desc'>At Veva Development, we have an exceptional team of consultants with expertise in various areas.
-              We’re committed to solving complex business challenges using the latest technology and data resources,
-              combined with our creative and collaborative strategic approach. Learn more about some of our talented professionals below.
+              <p class='team-desc'>We are a well-rounded team of exceptional consultants and professionals with expertise in a wide variety of areas.
+              We are committed to solving complex business challenges using the latest technology and data resources, and we combine this with our
+              creative and collaborative strategic approach. Learn more about some of our talented professionals below.
               </p>
             </div>
             <div>
