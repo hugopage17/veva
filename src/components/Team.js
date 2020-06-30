@@ -21,7 +21,7 @@ class Team extends Component {
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
     }
-    fetch('https://api.jsonbin.io/b/5ea63eff1299b9374236c11b/13')
+    fetch('https://api.jsonbin.io/b/5ea63eff1299b9374236c11b/14')
     .then(response => response.json())
     .then((data) => {
       this.setState({data})
