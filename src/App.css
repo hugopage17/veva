@@ -403,16 +403,21 @@ textarea { resize: none; }
   background-image: url("images/full-bg-small.png");
   background-size: 100%;
   background-repeat: repeat;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about-panel{
   border-radius:5px;
-  width:45%;
+  width:30%;
   margin:auto;
   margin-bottom: 20px;
-  margin-left: 10px;
+  left:10%;
   box-shadow: none;
-  float: right;
+  float: left;
+  position: absolute;
+  top:15%;
+
 }
 
 .about-panel p{
@@ -425,6 +430,7 @@ textarea { resize: none; }
 
 .about-h1{
   color: #18E69B;
+  font-size: 36px;
 }
 
 #veva-video{
@@ -709,6 +715,15 @@ textarea { resize: none; }
   -webkit-text-fill-color: transparent;
   animation: color-change 1s;
   font-weight: bold;
+}
+
+.why-us-h1{
+  background: -webkit-linear-gradient(#00B5CD, #18E69B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: color-change 1s;
+  font-weight: bold;
+  font-size: 36px;
 }
 
 @keyframes zoom {

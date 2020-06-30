@@ -9,6 +9,7 @@ import Services from './components/Services.js'
 import Service from './components/Service.js'
 import Error from './components/Error.js'
 import Navbar from './components/Navbar.js'
+import Careers from './components/Careers.js'
 import './App.css'
 import './stylesheet.css'
 import './slider.css'
@@ -20,6 +21,7 @@ class App extends Component {
 
     }
   }
+
 
 
   toggleNav = () => {
@@ -38,6 +40,7 @@ class App extends Component {
             <Route exact path='/Services/:service' component={Service}/>
             <Route exact path='/Contact' component={Contact}/>
             <Route exact path='/OurTeam' component={Team}/>
+            <Route exact path='/Careers' component={Careers}/>
             <Route component={Error}/>
           </Switch>
           <Footer/>

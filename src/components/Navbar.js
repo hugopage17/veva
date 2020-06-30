@@ -25,6 +25,7 @@ class Navbar extends Component {
             </Link>
             <Link to='/OurTeam' class='route-link'><li class='main-nav-li'>TEAM</li></Link>
             <Link to='/Contact' class='route-link'><li class='main-nav-li'>CONTACT</li></Link>
+            <Link to='/Careers' class='route-link'><li class='main-nav-li'>CAREERS</li></Link>
           </span>
         </ul>
       </div>

@@ -102,6 +102,165 @@
   overflow: auto;
 }
 
+.careers-wrapper{
+  height: auto;
+  background-color: #0E1938;
+  padding: 10px;
+  color:white;
+}
+
+.cv-name-tag{
+  height: 10vh;
+  position: relative;
+  text-align: center;
+}
+
+#cv-name-tag{
+  position: absolute;
+  top:50%;
+  left:30%;
+}
+
+.careers-inner{
+  width:50%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.career-txt{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.cv-uploader{
+  height: 30vh;
+  width:40%;
+  margin: auto;
+  border: 2px dashed #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 60px;
+  transition: 0.5s;
+}
+
+.cv-uploader:hover{
+  border: 2px dashed #18E69B;
+  background-color: rgba(24, 230, 155, 0.25);
+}
+
+.contact-img{
+  position: absolute;
+  right:10%;
+  width:15%;
+  bottom:0%;
+}
+
+.cover-letter-wrapper{
+  margin: 20px;
+  overflow: auto;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #18E69B;
+}
+
+.about-img{
+  width: 50%;
+  float: right;
+}
+
+.why-us-wrapper{
+  width:90%;
+  margin: 40px;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 100px;
+}
+
+.why-us-container{
+  display: grid;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+
+}
+
+.each-why-us{
+  width:70%;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+#third-why{
+  font-weight: 1000em;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+#cl-area{
+  width:80%;
+  height: 50vh;
+}
+
 @media screen and (max-width: 560px) {
   .sliding-text-home{
     background-color: rgba(14, 25, 56, 0.7);

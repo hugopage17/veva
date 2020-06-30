@@ -1,7 +1,7 @@
 export const data = [
   {
     name:'Business Development',
-    brief:'Do you have a viable business plan that needs some help? Let us take a look. We may be able to become business partners and help you take things to the next level.',
+    brief:'Do you have a viable business plan that needs some help? Let us take a look. We may be able to become business partners and help you take things to the next level. ',
     keyPoints:[
       'Strategic Planning',
       'Sales Training',

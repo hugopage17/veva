@@ -99,6 +99,7 @@ class Contact extends Component {
           <textarea placeholder='How can we help' class='msg-body' id='msg-body'/><br/>
           <button class='submit-but' onClick={this.sendEmail}>Submit</button>
         </div>
+        <img src={require('../images/contact-img.png')} class='contact-img' alt='contact'/>
       </div>
     )
   }
