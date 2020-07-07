@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import MetaTags from 'react-meta-tags'
 import fire from './Fire.js'
-import Swal from 'sweetalert2'
 import Spinner from './Spinner.js'
 import {Link} from 'react-router-dom'
 
@@ -13,7 +12,8 @@ class Careers extends Component {
       cv:{},
       coverletter:'',
       clName:'',
-      hideSpinner:true
+      hideSpinner:true,
+      token:''
     }
   }
 
@@ -66,7 +66,12 @@ class Careers extends Component {
       })
     })
     p.then((res)=>{
-      document.getElementById('success-link').click()
+      fetch('https://gz3ueb7x9i.execute-api.us-east-1.amazonaws.com/test/token')
+      .then(response => response.json())
+      .then((token) => {
+        this.setState({token:token})
+        document.getElementById('success-link').click()
+      })
     }).catch((err)=>{
       document.getElementById('fail-link').click()
     })
@@ -75,7 +80,7 @@ class Careers extends Component {
   render(){
     return (
       <div class='careers-wrapper'>
-        <Link to='/Careers/ApplicationSent?status=success'><a hidden={true} id='success-link'></a></Link>
+        <Link to={`/Careers/ApplicationSent?status=success&token=${this.state.token}`}><a hidden={true} id='success-link'></a></Link>
         <Link to='/Careers/ApplicationSent?status=failed'><a hidden={true} id='fail-link'></a></Link>
         <MetaTags>
           <title>Careers</title>
