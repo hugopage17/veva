@@ -3,6 +3,7 @@ import MetaTags from 'react-meta-tags'
 import fire from './Fire.js'
 import Swal from 'sweetalert2'
 import Spinner from './Spinner.js'
+import {Link} from 'react-router-dom'
 
 class Careers extends Component {
   constructor(props){
@@ -65,17 +66,17 @@ class Careers extends Component {
       })
     })
     p.then((res)=>{
-      Swal.fire({
-        icon: 'success',
-        title: 'Application sent',
-        text: 'Thank you for expressing interest in Veva, we review all resumes and will be in touch if we believe if you are suited candidate for any position available'
-      })
+      document.getElementById('success-link').click()
+    }).catch((err)=>{
+      document.getElementById('fail-link').click()
     })
   }
 
   render(){
     return (
       <div class='careers-wrapper'>
+        <Link to='/Careers/ApplicationSent?status=success'><a hidden={true} id='success-link'></a></Link>
+        <Link to='/Careers/ApplicationSent?status=failed'><a hidden={true} id='fail-link'></a></Link>
         <MetaTags>
           <title>Careers</title>
           <meta name='Careers' content="We're always looking for smart and positive people who are passionate about what they do and share a similar vision to help Kiwis achieve the business goals."/>

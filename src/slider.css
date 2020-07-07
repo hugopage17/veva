@@ -20,6 +20,16 @@
   height: 100vh;
 }
 
+#career-post-inner{
+  margin:auto;
+  width:50%;
+  text-align: center;
+}
+
+#career-post-inner h1{
+  font-size: 42px;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
