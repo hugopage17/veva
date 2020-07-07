@@ -4,6 +4,7 @@ import MetaTags from 'react-meta-tags'
 import {data} from '../services-data.js'
 import { Link} from "react-router-dom"
 import ScrollAnimation from 'react-animate-on-scroll'
+import fire from './Fire.js'
 
 class About extends Component {
   constructor(props){
@@ -18,11 +19,11 @@ class About extends Component {
   }
 
   componentDidMount(){
-    document.title = 'Veva - About'
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
     }
+    fire.analytics().logEvent('About page visited')
   }
 
   toggleNav = () => {

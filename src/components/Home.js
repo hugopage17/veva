@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 import {data} from '../services-data.js'
 import { Link} from "react-router-dom"
 import {FaFacebookSquare, FaLinkedin} from 'react-icons/fa'
-import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from 'react-animate-on-scroll'
+import fire from './Fire.js'
 
 
 class Home extends Component {
@@ -17,7 +18,8 @@ class Home extends Component {
         'With Veva Development, websites have never looked so good. Our team of graphic designers and developers put together seamless, high-quality websites that stand-out. Because websites are investments, we continually work with our clients to keep everything updated and running smoothly.'
       ],
       slideIndex:0,
-      iconSize:'9em'
+      iconSize:'9em',
+      clickedVideo:false
     }
   }
 
@@ -28,6 +30,10 @@ class Home extends Component {
       document.getElementById('navbar').style.display = 'none'
       this.setState({iconSize:'3em'})
     }
+    var player = document.getElementById("home-video");
+    player.addEventListener("play",  () => {
+      this.videoAnalytics()
+    });
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
     for (var i = 0; i < slides.length; i++) {
@@ -55,6 +61,13 @@ class Home extends Component {
         <p style={{width:'100%',fontWeight:100,lineHeight:'2em'}} class='mySlides'>{t}</p>
       )
     })
+  }
+
+  videoAnalytics = () => {
+    if(this.state.clickedVideo === false){
+      this.setState({clickedVideo:true})
+      fire.analytics().logEvent('Home Video was viewed')
+    }
   }
 
   showServices(){
@@ -122,15 +135,21 @@ class Home extends Component {
   }
 
   showSocials(){
+    const fbEvent = () => {
+      fire.analytics().logEvent('User visited Facebook page via social media button on home page')
+    }
+    const lnEvent = () => {
+      fire.analytics().logEvent('User visited Linkedin page via social media button on home page')
+    }
     return(
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
       <div class='socials-relative'>
         <div class='top-home-socials'>
-          <a href='https://www.facebook.com/vevadevnz/' target='_blank' rel="noopener noreferrer" class='social-img-big'>
+          <a href='https://www.facebook.com/vevadevnz/' target='_blank' rel="noopener noreferrer" class='social-img-big' onClick={fbEvent}>
             <FaFacebookSquare size={this.state.iconSize} color='#0E1938'/>
             <p>Follow Veva on Facebook</p>
           </a>
-          <a href='https://www.linkedin.com/company/veva-development-nz/' target='_blank' rel="noopener noreferrer" class='social-img-big'>
+          <a href='https://www.linkedin.com/company/veva-development-nz/' target='_blank' rel="noopener noreferrer" class='social-img-big' onClick={lnEvent}>
             <FaLinkedin size={this.state.iconSize} color='#0E1938' roundness="50%" class='linkedin'/>
             <p>Connect with Veva on Linkedin</p>
           </a>
@@ -178,7 +197,7 @@ class Home extends Component {
           {this.showSocials()}
         </div>
         <div class='home-mid-sec'>
-          <video class='home-video' controls>
+          <video class='home-video' controls onClick={this.videoAnalytics} id='home-video'>
             <source src="https://promo-video-veva.s3.amazonaws.com/Veva+Development+intro.mp4" type="video/mp4"/>
           </video>
         </div>

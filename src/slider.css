@@ -13,6 +13,13 @@
   font-size: 18px;
 }
 
+#career-post-wrapper{
+  color:white;
+  background-color: #0E1938;
+  padding:20px;
+  height: 100vh;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -342,5 +349,24 @@
 
   .four-panel-2{
     position: static;
+  }
+
+  .why-us-wrapper{
+    margin: 20px;
+    margin-bottom: 10px;
+  }
+
+  .why-us-h1{
+    text-align: center;
+  }
+
+  .why-us-container{
+    display: block;
+    text-align: center;
+    width:100%;
+  }
+  .each-why-us{
+    width:100%;
+    text-align: center;
   }
 }

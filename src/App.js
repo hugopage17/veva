@@ -10,9 +10,12 @@ import Service from './components/Service.js'
 import Error from './components/Error.js'
 import Navbar from './components/Navbar.js'
 import Careers from './components/Careers.js'
+import CareerPost from './components/CareerPost.js'
 import './App.css'
 import './stylesheet.css'
 import './slider.css'
+import socketIOClient from "socket.io-client";
+const ENDPOINT = "http://35.168.8.55:5000";
 
 class App extends Component {
   constructor(props){
@@ -22,7 +25,9 @@ class App extends Component {
     }
   }
 
-
+  componentDidMount(){
+    socketIOClient(ENDPOINT);
+  }
 
   toggleNav = () => {
     document.getElementById('navbar').style.display = 'block'
@@ -41,6 +46,7 @@ class App extends Component {
             <Route exact path='/Contact' component={Contact}/>
             <Route exact path='/OurTeam' component={Team}/>
             <Route exact path='/Careers' component={Careers}/>
+            <Route exact path='/Careers/ApplicationSent' component={CareerPost}/>
             <Route component={Error}/>
           </Switch>
           <Footer/>

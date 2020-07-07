@@ -16,16 +16,12 @@ class Team extends Component {
   }
 
   componentDidMount(){
-    document.title = 'Veva - Team'
-    let headers = new Headers();
-    headers.append('Origin','*');
-    headers.append('Content-Type', 'application/json');
-    headers.append('Accept', 'application/json');
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
     }
-    fetch('https://gz3ueb7x9i.execute-api.us-east-1.amazonaws.com/test/team').then(response => response.json())
+    fetch('https://gz3ueb7x9i.execute-api.us-east-1.amazonaws.com/test/team')
+    .then(response => response.json())
     .then((data) => {
       this.setState({data})
       this.setState({loading:!this.state.loading})

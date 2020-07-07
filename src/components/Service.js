@@ -3,6 +3,7 @@ import '../App.css'
 import {data} from '../services-data.js'
 import {Link} from "react-router-dom"
 import MetaTags from 'react-meta-tags'
+import fire from './Fire.js'
 
 class Service extends Component{
   constructor(props){
@@ -15,7 +16,7 @@ class Service extends Component{
 
   componentDidMount(){
     const key = this.props.match.params
-    document.title = `Veva - ${key.service}`
+    fire.analytics().logEvent(`${key.service} service was viewed`)
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
