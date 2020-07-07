@@ -61,7 +61,6 @@ class Careers extends Component {
       const email = document.getElementById('email-add').value
       var storageRef = fire.storage().ref()
       return storageRef.child(`${email}/${this.state.cv.name}`).put(this.state.cv).then(()=>{
-        this.setState({hideSpinner:!this.state.hideSpinner})
         resolve('success')
       })
     })
@@ -69,10 +68,12 @@ class Careers extends Component {
       fetch('https://gz3ueb7x9i.execute-api.us-east-1.amazonaws.com/test/token')
       .then(response => response.json())
       .then((token) => {
+        this.setState({hideSpinner:!this.state.hideSpinner})
         this.setState({token:token})
         document.getElementById('success-link').click()
       })
     }).catch((err)=>{
+      this.setState({hideSpinner:!this.state.hideSpinner})
       document.getElementById('fail-link').click()
     })
   }
