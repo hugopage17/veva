@@ -80,8 +80,8 @@ class Careers extends Component {
   render(){
     return (
       <div class='careers-wrapper'>
-        <Link to={`/Careers/ApplicationSent?status=success&token=${this.state.token}`}><a hidden={true} id='success-link'></a></Link>
-        <Link to='/Careers/ApplicationSent?status=failed'><a hidden={true} id='fail-link'></a></Link>
+        <Link to={`/Careers/ApplicationSent?status=success&token=${this.state.token}`}><a hidden={true} id='success-link' rel="noopener noreferrer"></a></Link>
+        <Link to='/Careers/ApplicationSent?status=failed'><a hidden={true} id='fail-link' rel="noopener noreferrer"></a></Link>
         <MetaTags>
           <title>Careers</title>
           <meta name='Careers' content="We're always looking for smart and positive people who are passionate about what they do and share a similar vision to help Kiwis achieve the business goals."/>
