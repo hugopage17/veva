@@ -262,8 +262,6 @@ textarea { resize: none; }
   width:100%;
   margin: auto;
   font-size: 16px;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .each-service h3{
