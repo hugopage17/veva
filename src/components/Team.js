@@ -79,7 +79,7 @@ class Team extends Component {
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-            <div>
+            <div class='team-writing'>
               <h1 class='text-gradient-no-anim'>Meet The Team</h1>
               <p class='team-desc'>We are a well-rounded team of exceptional consultants and professionals with expertise in a wide variety of areas.
               We are committed to solving complex business challenges using the latest technology and data resources, and we combine this with our

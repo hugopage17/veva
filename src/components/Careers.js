@@ -17,8 +17,16 @@ class Careers extends Component {
     }
   }
 
+  componentDidMount(){
+    window.scrollTo(0, 0);
+    if(window.screen.width <= 560){
+      document.getElementById('navbar').style.display = 'none'
+    }
+    fire.analytics().logEvent('Careers page visited')
+  }
+
   toggleNav = () => {
-    document.getElementById('navbar').style.display = 'none'
+    document.getElementById('navbar').style.display = 'block'
   }
 
   toggleCLOptions = () => {
@@ -81,6 +89,11 @@ class Careers extends Component {
   render(){
     return (
       <div class='careers-wrapper'>
+        <button class='toggle-nav' onClick={this.toggleNav}>
+          <div class='tog-bar'></div>
+          <div class='tog-bar'></div>
+          <div class='tog-bar'></div>
+        </button>
         <Link to={`/Careers/ApplicationSent?status=success&token=${this.state.token}`}><a hidden={true} id='success-link' href={`/Careers/ApplicationSent?status=success&token=${this.state.token}`} rel="noopener noreferrer">p</a></Link>
         <Link to='/Careers/ApplicationSent?status=failed'><a hidden={true} id='fail-link' href={`/Careers/ApplicationSent?status=success&token=${this.state.token}`} rel="noopener noreferrer">p</a></Link>
         <MetaTags>
@@ -95,11 +108,11 @@ class Careers extends Component {
           </p>
           <input type='email' placeholder='Email Address' class='email-add' id='email-add'/>
           <div style={{width:'100%',margin:'auto',marginTop:'40px'}}>
-          <label class="container" style={{float:'left'}}>Upload Coverletter
+          <label class="container" id='upload-cl-container'>Upload Coverletter
             <input type='radio' id="upload_cl" name="coverletter" value="upload" onChange={this.toggleCLOptions}/>
             <span class="checkmark"></span>
           </label>
-          <label class="container" style={{float:'right'}}>Write Coverletter
+          <label class="container" id='write-cl-container'>Write Coverletter
             <input type='radio' id="write_cl" name="coverletter" value="upload" onChange={this.toggleCLOptions}/>
             <span class="checkmark"></span>
           </label>
@@ -107,7 +120,7 @@ class Careers extends Component {
           <div class='cover-letter-wrapper'>
             <textarea placeholder='Type out coverletter' id='cl-area' hidden={true}/>
             <input type='file' hidden='true' id='cl-chooser'/>
-            <button class='but-1' id='upload-cl-but' onClick={this.uploadLetter} style={{width:'40%'}}>Upload Coverletter</button>
+            <button class='but-1' id='upload-cl-but' onClick={this.uploadLetter}>Upload Coverletter</button>
             <label id='cv-name-tag'>{this.state.clName}</label>
           </div>
           <div id='cv-uploader' class='cv-uploader' onClick={this.cvUploader}>
@@ -118,7 +131,7 @@ class Careers extends Component {
           <div class='cv-name-tag'>
             <label id='cv-name-tag'>{this.state.cvName}</label>
           </div>
-          <button class='but-1' style={{width:'40%',marginTop:'60px'}} onClick={this.uploadFiles}>Submit</button>
+          <button class='but-1' id='careers-but' onClick={this.uploadFiles}>Submit</button>
         </div>
       </div>
     )

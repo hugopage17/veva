@@ -13,6 +13,10 @@ class CareerPost extends Component {
     const query = new URLSearchParams(this.props.location.search)
     const status = query.get('status')
     this.setState({status})
+    window.scrollTo(0, 0);
+    if(window.screen.width <= 560){
+      document.getElementById('navbar').style.display = 'none'
+    }
   }
 
   toggleNav = () => {
@@ -22,7 +26,7 @@ class CareerPost extends Component {
   successPanel(){
     return(
       <div>
-        <h1 class='text-gradient'>Application Sent</h1>
+        <h1 class='text-gradient-no-anim'>Application Sent</h1>
         <p>Thank you for expressing interest in Veva, we review all resumes and will be in touch if we believe if you are suited candidate for any position available</p>
         <img src={require('../images/veva-1.png')} alt='Veva'/><br/><br/>
         <Link to='/' class='route-link'><button class='but-1' style={{fontSize:22}}>Return Home</button></Link>
@@ -51,6 +55,11 @@ class CareerPost extends Component {
     }
     return (
       <div id='career-post-wrapper'>
+        <button class='toggle-nav' onClick={this.toggleNav}>
+          <div class='tog-bar'></div>
+          <div class='tog-bar'></div>
+          <div class='tog-bar'></div>
+        </button>
         <div id='career-post-inner'>
           {isSuccess ? (this.successPanel()):(this.failPanel())}
         </div>

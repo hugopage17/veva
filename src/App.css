@@ -262,6 +262,8 @@ textarea { resize: none; }
   width:100%;
   margin: auto;
   font-size: 16px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .each-service h3{
@@ -466,11 +468,11 @@ textarea { resize: none; }
 
 
 .email-add{
-  width:80%;
+  width:100%;
   margin:auto;
   padding:10px;
   font-size: 16px;
-  margin: 20px;
+  margin: 20px 0px 20px 0px;
   outline-color:#18E69B
 }
 
@@ -525,6 +527,11 @@ textarea { resize: none; }
   padding: 20px;
   color:white;
   background-color: #0E1938;
+}
+
+.team-writing{
+  margin-left: 40px;
+  margin-bottom: 60px;
 }
 
 .team-inner h1{

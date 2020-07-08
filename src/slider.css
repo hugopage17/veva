@@ -236,9 +236,10 @@
 
 .why-us-container{
   display: grid;
-  display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-
+  width:100%;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .each-why-us{
@@ -278,6 +279,23 @@
   height: 50vh;
 }
 
+#careers-but{
+  width:40%;
+  margin-top:60px;
+}
+
+#upload-cl-but{
+  width:40%;
+}
+
+#upload-cl-container{
+  float:left;
+}
+
+#write-cl-container{
+  float:right;
+}
+
 @media screen and (max-width: 560px) {
   .sliding-text-home{
     background-color: rgba(14, 25, 56, 0.7);
@@ -288,20 +306,68 @@
     position: relative;
   }
 
-  .about-ser-wrapper{
-    display: grid;
-    text-align:center;
-    grid-template-columns: 2fr 2fr 2fr;
-    width:50%;
-    margin: auto;
-    position: static;
+  #upload-cl-container{
+    float:none;
+  }
+
+  #write-cl-container{
+    float:none;
+  }
+
+  .cv-uploader{
+    height: 30vh;
+    width:90%;
+  }
+
+  #career-post-inner{
+    margin:auto;
+    width:100%;
+    text-align: center;
+  }
+
+  #cl-area{
+    width:100%;
+  }
+
+  .about-img{
+    width: 90%;
+    float: none;
+    display: block;
+    position: absolute;
+    top: 70%;
+  }
+
+  .about-panel{
+    width:100%;
     left:0%;
+  }
+
+  .about-panel p{
+    width:100%;
+    text-align: center;
+  }
+
+  .about-h1{
+    text-align: center;
   }
 
   #anim-img{
     overflow: auto;
     width:100%;
     margin-left: auto;
+  }
+
+  .careers-inner{
+    width:95%;
+  }
+
+  #careers-but{
+    width:100%;
+    margin: auto;
+  }
+
+  #upload-cl-but{
+    width:100%;
   }
 
   .home-inner-sec-width{

@@ -85,7 +85,6 @@ class About extends Component {
           <div style={{height:'100vh'}}>
             <div class='about-panel'>
               <h1 class='about-h1 text-gradient'>Who We Are</h1>
-              <br/>
               <p>
                 Veva Development began as the result of passionate professionals from different fields coming together under a shared vision
                 to do more for businesses. We already love what we do  but now we want to bring something new to the table.
