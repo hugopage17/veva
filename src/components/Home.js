@@ -58,7 +58,7 @@ class Home extends Component {
     const text = this.state.textSlide
     return text.map((t)=>{
       return(
-        <p style={{width:'100%',fontWeight:100,lineHeight:'2em'}} class='mySlides'>{t}</p>
+        <p class='mySlides'>{t}</p>
       )
     })
   }

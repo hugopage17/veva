@@ -11,6 +11,9 @@
   display: none;
   transition: opacity 0.5s ease-out;
   font-size: 18px;
+  width:100%;
+  font-weight:100;
+  line-height:2em;
 }
 
 #career-post-wrapper{
@@ -361,6 +364,13 @@
     width:95%;
   }
 
+  .mySlides {
+    width:90%;
+    margin: auto;
+    text-align: center;
+    margin-right: 30px;
+  }
+
   #careers-but{
     width:100%;
     margin: auto;
@@ -405,26 +415,32 @@
     margin: auto;
     line-height: 2em;
     text-align:center;
-    overflow: hidden;
+    overflow: auto;
     position: static;
     height: auto;
-
+    font-size: 12px;
+    justify-content: center;
+    text-align: justify;
   }
 
   .forth-panel p{
     font-weight: bold;
     float: left;
-    width:100%;
+    width:95%;
+    margin: auto;
     padding: 10px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 2px 4px 8px #888888;
-    margin: 0px;
     line-height: 2.5em;
   }
 
   .four-panel-1{
     position: static;
+  }
+
+  .email-add{
+    width:90%;
   }
 
   .four-panel-2{
