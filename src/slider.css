@@ -380,6 +380,11 @@
     width:100%;
   }
 
+  .team-writing{
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
+
   .home-inner-sec-width{
     width:100%;
     margin: auto;
