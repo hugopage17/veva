@@ -305,7 +305,7 @@
   #first-div-top{
     float: none;
     width:100%;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
   }
 
@@ -404,7 +404,7 @@
 
   .left-top-div{
     float:none;
-    width:90%;
+    width:100%;
   }
 
   #key-points-list{

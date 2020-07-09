@@ -380,6 +380,9 @@
 
   .social-img-big{
     width: 100%;
+    font-size: 12px;
+    display: block;
+    float: none;
   }
 
   .show-socials-wrapper{
@@ -405,14 +408,15 @@
     overflow: hidden;
     position: static;
     height: auto;
+
   }
 
   .forth-panel p{
     font-weight: bold;
     float: left;
     width:100%;
+    padding: 10px;
     background-color: white;
-    padding:0px;
     border-radius: 5px;
     box-shadow: 2px 4px 8px #888888;
     margin: 0px;
