@@ -14,8 +14,6 @@ import CareerPost from './components/CareerPost.js'
 import './App.css'
 import './stylesheet.css'
 import './slider.css'
-import socketIOClient from "socket.io-client";
-const ENDPOINT = "http://35.168.8.55:5000";
 
 class App extends Component {
   constructor(props){
@@ -23,10 +21,6 @@ class App extends Component {
     this.state = {
 
     }
-  }
-
-  componentDidMount(){
-    socketIOClient(ENDPOINT);
   }
 
   toggleNav = () => {
