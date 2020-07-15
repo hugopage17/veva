@@ -20,7 +20,7 @@ class Team extends Component {
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
     }
-    fetch('https://gz3ueb7x9i.execute-api.us-east-1.amazonaws.com/test/team')
+    fetch('https://aoe1hjbasa.execute-api.us-east-1.amazonaws.com/dev/api/v1/team?id=qnQ4MWgHqScdXaRqi46IQmek1O62')
     .then(response => response.json())
     .then((data) => {
       this.setState({data})

@@ -73,7 +73,7 @@ class Careers extends Component {
       })
     })
     p.then((res)=>{
-      fetch('https://gz3ueb7x9i.execute-api.us-east-1.amazonaws.com/test/token')
+      fetch('https://aoe1hjbasa.execute-api.us-east-1.amazonaws.com/dev/api/v1/token?id=qnQ4MWgHqScdXaRqi46IQmek1O62')
       .then(response => response.json())
       .then((token) => {
         this.setState({hideSpinner:!this.state.hideSpinner})
