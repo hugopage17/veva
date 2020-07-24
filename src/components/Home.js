@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 import {data} from '../services-data.js'
 import { Link} from "react-router-dom"
-import {FaFacebookSquare, FaLinkedin} from 'react-icons/fa'
-import ScrollAnimation from 'react-animate-on-scroll'
+
 import fire from './Fire.js'
 
 
@@ -28,7 +27,10 @@ class Home extends Component {
     window.scrollTo(0, 0);
     if(window.screen.width <= 560){
       document.getElementById('navbar').style.display = 'none'
+      document.getElementById('mobile-logo').style.display = 'block'
       this.setState({iconSize:'3em'})
+    }else{
+      document.getElementById('mobile-logo').style.display = 'none'
     }
     var player = document.getElementById("home-video");
     player.addEventListener("play",  () => {
@@ -134,30 +136,6 @@ class Home extends Component {
     this.setState({slideIndex:index})
   }
 
-  showSocials(){
-    const fbEvent = () => {
-      fire.analytics().logEvent('User visited Facebook page via social media button on home page')
-    }
-    const lnEvent = () => {
-      fire.analytics().logEvent('User visited Linkedin page via social media button on home page')
-    }
-    return(
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-      <div class='socials-relative'>
-        <div class='top-home-socials'>
-          <a href='https://www.facebook.com/vevadevnz/' target='_blank' rel="noopener noreferrer" class='social-img-big' onClick={fbEvent}>
-            <FaFacebookSquare size={this.state.iconSize} color='#0E1938'/>
-            <p>Follow Veva on Facebook</p>
-          </a>
-          <a href='https://www.linkedin.com/company/veva-development-nz/' target='_blank' rel="noopener noreferrer" class='social-img-big' onClick={lnEvent}>
-            <FaLinkedin size={this.state.iconSize} color='#0E1938' roundness="50%" class='linkedin'/>
-            <p>Connect with Veva on Linkedin</p>
-          </a>
-        </div>
-      </div>
-      </ScrollAnimation>
-    )
-  }
 
   render(){
     return (
@@ -170,15 +148,16 @@ class Home extends Component {
           </button>
           <div class='home-inner-sec'>
             <div class='home-inner-sec-width'>
+              <img src={require('../images/blue-logo.png')} id='mobile-logo' alt='logo-mobile'/>
               <div class='left-top-div'>
-                <h1 id='blurb-id'><span class='text-gradient'>Veva Development </span>
-                  <span style={{color:'#0E1938'}}>brings together the best people with the right <span class='text-gradient'>expertise</span> to develop and
-                  manage companies around <span class='text-gradient'>New Zealand.</span></span>
+                <h1 id='blurb-id'>
+                  We are a <span class='text-gradient'>company</span> that brings the <span class='text-gradient'>best</span> people in <span class='text-gradient'>New Zealand</span> to <span class='text-gradient'>develop/manage </span>
+                  companies all across the country.
                 </h1>
                 <div id='first-div-top' class='intro-blurb'>
                   <div class='sliding-text-home'>
                     {this.renderText()}
-                    <div style={{textAlign:'center',position:'absolute',bottom:0,left:'45%'}}>
+                    <div class='three-dots'>
                       <span class="dot" onClick={this.changeTextSlide}></span>
                       <span class="dot" onClick={this.changeTextSlide}></span>
                       <span class="dot" onClick={this.changeTextSlide}></span>
@@ -192,9 +171,11 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div class='show-socials-wrapper'>
-          <h1><span class='text-gradient'>Connect</span> on our other channels</h1>
-          {this.showSocials()}
+        <div class='forth-panel'>
+          <p class='four-panel-1'>We’re here to help businesses reach their goals and stay afloat during difficult times. We can work with you to make sure investment opportunities are the right decision.
+          By leveraging our resources, we can work to bring you out of receivership and train you on how to run your business better.</p>
+          <p class='four-panel-2'>From rebranding to building new systems, and from new logos to a full overhaul, we have the team to assist you in any
+          endeavour. Our talented professionals have the experience and insight to make your business even better.</p>
         </div>
         <div class='home-mid-sec'>
           <video class='home-video' controls onClick={this.videoAnalytics} id='home-video'>
@@ -208,12 +189,7 @@ class Home extends Component {
             {this.showServices()}</div>
           </div>
         </div>
-        <div class='forth-panel'>
-          <p class='four-panel-1'>We’re here to help businesses reach their goals and stay afloat during difficult times. We can work with you to make sure investment opportunities are the right decision.
-          By leveraging our resources, we can work to bring you out of receivership and train you on how to run your business better.</p>
-          <p class='four-panel-2'>From rebranding to building new systems, and from new logos to a full overhaul, we have the team to assist you in any
-          endeavour. Our talented professionals have the experience and insight to make your business even better.</p>
-        </div>
+
       </div>
     )
   }

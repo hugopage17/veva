@@ -11,7 +11,7 @@ class About extends Component {
     super(props)
     this.state = {
       why:[
-        'Our flat structure means fewer hoops to jump through and no limits to what we can accomplish by leaverging the knowledge and expertise of each other into every project we do',
+        'Our flat structure means fewer hoops to jump through and no limits to what we can accomplish by leveraging the knowledge and expertise of each other into every project we do',
         'Through our unique connections, theres no problem we cant solve. We approach each business plan with fresh eyes and utilise the strengths of our team to develop customised strategies that work',
         'Are you ready to set your brand or business on the path to sucess?\n \nGive us a call today and find out what we can do for you.'
       ]
@@ -37,7 +37,7 @@ class About extends Component {
           var index = data.indexOf(d)
           let padding
           if(index === 1){
-            padding = '42px'
+            padding = '0px'
           }
           return(
             <Link style={{color:'white'}} to={`Services/${d.name}`} target="_blank"><div class='each-ser-about'>
@@ -82,7 +82,7 @@ class About extends Component {
           <div class='tog-bar'></div>
           <div class='tog-bar'></div>
         </button>
-          <div style={{height:'100vh'}}>
+          <div style={{height:'80vh'}}>
             <div class='about-panel'>
               <h1 class='about-h1 text-gradient'>Who We Are</h1>
               <p>

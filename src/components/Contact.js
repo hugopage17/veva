@@ -87,8 +87,8 @@ class Contact extends Component {
         <div class='tog-bar'></div>
       </button>
         <div class='contact-inner'>
-          <h1 class='text-gradient-no-anim' style={{fontSize:50}}>Contact Us</h1>
-          <p style={{fontSize:16}}>Use the form below to send us your queries and requests, and we will get back to you with 2-3 business days.</p>
+          <h1 class='text-gradient-no-anim'>Contact Us</h1>
+          <p style={{fontSize:22}}><span>Use the form below to send us your queries, requests</span><br/><span> and we will get back to you with 2-3 business days.</span></p>
           <input type='email' placeholder='Email Address' class='email-add' id='email-add'/><br/>
           <input type='text' list="options" placeholder='Subject' class='email-add' id='subject-add' maxlength="100"/><br/>
           <datalist id="options">

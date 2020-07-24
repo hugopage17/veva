@@ -80,7 +80,7 @@ class Team extends Component {
             <div class='tog-bar'></div>
           </button>
             <div class='team-writing'>
-              <h1 class='text-gradient-no-anim'>Meet The Team</h1>
+              <h1 class='text-gradient-no-anim' style={{fontSize:34}}>Meet The Team</h1>
               <p class='team-desc'>We are a well-rounded team of exceptional consultants and professionals with expertise in a wide variety of areas.
               We are committed to solving complex business challenges using the latest technology and data resources, and we combine this with our
               creative and collaborative strategic approach. Learn more about some of our talented professionals below.

@@ -102,7 +102,7 @@ class Careers extends Component {
         </MetaTags>
         <Spinner hide={this.state.hideSpinner}/>
         <div class='careers-inner'>
-          <h1 class='text-gradient-no-anim' style={{fontSize:50}}>Careers at Veva</h1>
+          <h1 class='text-gradient-no-anim'>Careers at Veva</h1>
           <p class='career-txt'>We're always looking for smart and positive people who are passionate about what they do
           and share a similar vision to help Kiwis achieve the business goals. Send through your resume below
           </p>
