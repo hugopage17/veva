@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import '../App.css'
 import MetaTags from 'react-meta-tags'
 import {data} from '../services-data.js'
-import { Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 import ScrollAnimation from 'react-animate-on-scroll'
 import fire from './Fire.js'
 
