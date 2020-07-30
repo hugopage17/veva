@@ -403,7 +403,7 @@
   }
 
   .home-video{
-    width: 75%;
+    width: 100%;
     margin: auto;
     box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.7);
   }
@@ -417,12 +417,11 @@
 
   .home-mid-sec{
     height: 20vh;
-    background-image: url("images/Video-Illustration.png");
-    background-size: 115%;
+    background-image: none;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 0px;
-
   }
 
   .left-top-div{
