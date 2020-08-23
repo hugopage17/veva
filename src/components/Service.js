@@ -41,8 +41,8 @@ class Service extends Component{
     const services = this.state.otherServices
     return services.map((service)=>{
       return (
-        <Link to={`/Services/${service.name}`} class='route-link' target="_blank"><div class='rounded-services'>
-          <img src={require(`../images/${service.img}`)} alt={service.name}/>
+        <Link to={`/Services/${service.name}`} class='route-link text-gradient' style={{fontSize:18}} target="_blank"><div class='other-services'>
+          <img src={require(`../images/${service.banner}`)} alt={service.name}/>
           <h3 >{service.name}</h3>
         </div></Link>
       )
@@ -67,7 +67,7 @@ class Service extends Component{
             <p class='service-desc'>{this.state.service.desc} <a href="mailto:contact@vevadev.co.nz" id='mail-link' class='text-gradient'>Contact us for more information</a></p>
           </div>
           <h1 style={{fontWeight:'bold'}}>Find out more about</h1>
-          <div>
+          <div class='other-services-wrapper'>
             {this.showOthers()}
           </div>
         </div>

@@ -3,6 +3,7 @@ import '../App.css'
 import {data} from '../services-data.js'
 import {Link} from "react-router-dom"
 import MetaTags from 'react-meta-tags'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 class Services extends Component{
   constructor(props){
@@ -21,16 +22,28 @@ class Services extends Component{
   showServices(){
     return data.map((service)=>{
       const index = data.indexOf(service)
-      let padding
+      let fade
+      let floatDir
       if(index === 1){
-        padding = 10
+        fade = 'fadeInRight'
+        floatDir = 'service-pos-right'
+      }else{
+        fade = 'fadeInLeft'
+        floatDir = 'service-pos-left'
       }
       return(
-        <Link to={`Services/${service.name}`} class='route-link'><div class='rounded-services'>
-          <img src={require(`../images/${service.img}`)} alt={service.name}/>
-          <h3>{service.name}</h3>
-          <p style={{paddingTop:padding}}>{service.brief}</p>
-        </div></Link>
+        <ScrollAnimation animateIn={fade} animateOnce={true}>
+        <div class='rounded-services'>
+          <div id={floatDir}>
+            <h2>{service.name}</h2><br/>
+            <p>{service.brief}</p><br/>
+            <Link to={`Services/${service.name}`} class='route-link'><button class='but-1' style={{float:'left'}}>Find out More</button></Link>
+          </div>
+          <div id={floatDir}>
+            <img src={require(`../images/${service.banner}`)} alt={service.name}/>
+          </div>
+        </div>
+        </ScrollAnimation>
       )
     })
   }
@@ -52,7 +65,6 @@ class Services extends Component{
             <div class='tog-bar'></div>
             <div class='tog-bar'></div>
           </button>
-          <h1 style={{fontWeight:'bold'}}>Find out about our <span class='text-gradient' >Services </span>below</h1>
           <div class='all-services'>
             {this.showServices()}
           </div>

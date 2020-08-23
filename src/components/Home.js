@@ -49,7 +49,7 @@ class Home extends Component {
     }
     setInterval(()=>{
       this.changeTextSlide()
-    },5000)
+    },6500)
   }
 
   toggleNav = () => {

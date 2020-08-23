@@ -2,6 +2,19 @@
   position: relative;
 }
 
+.service-link{
+  color:#0E1938;
+}
+
+.other-services{
+  width:40%;
+  display: inline-block;
+}
+
+.other-services img{
+  width:50%;
+}
+
 #bottom-home{
   background-color: #0E1938;
   color:white;
@@ -404,6 +417,7 @@
 
   .home-video{
     width: 100%;
+    padding:0px;
     margin: auto;
     box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.7);
   }

@@ -9,6 +9,7 @@ export const data = [
       'Accounting'
     ],
     img:'Icon-Business-Development.png',
+    banner:'bd-banner.png',
     desc:'Is your company undergoing financial stress? Have recent times resulted in financial loss? Our tools and expertise may be able to help put your company back on track. Our in-house and remote workshops provide the training to give you more confidence moving forward. Bring us your ideas, and we’ll show you how to make them tangible. If you have a viable business plan, let us take a look, and we may be able to become business partners or assist you through receivership. We’ll work to give you the best outcome possible.'
   },
   {
@@ -21,10 +22,12 @@ export const data = [
       'Collaborating'
     ],
     img:'Icon-Business-Management.png',
+    banner:'bm-banner.png',
     desc:'Show us your business, and we can show you how to reap its rewards better. Our in-house and remote workshops provide the training to give you the confidence to take your business to the next level. If your company has been hit by difficult times, we can help you find our way out of it and back on the right track. Our marketing, graphic design, IT, accounting, and business strategy professionals are available every step of the way. '
   },
   {
     name:'Investment Management',
+    banner:'im-banner.png',
     brief:'We can help create and execute the strategies that will make your money work for you. With the latest technology and data sources at your disposal, managing your portfolios to ensure the best results is easier than ever!',
     keyPoints:[
       'Data Analysis',
